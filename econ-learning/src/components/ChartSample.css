@@ -1,0 +1,32 @@
+﻿.chartFormat {
+    display: inline-block;
+    background-color: #F4ED9F;
+}
+
+.fiveElement {
+    height: 500px;
+    width: 1500px;
+    display: block;
+}
+
+.tenElement {
+    display: none;
+    height: 500px;
+    width: 1500px;
+}
+
+.fifteenElement {
+    display: none;
+    height: 500px;
+    width: 1500px;
+}
+
+.select {
+    width: 100px;
+    border-radius: 3px;
+    font-weight: 700;
+    position: absolute;
+    left: 80%;
+    top: 10%;
+    background-color: #85C55A;
+}

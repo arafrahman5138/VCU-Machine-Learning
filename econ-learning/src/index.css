@@ -1,0 +1,35 @@
+:root {
+  --orange-1: #F26D26;
+  --orange-2: #F99D3A;
+  --orange-3: #F4ED9F;
+
+  --blue-1: #195D81;
+  --blue-2: #1C9CD3;
+  --blue-3: #7ED2EF;
+
+  --green-1: #4A9C72;
+  --green-2: #85C55A;
+
+  --global-pad: 0 10%;
+  --content-pad: 0 20%;
+  --page-pad: 0 15%;
+}
+
+
+@media (max-width: 480px) {
+  :root {
+    --global-pad: 0 2%;
+    --content-pad: 0 5%;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-size: 16px;
+}

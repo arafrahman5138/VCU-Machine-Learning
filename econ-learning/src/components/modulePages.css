@@ -1,0 +1,36 @@
+.topNavigation {
+    padding: var(--global-pad);
+
+    display: flex;
+    align-items: baseline;
+}
+
+.topNavigation h1 {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.pageContent {
+    padding: var(--page-pad);
+}
+
+.bottomNavigation {
+    padding: var(--page-pad);
+    background-color: var(--orange-3);
+
+    display: flex;
+    align-items: baseline;
+}
+
+.bottomNavigation h4 {
+    background-color: white;
+    padding: 0.25em;
+
+    border-radius: 0.25em;
+    box-shadow: 0.2em 0.2em 0.25em rgba(0, 0, 0, 0.5);
+}
+
+.bottomNavigation p {
+    flex-grow: 1;
+    text-align: center;
+}

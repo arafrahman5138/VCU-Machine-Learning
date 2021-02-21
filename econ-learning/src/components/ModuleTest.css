@@ -1,0 +1,315 @@
+﻿/* .previous_module {
+    margin: -20px -20px 20px;
+    padding: 20px;
+}
+
+.next_module {
+    position: static;
+    margin: 20px 20px -20px;
+    width: 200px;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: #7ED2EF;
+        transition: all 0.2s ease-out;
+        border-radius: 5px;
+    }
+
+    .testing123{
+        position: absolute;
+        left: 14px;
+        top: 94px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        font-size: 18px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 5px;
+    }
+
+        .testing123:hover {
+            background-color: #7ED2EF;
+            transition: all 0.2s ease-out;
+        }
+
+        .testing456:hover {
+            background-color: #7ED2EF;
+            transition: all 0.2s ease-out;
+        }
+
+    .testing456{
+        left: 1699px;
+        top: 94px;
+        position: absolute;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        font-size: 18px;
+        padding-left: 51px;
+        padding-right: 51px;
+        border-radius: 5px;
+    }
+
+    .textblock_placeholder{
+        text-align: center;
+        left: 811px;
+        top: 94px;
+        font-size: 70px;
+        position: absolute;
+        margin: auto;
+        border-radius: 5px;
+    }
+
+    .credits{
+        position: absolute;
+        left: 240px;
+        top: 94px;
+    }
+
+    .testingQuiz{
+        transform: scale(0.65); 
+        position: relative; 
+        top: 94px;
+        font-size: 47px;
+    }
+
+    .block11{
+        padding: 10px;
+    }
+
+    .block12{
+        padding: 10px;
+    }
+
+    .block13{
+        padding: 10px;
+    }
+
+    .block14{
+        padding: 10px;
+    }
+
+    .option11{
+        padding: 5px; font-size: 2.5rem;
+        transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;
+    }
+
+    .option12{
+        padding: 5px; font-size: 2.5rem;
+        transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;
+    }
+
+    .option13{
+        padding: 5px; font-size: 2.5rem;
+        transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;
+    }
+
+    .option14{
+        padding: 5px; font-size: 2.5rem;
+        transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;
+        visibility: visible;
+    }
+
+    .submitButton{
+        width: 100px; 
+        height: 40px; 
+        border-radius: 3px; 
+        font-weight: 700; 
+        position: relative; 
+        left: 320px; 
+        top: 30px;
+    }
+
+    .submitButton:hover{
+        background-color: #7ED2EF;
+        transition: all 0.2s ease-out;
+    }
+
+    .continue{
+        position: absolute;
+        left: 240px;
+        top: 134px; 
+        transition: all 0.2s ease-out;
+    }
+
+    .testtext{
+        position: absolute;
+        top: 400px;
+    } */
+
+    .previous_module {
+        margin: -20px -20px 20px;
+        padding: 20px;
+    }
+    
+    .next_module {
+        position: static;
+        margin: 20px 20px -20px;
+        width: 200px;
+    }
+    
+    .navbar a {
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+    
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #7ED2EF;
+            transition: all 0.2s ease-out;
+            border-radius: 5px;
+        }
+    
+        .testing123{
+            position: absolute;
+            left: 14px;
+            top: 94px;
+            padding-top: 22px;
+            padding-bottom: 22px;
+            font-size: 18px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 5px;
+        }
+    
+            .testing123:hover {
+                background-color: #7ED2EF;
+                transition: all 0.2s ease-out;
+            }
+    
+            .testing456:hover {
+                background-color: #7ED2EF;
+                transition: all 0.2s ease-out;
+            }
+    
+        .testing456{
+            left: 1699px;
+            top: 94px;
+            position: absolute;
+            padding-top: 22px;
+            padding-bottom: 22px;
+            font-size: 18px;
+            padding-left: 51px;
+            padding-right: 51px;
+            border-radius: 5px;
+        }
+    
+        .textblock_placeholder{
+            text-align: center;
+            left: 811px;
+            top: 94px;
+            font-size: 70px;
+            position: absolute;
+            margin: auto;
+            border-radius: 5px;
+        }
+    
+        .credits{
+            position: relative;
+            left: 240px;
+            top: 94px;
+        }
+    
+        .testingQuiz{
+            margin-top: 94px;
+    
+            width: 50%;
+            margin-left: 25%;
+        }
+    
+        .block11{
+            padding: 10px;
+        }
+    
+        .block12{
+            padding: 10px;
+        }
+    
+        .block13{
+            padding: 10px;
+        }
+    
+        .block14{
+            padding: 10px;
+        }
+    
+        .option11{
+            padding: 5px; font-size: 2.5rem;
+            transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;
+        }
+    
+        .option12{
+            padding: 5px; font-size: 2.5rem;
+            transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;
+        }
+    
+        .option13{
+            padding: 5px; font-size: 2.5rem;
+            transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;
+        }
+    
+        .option14{
+            padding: 5px; font-size: 2.5rem;
+            transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;
+            visibility: visible;
+        }
+    
+        .submitButton{
+            width: 100px; 
+            border-radius: 3px; 
+            font-weight: 700; 
+            position: relative; 
+            left: calc(75% - 100px); 
+            top: 30px;
+            margin-bottom: 50px;
+        }
+    
+        .submitButton:hover{
+            background-color: #7ED2EF;
+            transition: all 0.2s ease-out;
+        }
+    
+        .continue{
+            width: 100px; 
+            border-radius: 3px; 
+            font-weight: 700; 
+            position: absolute;
+            left: 75%;
+    
+        }
+    
+        .testtext{
+            position: absolute;
+            top: 400px;
+        }
