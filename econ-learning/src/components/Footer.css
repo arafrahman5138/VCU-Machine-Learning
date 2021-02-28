@@ -1,0 +1,9 @@
+.footer-container {
+    background-color: #F26D26;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+

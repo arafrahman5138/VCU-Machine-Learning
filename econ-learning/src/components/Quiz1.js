@@ -39,7 +39,7 @@ class Quiz1 extends React.Component {
                         <p className="credits_total" id="credits_total">Total credits: 0</p>
                     </div> <br/>
                     <div className="next_content">
-                        <button onClick={() => nextContent()} class="continue" id="continue_module" hidden="true">Next page</button>
+                        <button onClick={() => nextContent()} class="continue" id="continue_module" hidden="true">Next Question</button>
                     </div>
                 </table>
                 <div className="testingQuiz" id="testingQuiz">

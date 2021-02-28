@@ -20,7 +20,7 @@ function App() {
       <Router>
 
       <div className="navigation">
-        <h2>logo</h2>
+        <h2>CODEVA</h2>
         <div className="links">
           <Link to="/">Home</Link>
           <Link to="/modules">Modules</Link>
