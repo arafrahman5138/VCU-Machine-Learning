@@ -65,7 +65,7 @@ function BottomNavGen(props) {
       return (<div className="bottomNavigation">
         <h4><Link to={`/modules/${module}/${pages - 1}`} replace>Previous Page</Link></h4>
         <p>Page {pages + 1}/{len}</p>
-        <h4><Link to="/quiz">Start Quiz</Link></h4>
+        <h4><Link to="/quizz">Start Quiz</Link></h4>
       </div>)
     }
 
@@ -84,4 +84,3 @@ function BottomNavGen(props) {
         <h4><Link to={`/modules/${module}/${pages + 1}`} replace>Next Page</Link></h4>
     </div>)
 }
-

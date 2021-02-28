@@ -5,6 +5,11 @@ import Profile from './pages/Profile.js';
 import Quiz from './components/Quiz1.js';
 import Login from './pages/Login';
 import Help from './pages/Help';
+import Quizz from './components/Quiz'
+
+import { render } from 'react-dom';
+import { IndexRoute, hashHistory } from 'react-router';
+
 
 import {
   BrowserRouter as Router,
@@ -30,6 +35,11 @@ function App() {
       
       <Switch>
 
+
+      <Route path="/quizz">
+          <Quizz/>
+      </Route>
+      
       <Route path="/help">
           <Help/>
       </Route>
@@ -55,7 +65,6 @@ function App() {
       </Switch>
       
       </Router>
-
 
       <div className="footer">
         footer area
