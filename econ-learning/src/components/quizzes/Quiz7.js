@@ -7,9 +7,9 @@ import {
     useRouteMatch,
     Redirect
   } from "react-router-dom";
-  import DragChart from '../components/TestingDragChart'
+  import DragChart from '../TestingDragChart'
 
-export default function Quiz() {
+export default function Quiz7() {
 	const questions = [
 		{
 			questionText: 'What is the capital of France?',
@@ -52,6 +52,7 @@ export default function Quiz() {
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
+	var tokens = 0;
 
 	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
@@ -68,11 +69,17 @@ export default function Quiz() {
 	return (
         <>
 		<div className='app'>
+		Quiz 7
 			{showScore ? (
                 <>
 				<div className='score-section'>
-					You scored {score} out of {questions.length}
+					You scored {score} out of {questions.length} <br/>
+					You earned {tokens = tokens + score * 5} tokens
 				</div>
+				<div className="credits">
+                        {/* <p className="credits_earnable" id="credits_earnable">Credits you can earn: 4</p> */}
+                        <p className="credits_total" id="credits_total"> Total tokens: {tokens}</p>
+                </div>
                 <h4><Link to="/modules/1/0">Next Module</Link></h4>
                 </>
 			) : (
@@ -90,7 +97,7 @@ export default function Quiz() {
 					</div>
 				</>
 			)}
-		</div>
+		</div> <br/>
         <DragChart/>
         </>
 	);
