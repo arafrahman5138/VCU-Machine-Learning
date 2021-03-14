@@ -43,8 +43,8 @@ export default function ModulePagesDOM() {
             <ModuleNavHeader title={modulesData[module].Title} prevLink={`/modules/${module-1}/${page}`} nextLink={`/modules/${module+1}/${page}`}/>
           </div>
           
+          <h2 className="title">{modulesData[module].Pages[page][0]}</h2>
           <div className="pageContent">
-            <h2>{modulesData[module].Pages[page][0]}</h2>
             <p>{modulesData[module].Pages[page][1]}</p>
           </div>
           
