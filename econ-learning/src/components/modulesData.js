@@ -137,8 +137,6 @@ export const modulesData = [
             Training data is a collection of information that is a sample of the overall set of data that the machine learning model is expected to predict values for. Training data can consist of a variety of different information depending on the task that a model is constructed for, including text, images, audio, or simply numerical values. The purpose of training data is to act as a teacher that shows and teaches the model how to perform its intended task. So, the model can use the patterns it analyzed or learned from the training data to apply them to future unseen data. In the previous example with the images of fruits, the training data would be the identification of the fruits and their corresponding images shown to computer so it can recognize what an apple or a banana looks like.
             
             In terms of machine learning algorithms, there are three main categories that are commonly used to build machine learning models. The categories are supervised learning, unsupervised learning, and reinforcement learning. We will talk more about these techniques and look at how the most popular algorithms can be applied to the stock market in the upcoming modules.`],
-
-            
         ],
         QuizPool: [
             ["What is a program?", 
@@ -152,7 +150,7 @@ export const modulesData = [
                 "To control a robot",
                 "To make human-like machines"],
             ["Which of these are examples of training data?", 
-                "All of the answers", 
+                "All of the choices", 
                 "Text", 
                 "Images", 
                 "Numbers"],
