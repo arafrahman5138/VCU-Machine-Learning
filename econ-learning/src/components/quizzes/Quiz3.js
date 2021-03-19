@@ -9,7 +9,15 @@ import {
   } from "react-router-dom";
   import DragChart from '../TestingDragChart'
 
+<<<<<<< HEAD
+<<<<<<< HEAD:econ-learning/src/components/quizzes/Quiz3.js
 export default function Quiz3() {
+=======
+export default function Quiz2() {
+>>>>>>> refs/remotes/origin/master:econ-learning/src/components/quizzes/Quiz2.js
+=======
+export default function Quiz3() {
+>>>>>>> refs/remotes/origin/master
 	const questions = [
 		{
 			questionText: 'What is the capital of France?',
@@ -69,7 +77,15 @@ export default function Quiz3() {
 	return (
         <>
 		<div className='app'>
+<<<<<<< HEAD
+<<<<<<< HEAD:econ-learning/src/components/quizzes/Quiz3.js
 		Quiz 1
+=======
+		Quiz 2
+>>>>>>> refs/remotes/origin/master:econ-learning/src/components/quizzes/Quiz2.js
+=======
+		Quiz 1
+>>>>>>> refs/remotes/origin/master
 			{showScore ? (
                 <>
 				<div className='score-section'>

@@ -30,3 +30,14 @@
     top: 10%;
     background-color: #85C55A;
 }
+
+.python {
+    display: inline-block;
+    width: 100px;
+    border-radius: 3px;
+    font-weight: 700;
+    position: absolute;
+    left: 80%;
+    top: 20%;
+    background-color: #85C55A;
+}
