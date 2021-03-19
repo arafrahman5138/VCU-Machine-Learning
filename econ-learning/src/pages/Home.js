@@ -5,8 +5,9 @@ import Footer from '../components/Footer'
 function Home() {
     return (
         <>
-        <h1>Home</h1>
-        <DragChart/>
+        <h1 align="center">Home</h1>
+        Welcome Student!
+        <DragChart/>    
 
         <Footer/>
         </>
