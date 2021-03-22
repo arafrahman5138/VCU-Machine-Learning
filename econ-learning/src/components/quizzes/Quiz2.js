@@ -9,6 +9,7 @@ import {
   } from "react-router-dom";
   import DragChart from '../TestingDragChart'
 
+
 export default function Quiz2() {
 	const questions = [
 		{
@@ -69,7 +70,6 @@ export default function Quiz2() {
 	return (
         <>
 		<div className='app'>
-		Quiz 2
 			{showScore ? (
                 <>
 				<div className='score-section'>

@@ -9,7 +9,9 @@ import {
   } from "react-router-dom";
   import DragChart from '../TestingDragChart'
 
+
 export default function Quiz3() {
+
 	const questions = [
 		{
 			questionText: 'What is the capital of France?',
@@ -69,7 +71,7 @@ export default function Quiz3() {
 	return (
         <>
 		<div className='app'>
-		Quiz 1
+
 			{showScore ? (
                 <>
 				<div className='score-section'>
