@@ -33,6 +33,9 @@ export const modulesData = [
             ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
         ],
         QuizSize: 2,
+        ModuleImg: [
+            ['computer.jpeg']
+        ]
     },
 
     {
@@ -107,6 +110,9 @@ export const modulesData = [
             ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
         ],
         QuizSize: 2,
+        ModuleImg: [
+            ['computer.jpeg']
+        ]
     },
 
     
@@ -156,6 +162,9 @@ export const modulesData = [
                 "Numbers"],
         ],
         QuizSize: 3,
+        ModuleImg: [
+            ['computer.jpeg']
+        ]
     },
 
     
@@ -210,6 +219,9 @@ export const modulesData = [
                 "Categories; text"],
         ],
         QuizSize: 4,
+        ModuleImg: [
+            ['computer.jpeg']
+        ]
     },
     {
         Title: "MODULE 6",
@@ -245,6 +257,9 @@ export const modulesData = [
             ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
         ],
         QuizSize: 2,
+        ModuleImg: [
+            ['computer.jpeg']
+        ]
     },
     {
         Title: "MODULE 7",
@@ -280,6 +295,9 @@ export const modulesData = [
             ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
         ],
         QuizSize: 2,
+        ModuleImg: [
+            ['computer.jpeg']
+        ]
     },
     {
         Title: "MODULE 8",
@@ -315,5 +333,8 @@ export const modulesData = [
             ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
         ],
         QuizSize: 2,
+        ModuleImg: [
+            ['computer.jpeg']
+        ]
     },
 ];

@@ -82,7 +82,7 @@ export default function Quiz3() {
                         {/* <p className="credits_earnable" id="credits_earnable">Credits you can earn: 4</p> */}
                         <p className="credits_total" id="credits_total"> Total tokens: {tokens}</p>
                 </div>
-                <h4><Link to="/modules/1/0">Next Module</Link></h4>
+                <h4><Link to="/modules/3/0">Next Module</Link></h4>
                 </>
 			) : (
 				<>

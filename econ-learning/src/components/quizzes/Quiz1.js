@@ -9,6 +9,8 @@ import {
   } from "react-router-dom";
   import DragChart from '../TestingDragChart'
 
+  import {modulesData} from '../../components/modulesData'
+
 export default function Quiz1() {
 	const questions = [
 		{

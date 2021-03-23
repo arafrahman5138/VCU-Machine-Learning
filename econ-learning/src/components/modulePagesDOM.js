@@ -40,10 +40,14 @@ export default function ModulePagesDOM() {
             {/* <p>&lt;Previous Module</p>
             <h1>{modulesData[module].Title}</h1>
             <p>Next Module&gt;</p> */}
-            <ModuleNavHeader title={modulesData[module].Title} prevLink={`/modules/${module-1}/${page}`} nextLink={`/modules/${module+1}/${page}`}/>
+            <ModuleNavHeader title={modulesData[module].Title} prevLink={`/modules/${module-1}`} nextLink={`/modules/${module+1}`}/>
           </div>
           
+
           <h2 className="title">{modulesData[module].Pages[page][0]}</h2>
+          <div className="image" align="center">
+            {/* <img src={`../images/${modulesData[module].ModuleImg[page][0]}`}/> */}
+          </div>
           <div className="pageContent">
             <p>{modulesData[module].Pages[page][1]}</p>
           </div>

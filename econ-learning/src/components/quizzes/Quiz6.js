@@ -80,7 +80,7 @@ export default function Quiz6() {
                         {/* <p className="credits_earnable" id="credits_earnable">Credits you can earn: 4</p> */}
                         <p className="credits_total" id="credits_total"> Total tokens: {tokens}</p>
                 </div>
-                <h4><Link to="/modules/1/0">Next Module</Link></h4>
+                <h4><Link to="/modules/6/0">Next Module</Link></h4>
                 </>
 			) : (
 				<>

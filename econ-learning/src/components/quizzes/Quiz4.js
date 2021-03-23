@@ -8,43 +8,36 @@ import {
     Redirect
   } from "react-router-dom";
   import DragChart from '../TestingDragChart'
+  import {modulesData} from '../../components/modulesData'
+
 
 export default function Quiz4() {
 	const questions = [
 		{
-			questionText: 'What is the capital of France?',
+			questionText: modulesData[3].QuizPool[0][0],
 			answerOptions: [
-				{ answerText: 'New York', isCorrect: false },
-				{ answerText: 'London', isCorrect: false },
-				{ answerText: 'Paris', isCorrect: true },
-				{ answerText: 'Dublin', isCorrect: false },
+				{ answerText: modulesData[3].QuizPool[0][1], isCorrect: false },
+				{ answerText: modulesData[3].QuizPool[0][2], isCorrect: false },
+				{ answerText: modulesData[3].QuizPool[0][3], isCorrect: true },
+				{ answerText: modulesData[3].QuizPool[0][4], isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Who is CEO of Tesla?',
+			questionText: modulesData[3].QuizPool[1][0],
 			answerOptions: [
-				{ answerText: 'Jeff Bezos', isCorrect: false },
-				{ answerText: 'Elon Musk', isCorrect: true },
-				{ answerText: 'Bill Gates', isCorrect: false },
-				{ answerText: 'Tony Stark', isCorrect: false },
+				{ answerText: modulesData[3].QuizPool[1][1], isCorrect: false },
+				{ answerText: modulesData[3].QuizPool[1][2], isCorrect: false },
+				{ answerText: modulesData[3].QuizPool[1][3], isCorrect: true },
+				{ answerText: modulesData[3].QuizPool[1][4], isCorrect: false },
 			],
 		},
 		{
-			questionText: 'The iPhone was created by which company?',
+			questionText: modulesData[3].QuizPool[2][0],
 			answerOptions: [
-				{ answerText: 'Apple', isCorrect: true },
-				{ answerText: 'Intel', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Microsoft', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'How many Harry Potter books are there?',
-			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
+				{ answerText: modulesData[3].QuizPool[2][1], isCorrect: false },
+				{ answerText: modulesData[3].QuizPool[2][2], isCorrect: false },
+				{ answerText: modulesData[3].QuizPool[2][3], isCorrect: true },
+				{ answerText: modulesData[3].QuizPool[2][4], isCorrect: false },
 			],
 		},
 	];
@@ -80,7 +73,7 @@ export default function Quiz4() {
                         {/* <p className="credits_earnable" id="credits_earnable">Credits you can earn: 4</p> */}
                         <p className="credits_total" id="credits_total"> Total tokens: {tokens}</p>
                 </div>
-                <h4><Link to="/modules/1/0">Next Module</Link></h4>
+                <h4><Link to="/modules/4/0">Next Module</Link></h4>
                 </>
 			) : (
 				<>
