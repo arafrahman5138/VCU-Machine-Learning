@@ -1,3 +1,4 @@
+import React, { useContext } from "react";
 import Chart from '../components/ChartSample'
 import DragChart from '../components/TestingDragChart'
 import Footer from '../components/Footer'

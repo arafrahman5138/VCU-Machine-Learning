@@ -1,8 +1,10 @@
+import React, { useState } from "react";
 import './App.css';
 import Home from './pages/Home.js';
+import Welcome from './pages/Welcome.js';
 import Modules from './pages/Modules.js';
-import Profile from './pages/Profile.js';
 import Login from './pages/Login';
+import Register from './pages/Register';
 import Help from './pages/Help';
 import Quiz1 from './components/quizzes/Quiz1'
 import Quiz2 from './components/quizzes/Quiz2'
@@ -16,7 +18,6 @@ import Quiz8 from './components/quizzes/Quiz8'
 import { render } from 'react-dom';
 import { IndexRoute, hashHistory } from 'react-router';
 
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,18 +25,21 @@ import {
   Link,
 } from "react-router-dom";
 
+export const CredentialsContext = React.createContext();
+
 function App() {
+  const credentialsState = useState(null);
+
   return (
     <div className="app">
-      
+     <CredentialsContext.Provider value={credentialsState}>
       <Router>
 
       <div className="navigation">
         <h2>CODEVA</h2>
         <div className="links">
-          <Link to="/">Home</Link>
+          <Link to="/">Welcome</Link>
           <Link to="/modules">Modules</Link>
-          <Link to="/profile">Profile</Link>
         </div>
       </div>
       
@@ -74,26 +78,27 @@ function App() {
         <Route path="/modules">
           <Modules/>
         </Route>
-        <Route path="/profile">
-          <Profile/>
-        </Route>
 
         <Route path="/login">
           <Login/>
         </Route>
 
-        <Route path="/">
-          <Home/>
+        <Route path="/Register">
+          <Register/>
+        </Route>
+
+        <Route exact path="/">
+          <Welcome/>
         </Route>
 
       </Switch>
       
       </Router>
-
+      </CredentialsContext.Provider>
       <div className="footer">
         footer area
       </div>
-
+    
     </div>
   )
 }
