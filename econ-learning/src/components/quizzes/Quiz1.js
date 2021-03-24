@@ -71,7 +71,6 @@ export default function Quiz1() {
 	return (
         <>
 		<div className='app'>
-			Quiz 1
 			{showScore ? (
                 <>
 				<div className='score-section'>
@@ -87,6 +86,7 @@ export default function Quiz1() {
 			) : (
 				<>
 					<div className='question-section'>
+						<h2>Quiz 1</h2>
 						<div className='question-count'>
 							<span>Question {currentQuestion + 1}</span>/{questions.length}
 						</div>

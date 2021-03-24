@@ -13,6 +13,7 @@
   --global-pad: 0 10%;
   --content-pad: 0 20%;
   --page-pad: 0 15%;
+  --narrow-pad: 0 25%;
 }
 
 
@@ -32,4 +33,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   font-size: 18px;
+}
+
+body .app body {
+  position: relative;
+}
+
+body .app body button {
+  position: absolute;
+
+  background-color: #85C55A;
 }

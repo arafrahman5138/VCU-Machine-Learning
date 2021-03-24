@@ -1,43 +1,36 @@
 ﻿.chartFormat {
     display: inline-block;
     background-color: #F4ED9F;
+
+    width: 100%;
 }
 
 .fiveElement {
     height: 500px;
-    width: 1500px;
+    width: 100%;
+    padding: var(--page-pad);
     display: block;
 }
 
 .tenElement {
     display: none;
     height: 500px;
-    width: 1500px;
+    width: 100%;
+    padding: var(--page-pad);
 }
 
 .fifteenElement {
     display: none;
     height: 500px;
-    width: 1500px;
-}
-
-.select {
-    width: 100px;
-    border-radius: 3px;
-    font-weight: 700;
-    position: absolute;
-    left: 80%;
-    top: 10%;
-    background-color: #85C55A;
+    width: 100%;
+    padding: var(--page-pad);
 }
 
 .python {
-    display: inline-block;
-    width: 100px;
-    border-radius: 3px;
-    font-weight: 700;
-    position: absolute;
-    left: 80%;
-    top: 20%;
-    background-color: #85C55A;
+    left: 10%;
+}
+
+.select {
+    left: 10%;
+    top: 1.5em;
 }
