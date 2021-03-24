@@ -86,7 +86,7 @@ export default function Quiz1() {
 			) : (
 				<>
 					<div className='question-section'>
-						<h2>Quiz 1</h2>
+						<h2 align="center">Quiz 1</h2>
 						<div className='question-count'>
 							<span>Question {currentQuestion + 1}</span>/{questions.length}
 						</div>
