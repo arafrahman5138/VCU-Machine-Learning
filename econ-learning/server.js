@@ -36,7 +36,7 @@ app.post("/register", async (req, res) => {
   if (user) {
     res.status(500);
     res.json({
-      message: "user already exists",
+      message: "User Already Exists",
     });
     return;
   }
@@ -47,8 +47,32 @@ app.post("/register", async (req, res) => {
 });
 
 app.post("/login", async (req, res) => {
-  const { username, password, module1 } = req.body;
+  const { username, password} = req.body;
   const user = await User.findOne({ username }).exec();
+  if (!user || user.password !== password) {
+    res.status(403);
+    res.json({
+      message: "Invalid Login",
+    });
+    return;
+  }
+  res.json({
+    message: "success",
+  });
+});
+
+app.post("/welcome", async (req, res) => {
+  const { username, password} = req.body;
+  const user = await User.findOne({ username }).exec();
+  const db = mongoose.connection;
+  db.collection('users').updateOne(
+  {username: user.username},
+  {
+    $set: {
+      module1: "100"
+    }
+  }
+);
   if (!user || user.password !== password) {
     res.status(403);
     res.json({
@@ -58,6 +82,207 @@ app.post("/login", async (req, res) => {
   }
   res.json({
     message: "success",
+    
+  });
+});
+
+app.post("/Quiz1", async (req, res) => {
+  const { username, password} = req.body;
+  const user = await User.findOne({ username }).exec();
+  const db = mongoose.connection;
+  db.collection('users').updateOne(
+  {username: user.username},
+  {
+    $set: {
+      module1: "100"
+    }
+  }
+);
+  if (!user || user.password !== password) {
+    res.status(403);
+    res.json({
+      message: "invalid login",
+    });
+    return;
+  }
+  res.json({
+    message: "success",
+    
+  });
+});
+
+app.post("/Quiz2", async (req, res) => {
+  const { username, password} = req.body;
+  const user = await User.findOne({ username }).exec();
+  const db = mongoose.connection;
+  db.collection('users').updateOne(
+  {username: user.username},
+  {
+    $set: {
+      module2: "100"
+    }
+  }
+);
+  if (!user || user.password !== password) {
+    res.status(403);
+    res.json({
+      message: "invalid login",
+    });
+    return;
+  }
+  res.json({
+    message: "success",
+    
+  });
+});
+
+app.post("/Quiz3", async (req, res) => {
+  const { username, password} = req.body;
+  const user = await User.findOne({ username }).exec();
+  const db = mongoose.connection;
+  db.collection('users').updateOne(
+  {username: user.username},
+  {
+    $set: {
+      module3: "100"
+    }
+  }
+);
+  if (!user || user.password !== password) {
+    res.status(403);
+    res.json({
+      message: "invalid login",
+    });
+    return;
+  }
+  res.json({
+    message: "success",
+    
+  });
+});
+
+app.post("/Quiz4", async (req, res) => {
+  const { username, password} = req.body;
+  const user = await User.findOne({ username }).exec();
+  const db = mongoose.connection;
+  db.collection('users').updateOne(
+  {username: user.username},
+  {
+    $set: {
+      module4: "100"
+    }
+  }
+);
+  if (!user || user.password !== password) {
+    res.status(403);
+    res.json({
+      message: "invalid login",
+    });
+    return;
+  }
+  res.json({
+    message: "success",
+    
+  });
+});
+
+app.post("/Quiz5", async (req, res) => {
+  const { username, password} = req.body;
+  const user = await User.findOne({ username }).exec();
+  const db = mongoose.connection;
+  db.collection('users').updateOne(
+  {username: user.username},
+  {
+    $set: {
+      module5: "100"
+    }
+  }
+);
+  if (!user || user.password !== password) {
+    res.status(403);
+    res.json({
+      message: "invalid login",
+    });
+    return;
+  }
+  res.json({
+    message: "success",
+    
+  });
+});
+
+app.post("/Quiz6", async (req, res) => {
+  const { username, password} = req.body;
+  const user = await User.findOne({ username }).exec();
+  const db = mongoose.connection;
+  db.collection('users').updateOne(
+  {username: user.username},
+  {
+    $set: {
+      module6: "100"
+    }
+  }
+);
+  if (!user || user.password !== password) {
+    res.status(403);
+    res.json({
+      message: "invalid login",
+    });
+    return;
+  }
+  res.json({
+    message: "success",
+    
+  });
+});
+
+app.post("/Quiz7", async (req, res) => {
+  const { username, password} = req.body;
+  const user = await User.findOne({ username }).exec();
+  const db = mongoose.connection;
+  db.collection('users').updateOne(
+  {username: user.username},
+  {
+    $set: {
+      module7: "100"
+    }
+  }
+);
+  if (!user || user.password !== password) {
+    res.status(403);
+    res.json({
+      message: "invalid login",
+    });
+    return;
+  }
+  res.json({
+    message: "success",
+    
+  });
+});
+
+app.post("/Quiz8", async (req, res) => {
+  const { username, password} = req.body;
+  const user = await User.findOne({ username }).exec();
+  const db = mongoose.connection;
+  db.collection('users').updateOne(
+  {username: user.username},
+  {
+    $set: {
+      module8: "100"
+    }
+  }
+);
+  if (!user || user.password !== password) {
+    res.status(403);
+    res.json({
+      message: "invalid login",
+    });
+    return;
+  }
+  res.json({
+    message: "success",
+    
   });
 });
 

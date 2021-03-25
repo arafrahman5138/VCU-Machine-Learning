@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import './App.css';
-import Home from './pages/Home.js';
-import Welcome from './pages/Welcome.js';
-import Modules from './pages/Modules.js';
+import Home from './pages/Home';
+import Welcome from './pages/Welcome';
+import Modules from './pages/Modules';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Help from './pages/Help';
@@ -76,19 +76,19 @@ function App() {
       </Route>
 
         <Route path="/modules">
-          <Modules/>
+          <Modules />
         </Route>
 
         <Route path="/login">
-          <Login/>
+          <Login />
         </Route>
 
         <Route path="/Register">
-          <Register/>
+          <Register />
         </Route>
 
         <Route exact path="/">
-          <Welcome/>
+          <Welcome />
         </Route>
 
       </Switch>
