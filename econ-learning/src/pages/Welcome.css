@@ -1,0 +1,51 @@
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.wrapper {
+  text-align: center;
+  display: inline-block;
+}
+
+.logoutBtn {
+  padding: 8px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--blue-3);
+  border: 1px solid var(--blue-3);
+  border-radius: 10px;
+  transition: all 0.3s ease-out;
+  position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.loginBt {
+  padding: 8px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--blue-3);
+  border: 1px solid var(--blue-3);
+  border-radius: 10px;
+  transition: all 0.3s ease-out;
+  position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+}
+
+.registerBt {
+  padding: 8px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--blue-3);
+  border: 1px solid var(--blue-3);
+  border-radius: 10px;
+  transition: all 0.3s ease-out;
+  position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(20%);
+}

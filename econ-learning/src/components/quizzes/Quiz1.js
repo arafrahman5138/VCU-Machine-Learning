@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import { CredentialsContext } from "../../App";
+import { useHistory } from "react-router-dom";
+import React, { useState, useContext, useEffect } from 'react';
 import {
     Switch,
     Route,
@@ -7,11 +9,23 @@ import {
     useRouteMatch,
     Redirect
   } from "react-router-dom";
-  import DragChart from '../TestingDragChart'
+import DragChart from '../TestingDragChart'
+import {modulesData} from '../../components/modulesData'
 
-  import {modulesData} from '../../components/modulesData'
+export const handleErrors = async (response) => {
+  if (!response.ok) {
+    const { message } = await response.json();
+    throw Error(message);
+  }
+  return response.json();
+};
 
 export default function Quiz1() {
+  const [credentials, setCredentials] = useContext(CredentialsContext);
+  const [username, setUsername] = useState(credentials && credentials.username);
+  const [module, setModule] = useState("100"); 
+  const [error, setError] = useState("");
+
 	const questions = [
 		{
 			questionText: 'What is the capital of France?',
@@ -68,10 +82,37 @@ export default function Quiz1() {
 			setShowScore(true);
 		}
 	};
+
+  const Quiz1 = (e) => {
+    e.preventDefault();
+    fetch(`http://localhost:4000/Quiz1`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username,
+        module,
+      }),
+    })
+      .then(handleErrors)
+      .then(() => {
+        setCredentials({
+          username,
+          module,
+        });
+        history.push("/");
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  };
+
+  const history = useHistory();
+
 	return (
         <>
 		<div className='app'>
-			Quiz 1
 			{showScore ? (
                 <>
 				<div className='score-section'>
@@ -82,11 +123,14 @@ export default function Quiz1() {
                         {/* <p className="credits_earnable" id="credits_earnable">Credits you can earn: 4</p> */}
                         <p className="credits_total" id="credits_total"> Total tokens: {tokens}</p>
                 </div>
+				<form onClick={Quiz1}>
                 <h4><Link to="/modules/1/0">Next Module</Link></h4>
+				</form>
                 </>
 			) : (
 				<>
 					<div className='question-section'>
+						<h2 align="center">Quiz 1</h2>
 						<div className='question-count'>
 							<span>Question {currentQuestion + 1}</span>/{questions.length}
 						</div>

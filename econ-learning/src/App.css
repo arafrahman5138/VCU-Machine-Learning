@@ -132,26 +132,30 @@
 
 .score-section {
   display: flex;
-  font-size: 24px;
+  font-size: 2em;
+  padding: var(--page-pad);
   align-items: center;
 }
 
 /* QUESTION/TIMER/LEFT SECTION */
 .question-section {
   width: 100%;
-  position: relative;
+  padding: var(--narrow-pad);
+  margin-top: 1em;
 }
 
 .question-count {
-  margin-bottom: 20px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .question-count span {
-  font-size: 28px;
+  font-size: 1em;
 }
 
 .question-text {
-  margin-bottom: 12px;
+  font-size: 1.25em;
+  margin-bottom: 0.5em;
 }
 
 .timer-text {
@@ -166,10 +170,22 @@
 
 /* ANSWERS/RIGHT SECTION */
 .answer-section {
+  padding: var(--narrow-pad);
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  font-size: 2em;
+}
+
+.answer-section button {
+   font-size: 0.5em;
+   padding: 0.25em;
+   text-align: left;
+   text-indent: 1em;
+
+   margin: .15em 0;
 }
 
 .correct {

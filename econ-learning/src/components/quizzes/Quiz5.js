@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import { CredentialsContext } from "../../App";
+import { useHistory } from "react-router-dom";
+import React, { useState, useContext, useEffect } from 'react';
 import {
     Switch,
     Route,
@@ -10,7 +12,20 @@ import {
   import DragChart from '../TestingDragChart'
   import {modulesData} from '../../components/modulesData'
 
+export const handleErrors = async (response) => {
+  if (!response.ok) {
+    const { message } = await response.json();
+    throw Error(message);
+  }
+  return response.json();
+};
+
 export default function Quiz5() {
+  const [credentials, setCredentials] = useContext(CredentialsContext);
+  const [username, setUsername] = useState(credentials && credentials.username);
+  const [module, setModule] = useState("100"); 
+  const [error, setError] = useState("");
+
 	const questions = [
 		{
 			questionText: modulesData[4].QuizPool[0][0],
@@ -67,6 +82,34 @@ export default function Quiz5() {
 			setShowScore(true);
 		}
 	};
+
+  const Quiz5 = (e) => {
+    e.preventDefault();
+    fetch(`http://localhost:4000/Quiz5`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username,
+        module,
+      }),
+    })
+      .then(handleErrors)
+      .then(() => {
+        setCredentials({
+          username,
+          module,
+        });
+        history.push("/");
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  };
+
+  const history = useHistory();
+
 	return (
         <>
 		<div className='app'>
@@ -81,7 +124,9 @@ export default function Quiz5() {
                         {/* <p className="credits_earnable" id="credits_earnable">Credits you can earn: 4</p> */}
                         <p className="credits_total" id="credits_total"> Total tokens: {tokens}</p>
                 </div>
+                <form onClick={Quiz5}>
                 <h4><Link to="/modules/5/0">Next Module</Link></h4>
+				</form>
                 </>
 			) : (
 				<>

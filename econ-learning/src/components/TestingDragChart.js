@@ -1897,7 +1897,7 @@ export default class DraggableGraph extends React.Component {
                         />
                     </div>
                 </div>
-                <button class="chartFormat select" onClick={() => cycleCharts()}>Next Chart</button>
+                <button class="select" onClick={() => cycleCharts()}>Next Chart</button>
                 <button class="python" onClick={() => launchPythonScript()}>Logistic Regression</button>
             </body>
         );

@@ -194,7 +194,7 @@ export default class ChartSample extends React.Component {
                             />
                     </div>
                 </div>
-                <button class="chartFormat select" onClick={() => cycleCharts()}>Next Chart</button>
+                <button class="select" onClick={() => cycleCharts()}>Next Chart</button>
             </body>
         );
     }
