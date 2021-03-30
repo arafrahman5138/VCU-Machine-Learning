@@ -50,7 +50,7 @@ export default function ModulePagesDOM() {
           </div>
           {console.log("name" + modulesData[module].ModuleImg[0])}
           <div className="pageContent">
-            <p>{modulesData[module].Pages[page][1]}</p>
+             {modulesData[module].Pages[page][1]}
           </div>
           
           <BottomNavGen module={module} page={page}/>
