@@ -33,9 +33,8 @@ export const modulesData = [
             ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
         ],
         QuizSize: 2,
-        ModuleImg: [
-            ['computer.jpeg']
-        ]
+        ModuleImg: 
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"]
     },
 
     {
@@ -74,6 +73,8 @@ export const modulesData = [
             ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
         ],
         QuizSize: 1,
+        ModuleImg: 
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg", "codeva.jpeg"]
     },
 
     {
@@ -110,9 +111,8 @@ export const modulesData = [
             ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
         ],
         QuizSize: 2,
-        ModuleImg: [
-            ['computer.jpeg']
-        ]
+        ModuleImg: 
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"]
     },
 
     
@@ -162,9 +162,8 @@ export const modulesData = [
                 "Numbers"],
         ],
         QuizSize: 3,
-        ModuleImg: [
-            ['computer.jpeg']
-        ]
+        ModuleImg: 
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"]
     },
     
     {
@@ -217,9 +216,8 @@ export const modulesData = [
                 "Categories; text"],
         ],
         QuizSize: 4,
-        ModuleImg: [
-            ['computer.jpeg']
-        ]
+        ModuleImg: 
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"]
     },
     {
         Title: "MODULE 6",
@@ -255,9 +253,8 @@ export const modulesData = [
             ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
         ],
         QuizSize: 2,
-        ModuleImg: [
-            ['computer.jpeg']
-        ]
+        ModuleImg: 
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"]
     },
     {
         Title: "MODULE 7",
@@ -293,9 +290,8 @@ export const modulesData = [
             ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
         ],
         QuizSize: 2,
-        ModuleImg: [
-            ['computer.jpeg']
-        ]
+        ModuleImg: 
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"]
     },
     {
         Title: "MODULE 8",
@@ -331,9 +327,8 @@ export const modulesData = [
             ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
         ],
         QuizSize: 2,
-        ModuleImg: [
-            ['computer.jpeg']
-        ]
+        ModuleImg: 
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"]
     },
 
     {
@@ -376,9 +371,8 @@ export const modulesData = [
                 "Treats; rewards"],
         ],
         QuizSize: 3,
-        ModuleImg: [
-            ['computer.jpeg']
-        ]
+        ModuleImg: 
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"]
     },
 
     {
@@ -415,8 +409,7 @@ export const modulesData = [
             ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
         ],
         QuizSize: 2,
-        ModuleImg: [
-            ['computer.jpeg']
-        ]
+        ModuleImg: 
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"]
     },
 ];

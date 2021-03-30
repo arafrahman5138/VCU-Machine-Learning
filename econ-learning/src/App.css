@@ -208,3 +208,9 @@ button svg {
   margin-right: 5px;
 }
 
+.modImg {
+  border: 5px solid #555;
+  width: 300px;
+  height: 200px;
+}
+
