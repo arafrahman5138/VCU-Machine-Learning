@@ -128,11 +128,11 @@ export const modulesData = [
             
             ["Introduction to Computer Science and Machine Learning",
             `Typically, programmers write computer programs which consists of a set of instructions, or an algorithm, in order to tell the machine how to execute a particular task. 
-            For example, if you want to tell your computer to buy milk from an online grocery store, you might write a simple program with the following instructions:\n
-                \nStep 1: Go to the grocery store’s website.\n
-                \nStep 2: Input “milk” in the search bar and click the search button.
-                \nStep 3: Click the milk item and add one to cart.
-                \nStep 4: Checkout with the payment information provided by the user.
+            For example, if you want to tell your computer to buy milk from an online grocery store, you might write a simple program with the following instructions:
+                Step 1: Go to the grocery store’s website.
+                Step 2: Input “milk” in the search bar and click the search button.
+                Step 3: Click the milk item and add one to cart.
+                Step 4: Checkout with the payment information provided by the user.
             The computer is able to successfully buy milk from the store thanks to the explicit instructions in the program.`],
             
             ["Introduction to Computer Science and Machine Learning",
