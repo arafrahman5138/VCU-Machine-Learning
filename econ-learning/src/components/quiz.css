@@ -1,0 +1,19 @@
+.nextMod {
+    font-size: large;
+}
+
+#leftMod {
+    float: left;
+}
+
+#rightMod {
+    float: right;
+}
+
+.score-section {
+    /* display: flex; */
+    float: center;
+    font-size: 2em;
+    padding: var(--page-pad);
+    align-items: center;
+  }

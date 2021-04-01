@@ -10,6 +10,8 @@ import {
     Redirect
   } from "react-router-dom";
   import DragChart from '../TestingDragChart'
+  import '../../components/quiz.css'
+  import * as Styled from '../../components/StyledButton'
 
 export const handleErrors = async (response) => {
   if (!response.ok) {
@@ -123,13 +125,18 @@ export default function Quiz7() {
                         {/* <p className="credits_earnable" id="credits_earnable">Credits you can earn: 4</p> */}
                         <p className="credits_total" id="credits_total"> Total tokens: {tokens}</p>
                 </div>
-                <form onClick={Quiz7}>
-                <h4><Link to="/modules/7/0">Next Module</Link></h4>
+                <div className="nextMod">
+				<form onClick={Quiz7}>
+                <h4 id = "leftMod"><Link to="/modules/6/0"><Styled.Button>Restart</Styled.Button></Link></h4>
+				<h4 id = "rightMod"><Link to="/modules/7/0"><Styled.Button>Next Module</Styled.Button></Link></h4>
 				</form>
+				<br/>
+				</div>
                 </>
 			) : (
 				<>
 					<div className='question-section'>
+					<h2 align="center">Quiz 7</h2>
 						<div className='question-count'>
 							<span>Question {currentQuestion + 1}</span>/{questions.length}
 						</div>
