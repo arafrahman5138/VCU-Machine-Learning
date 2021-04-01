@@ -13,7 +13,7 @@ export const Button = styled.button`
   padding: 0 15px;
   border-radius: 7px;
   font-size: 17px;
-  &:hover, &:focus {
+  &:hover {
     background-color: #cceeff;
     border-color: #1c9cd3;
   }
