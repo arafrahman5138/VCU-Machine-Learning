@@ -130,12 +130,6 @@
   font-size: 100px;
 }
 
-.score-section {
-  display: flex;
-  font-size: 2em;
-  padding: var(--page-pad);
-  align-items: center;
-}
 
 /* QUESTION/TIMER/LEFT SECTION */
 .question-section {

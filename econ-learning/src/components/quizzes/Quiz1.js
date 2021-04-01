@@ -11,6 +11,8 @@ import {
   } from "react-router-dom";
 import DragChart from '../TestingDragChart'
 import {modulesData} from '../../components/modulesData'
+import '../../components/quiz.css'
+import * as Styled from '../../components/StyledButton'
 
 export const handleErrors = async (response) => {
   if (!response.ok) {
@@ -123,9 +125,13 @@ export default function Quiz1() {
                         {/* <p className="credits_earnable" id="credits_earnable">Credits you can earn: 4</p> */}
                         <p className="credits_total" id="credits_total"> Total tokens: {tokens}</p>
                 </div>
+				<div className="nextMod">
 				<form onClick={Quiz1}>
-                <h4><Link to="/modules/1/0">Next Module</Link></h4>
+                <h4 id = "leftMod"><Link to="/modules/0/0"><Styled.Button>Restart</Styled.Button></Link></h4>
+				<h4 id = "rightMod"><Link to="/modules/1/0"><Styled.Button>Next Module</Styled.Button></Link></h4>
 				</form>
+				<br/>
+				</div>
                 </>
 			) : (
 				<>
@@ -143,7 +149,7 @@ export default function Quiz1() {
 					</div>
 				</>
 			)}
-		</div> <br/>
+		</div> <br/> 
         <DragChart/>
         </>
 	);
