@@ -26,20 +26,21 @@
 }
 
 .bottomNavigation {
-    padding: var(--page-pad);
+    /* padding: var(--page-pad); */
+    padding: 1em 15em;
     background-color: var(--orange-3);
 
     display: flex;
     align-items: baseline;
 }
 
-.bottomNavigation h4 {
+/* .bottomNavigation button {
     background-color: white;
-    padding: 0.25em;
+    padding: 0.5em;
 
     border-radius: 0.25em;
     box-shadow: 0.2em 0.2em 0.25em rgba(0, 0, 0, 0.5);
-}
+} */
 
 .bottomNavigation p {
     flex-grow: 1;

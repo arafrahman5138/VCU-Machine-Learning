@@ -1,5 +1,6 @@
 import React from "react";
 import ModuleNavHeader from '../components/ModuleNavHeader.js'
+import * as Styled from './StyledButton'
 
 
 import {
@@ -68,24 +69,49 @@ function BottomNavGen(props) {
     
     if ((len - pages - 1) === 0) {
       return (<div className="bottomNavigation">
-        <h4><Link to={`/modules/${module}/${pages - 1}`} replace>Previous Page</Link></h4>
+        {/* <h4><Link to={`/modules/${module}/${pages - 1}`} replace>Previous Page</Link></h4> */}
+        <Link to={`/modules/${module}/${pages - 1}`} replace>
+          <Styled.Button> Previous Page </Styled.Button>
+        </Link>
+
         <p>Page {pages + 1}/{len}</p>
-        <h4><Link to={`/quiz${module+1}`}>Start Quiz</Link></h4>
+        {/* <h4><Link to={`/quiz${module+1}`}>Start Quiz</Link></h4> */}
+
+        <Link to={`/quiz${module+1}`} replace>
+          <Styled.Button> Start Quiz </Styled.Button>
+        </Link>
       </div>)
     }
 
     if (pages === 0) {
       return (<div className="bottomNavigation">
-        <h4>Previous Page</h4>
+        {/* <h4>Previous Page</h4> */}
+        <Styled.Button> Previous Page </Styled.Button>
+
         <p>Page {pages + 1}/{len}</p>
-        <h4><Link to={`/modules/${module}/${pages + 1}`} replace>Next Page</Link></h4>
+        {/* <h4><Link to={`/modules/${module}/${pages + 1}`} replace>Next Page</Link></h4> */}
+
+        <Link to={`/modules/${module}/${pages + 1}`} replace>
+          <Styled.Button> Next Page </Styled.Button>
+        </Link>
       </div>)
     }
 
 
     return (<div className="bottomNavigation">
-        <h4><Link to={`/modules/${module}/${pages - 1}`} replace>Previous Page</Link></h4>
+        {/* <h4><Link to={`/modules/${module}/${pages - 1}`} replace>Previous Page</Link></h4>
         <p>Page {pages + 1}/{len}</p>
-        <h4><Link to={`/modules/${module}/${pages + 1}`} replace>Next Page</Link></h4>
+        <h4><Link to={`/modules/${module}/${pages + 1}`} replace>Next Page</Link></h4> */}
+
+        <Link to={`/modules/${module}/${pages - 1}`} replace>
+          <Styled.Button> Previous Page </Styled.Button>
+        </Link>
+
+        <p>Page {pages + 1}/{len}</p>
+
+        <Link to={`/modules/${module}/${pages + 1}`} replace>
+          <Styled.Button> Next Page </Styled.Button>
+        </Link>
+
     </div>)
 }

@@ -9,10 +9,10 @@ export const Button = styled.button`
   cursor: pointer;
   transition: all .3s cubic-bezier(.645, .045, .355, 1);
   height: 45px;
-  width: 175px;
+  width: 160px;
   padding: 0 15px;
   border-radius: 7px;
-  font-size: 14px;
+  font-size: 17px;
   &:hover, &:focus {
     background-color: #cceeff;
     border-color: #1c9cd3;
