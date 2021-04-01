@@ -29,13 +29,15 @@ export default function Welcome() {
       {!credentials && <Link class="loginBt" to="/login">Login</Link>}
       <div class ="wrapper">
       {credentials && <button class="logoutBtn" onClick={logout}>Logout</button>}
-      {credentials && `Tokens:`}
+      
       </div>
     </div>
     <br/><br/><br/><br/>
     {!credentials && '<br/><br/><br/>' && <center><img width = "1000px" height = "550px" src="images/codeva.jpeg"/></center>}
-    {credentials && <ModuleProgress m1={50} m2={40} m3={20} m4={80} m5={100} m6={90} m7={10} m8={50}/> }
+    {credentials && <ModuleProgress m1={50} m2={40} m3={20} m4={80} m5={100} m6={90} m7={10} m8={50} m9={30} m10={40}/> }
+    
     {credentials && '<br/><br/><br/>' && <DragChart/>} 
+    {credentials && `Tokens:`}
     {!credentials && <Footer/>}
     </>
   );

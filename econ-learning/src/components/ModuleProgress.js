@@ -23,8 +23,28 @@ const ModuleProgress = (props) => {
 
     return (
         <>
-        <div id="progress" align="center">
-            <h2>PROGRESS:</h2>
+        {/* <div className="wrapper">
+        <h1>Progress:</h1>
+        <div className="cols">
+                    <div className="col" ontouchstart="this.classList.toggle('hover');">
+                        <div className="container">
+                            <div className="front" style="background-image: url(https://unsplash.it/500/500/)">
+                                <div className="inner">
+                                    <p>Diligord</p>
+                                    <span>Lorem ipsum</span>
+                                </div>
+                            </div>
+                            <div className="back">
+                                <div className="inner">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        </div> */}
+        <h2 align="center">PROGRESS:</h2>
+        <div className="progress" align="center">
             <Link to="/modules/0">Module 1:</Link> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m1} max={100} />
             <Link to="/modules/1">Module 2:</Link> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m2} max={100} />
             <Link to="/modules/2">Module 3:</Link> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m3} max={100} />
@@ -33,7 +53,8 @@ const ModuleProgress = (props) => {
             <Link to="/modules/5">Module 6:</Link> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m6} max={100} />
             <Link to="/modules/6">Module 7:</Link> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m7} max={100} />
             <Link to="/modules/7">Module 8:</Link> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m8} max={100} />
-            {/* </div> */}
+            <Link to="/modules/8">Module 9:</Link> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m9} max={100} />
+            <Link to="/modules/9">Module 10:</Link> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m10} max={100} />
         </div>
         </>
     )
