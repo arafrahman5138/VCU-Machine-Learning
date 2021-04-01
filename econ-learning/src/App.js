@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './App.css';
+import ScrollToTop from './ScrollToTop.js';
 import Home from './pages/Home';
 import Welcome from './pages/Welcome';
 import Modules from './pages/Modules';
@@ -34,6 +35,8 @@ function App() {
     <div className="app">
      <CredentialsContext.Provider value={credentialsState}>
       <Router>
+
+      <ScrollToTop/>
 
       <div className="navigation">
         <h2>CODEVA</h2>
