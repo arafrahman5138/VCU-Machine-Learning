@@ -45,16 +45,16 @@ const ModuleProgress = (props) => {
         </div> */}
         <h2 align="center">PROGRESS:</h2>
         <div className="progress" align="center">
-            <Link to="/modules/0">Module 1:</Link> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m1} max={100} />
-            <Link to="/modules/1">Module 2:</Link> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m2} max={100} />
-            <Link to="/modules/2">Module 3:</Link> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m3} max={100} />
-            <Link to="/modules/3">Module 4:</Link> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m4} max={100} />
-            <Link to="/modules/4">Module 5:</Link> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m5} max={100} />
-            <Link to="/modules/5">Module 6:</Link> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m6} max={100} />
-            <Link to="/modules/6">Module 7:</Link> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m7} max={100} />
-            <Link to="/modules/7">Module 8:</Link> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m8} max={100} />
-            <Link to="/modules/8">Module 9:</Link> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m9} max={100} />
-            <Link to="/modules/9">Module 10:</Link> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m10} max={100} />
+            <button className="modbtn"><Link className="linkbtn" to="/modules/0">Module 1:</Link></button> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m1} max={100} />
+            <button className="modbtn"><Link className="linkbtn"to="/modules/1">Module 2:</Link></button> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m2} max={100} />
+            <button className="modbtn"><Link className="linkbtn" to="/modules/2">Module 3:</Link></button> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m3} max={100} />
+            <button className="modbtn"><Link className="linkbtn" to="/modules/3">Module 4:</Link></button> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m4} max={100} />
+            <button className="modbtn"><Link className="linkbtn" to="/modules/4">Module 5:</Link></button> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m5} max={100} />
+            <button className="modbtn"><Link className="linkbtn" to="/modules/5">Module 6:</Link></button> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m6} max={100} />
+            <button className="modbtn"><Link className="linkbtn" to="/modules/6">Module 7:</Link></button> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m7} max={100} />
+            <button className="modbtn"><Link className="linkbtn" to="/modules/7">Module 8:</Link></button> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m8} max={100} />
+            <button className="modbtn"><Link className="linkbtn" to="/modules/8">Module 9:</Link></button> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m9} max={100} />
+            <button className="modbtn"><Link className="linkbtn" to="/modules/9">Module 10:</Link></button> <ProgressBar color={"#ff7979"} width={"150px"} value={props.m10} max={100} />
         </div>
         </>
     )

@@ -30,7 +30,7 @@ const Container = Styled.div`
 
 const ProgressBar = ({ value, max, color, width }) => {
   return (
-    <Container color={color} width={width}>
+    <Container color="#4A9C72" width={width}>
       <progress value={value} max={max} align="left"/>
       <span>{(value / max) * 100}%</span>
     </Container>
