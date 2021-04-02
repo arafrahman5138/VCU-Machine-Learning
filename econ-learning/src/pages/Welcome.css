@@ -40,6 +40,7 @@ h1 {
   text-decoration: none;
   left: 5%;
   transform: translateX(-50%) translateY(100%);
+  margin-left: 100px;
 }
 
 .registerBt {
@@ -54,6 +55,7 @@ h1 {
   text-decoration: none;
   left: 50%;
   transform: translateX(-50%) translateY(20%);
+  margin: 0, auto;
 }
 
 .credentials {

@@ -6,6 +6,7 @@ import DragChart from '../components/TestingDragChart'
 import ModuleProgress from '../components/ModuleProgress'
 import Footer from '../components/Footer'
 import PageHeader from '../components/PageHeader/PageHeader'
+import SlideShow from '../components/SlideShow'
 
 export const handleErrors = async (response) => {
   if (!response.ok) {
@@ -35,7 +36,10 @@ export default function Welcome() {
       {credentials && <button class="logoutBtn" onClick={logout}>Logout</button>}
       </div>
     <br/><br/>
-    {!credentials && '<br/><br/><br/>' && <center><img width = "1000px" height = "550px" src="images/codeva.jpeg"/></center>}
+    {!credentials && '<br/><br/><br/>' && 
+    // <center><img width = "1000px" height = "550px" src="images/codeva.jpeg"/></center>
+    <center><SlideShow/></center>
+    }
     {credentials && <ModuleProgress m1={50} m2={40} m3={20} m4={80} m5={100} m6={90} m7={10} m8={50} m9={30} m10={40}/> }
     
     {credentials && '<br/><br/><br/>' && <DragChart/>} 

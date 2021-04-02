@@ -117,10 +117,12 @@ export default function Quiz1() {
 		<div className='app'>
 			{showScore ? (
                 <>
+				<center>
 				<div className='score-section'>
 					You scored {score} out of {questions.length} <br/>
 					You earned {tokens = tokens + score * 5} tokens
 				</div>
+				</center>
 				<div className="credits">
                         {/* <p className="credits_earnable" id="credits_earnable">Credits you can earn: 4</p> */}
                         <p className="credits_total" id="credits_total"> Total tokens: {tokens}</p>
