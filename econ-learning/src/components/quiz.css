@@ -11,9 +11,11 @@
 }
 
 .score-section {
-    /* display: flex; */
-    float: center;
+    margin-top: auto;
     font-size: 2em;
     padding: var(--page-pad);
-    align-items: center;
-  }
+}
+
+.app {
+    background-color: #F4ED9F;
+}
