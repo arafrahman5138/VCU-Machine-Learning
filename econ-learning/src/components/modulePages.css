@@ -12,8 +12,8 @@
 
 .pageContent {
     padding: var(--page-pad);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-top: 20px; */
+    padding-bottom: 40px;
     font-size: larger;
     /* letter-spacing: 0.01cm;
     word-spacing: 0.01cm; */
@@ -25,9 +25,18 @@
     text-align: center;
 }
 
+.image {
+    padding: 30px;
+}
+
+.modImg {
+    width: 35%;
+    height: auto;
+}
+
 .bottomNavigation {
     /* padding: var(--page-pad); */
-    padding: 1em 15em;
+    padding: 0.8em 20%;
     background-color: var(--orange-3);
 
     display: flex;

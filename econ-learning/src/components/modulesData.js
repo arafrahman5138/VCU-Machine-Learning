@@ -299,29 +299,37 @@ export const modulesData = [
         Title: "MODULE 6",
         Image: "https://picsum.photos/id/22/300/200",
         Pages: [
-            ["TITLE", "CONTENT"],
+            ["Classification Algorithms - Logistic Regression", 
+            `One of the simplest classification algorithms is logistic regression. Now you might wonder why it is called “logistic regression” if it is a classification algorithm. Well, logistic regression is technically considered a regression algorithm since it makes use of a mathematical function to output numerical values, but many people think of it as a classification algorithm because the model is mainly applied to classification tasks.
             
-            ["TITLE 2", `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, nunc iaculis vulputate sagittis, sem tortor semper leo, at varius elit ipsum et metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Duis blandit risus mauris, sit amet pulvinar eros interdum in. Aliquam efficitur odio at suscipit viverra. Etiam nibh tellus, iaculis sed metus mattis, semper consequat felis. Donec elementum rhoncus ligula rhoncus aliquam. Praesent lacinia sapien ligula, semper vehicula libero pulvinar at. Maecenas nibh lorem, condimentum non justo in, imperdiet finibus nibh.
+            Logistic regression is especially great at solving binary classification tasks. Binary classification is when there are only two categorical outputs that you want to try and predict. Some examples of binary classification might be whether or not an email is spam (spam or not spam) and whether or not a patient has a certain disease (ill or not ill). Typically, any classification tasks that involve yes/no or true/false are binary classification tasks.`],
+            
+            ["Classification Algorithms - Logistic Regression", 
+            `So, why does logistic regression work so well with binary classification? Well, a logistic regression uses a logistic or sigmoid function as its core. A graph of a sigmoid function is shown above, and, as you can see, all values of the function fall between 0 and 1. 
+            
+            After receiving data, the model implicitly performs calculations on the inputs and passes them through the sigmoid function in order to return outputs between 0 and 1. Since only values between 0 and 1 can be returned, it is easy to think of any inputs that return values of 0.5 or greater as being grouped into one class and any inputs that returns values of 0.49 and lower as being grouped into the second class.`],
+            
+            ["Classification Algorithms - K-Nearest Neighbors", 
+            `A second popular classification algorithm is K-nearest neighbors (KNN). This algorithm takes advantage of the simple concept that objects in the same class usually have similar features. The KNN algorithm uses the training data to plot each labeled datapoint on a scatterplot. So, in theory, all points belonging to the same class should be at least somewhat close to each other, though this does not always happen. After the KNN algorithm plots all of the training data, it uses the scatterplot in order to predict the labels of new data.`],
+            
+            ["Classification Algorithms - K-Nearest Neighbors", 
+            `When given new data to predict the class of, the KNN algorithm plots the point and looks for its neighboring points. The “K” in “K-nearest neighbors” represents the number of nearby datapoints that the algorithm will consider when deciding on the class of a new datapoint, and this K value is pre-determined and manually set by an individual. 
+            
+            The KNN algorithm will then examine the labels of the K neighboring datapoints to determine the label of the new datapoint. This is based on frequency, so the label that appears the most gets applied to the new point.`],
+            
+            ["Classification Algorithms - Decision Tree", 
+            `The last popular classification model we will learn is a decision tree. As the name implies, this model builds a tree of decisions that simulates the flow of decision-making. 
+            
+            A decision tree starts from a single node, also known as the root node, that represents a condition based on the data. Then, the algorithm would choose and follow a path or branch downwards that would lead to another node with a different condition. 
+            
+            This process will continue until the algorithm lands on a node and there are no more branches to follow. This node can be referred to as a leaf node, and it does not represent another condition. Instead, reaching a leaf node means that the algorithm has arrived at the end of the decision-making process and has an answer. So, in other words, the leaf nodes represent the class labels determined after a series of decisions.`],
 
-            Sed ac condimentum urna. Cras nulla dui, rhoncus a euismod non, facilisis dapibus elit. Phasellus ut sodales mi. Cras tempus id nisl non efficitur. Nullam lorem tellus, imperdiet eu dui at, rhoncus tristique quam. Cras egestas, orci vitae hendrerit blandit, ipsum magna iaculis libero, placerat pharetra nulla velit eu magna. Duis consequat ut diam rhoncus vestibulum. Cras vitae consequat orci. Morbi et laoreet lacus, in faucibus ex. Nulla facilisi. Donec suscipit nibh ut velit tristique, a rhoncus sapien porta. Morbi ex nisi, facilisis id purus quis, ultricies commodo purus. Ut egestas nulla sit amet tellus accumsan, dictum hendrerit mauris tristique. Etiam elit dolor, fringilla eget quam varius, dignissim maximus purus. Curabitur sed pulvinar risus.
+            ["Classification Algorithms - Decision Tree", 
+            `A decision tree model constructs the decision tree based on the training data. After analyzing the training data, the model can discern which values of each characteristic play a part in influencing the label of each object. The decision tree model then creates conditions based on what it found. 
             
-            Phasellus eu elit ultricies erat dapibus finibus. Nulla hendrerit vestibulum augue in eleifend. Vestibulum sit amet faucibus elit. Sed sit amet ligula non orci bibendum condimentum sit amet eu lectus. Praesent non eros et justo tempor eleifend. Etiam ultricies velit elit, sit amet pharetra lacus luctus ut. Suspendisse consequat dui elit, quis accumsan ipsum finibus a. Donec quis odio risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            The order that each condition appears in the tree is also important. Conditions that appear near the top are more critical in the deduction of a class. So, the decision tree model also calculates the significance of each condition when building the tree with the root node being the most influential condition. 
             
-            Phasellus non purus sed libero sagittis dignissim. Morbi ornare leo faucibus turpis iaculis, gravida dignissim dolor semper. Maecenas facilisis tristique bibendum. Donec in tincidunt turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sit amet tortor vitae dolor mattis pellentesque. Vivamus non elit lobortis, egestas neque a, dictum metus. Donec finibus nulla lorem, vel suscipit dolor bibendum quis. Suspendisse vulputate vel libero et ultrices. Nam ac molestie massa.
-            
-            Curabitur tincidunt in dolor a maximus. Vestibulum commodo viverra suscipit. Nulla facilisi. Phasellus venenatis dignissim ante sit amet elementum. Cras massa ligula, tempor sit amet aliquam nec, dictum a quam. Phasellus pharetra euismod eros. Praesent ullamcorper quam felis, sit amet elementum elit hendrerit et. Vivamus faucibus et libero vitae pulvinar. Sed consectetur at arcu vel cursus. Pellentesque iaculis velit erat, et fringilla ipsum consequat vel. Nunc ut purus ac ipsum varius commodo lacinia vel nisi. In convallis tortor eros, non vestibulum risus rutrum ac.`],
-            
-            ["TITLE 3", `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, nunc iaculis vulputate sagittis, sem tortor semper leo, at varius elit ipsum et metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Duis blandit risus mauris, sit amet pulvinar eros interdum in. Aliquam efficitur odio at suscipit viverra. Etiam nibh tellus, iaculis sed metus mattis, semper consequat felis. Donec elementum rhoncus ligula rhoncus aliquam. Praesent lacinia sapien ligula, semper vehicula libero pulvinar at. Maecenas nibh lorem, condimentum non justo in, imperdiet finibus nibh.
-
-            Sed ac condimentum urna. Cras nulla dui, rhoncus a euismod non, facilisis dapibus elit. Phasellus ut sodales mi. Cras tempus id nisl non efficitur. Nullam lorem tellus, imperdiet eu dui at, rhoncus tristique quam. Cras egestas, orci vitae hendrerit blandit, ipsum magna iaculis libero, placerat pharetra nulla velit eu magna. Duis consequat ut diam rhoncus vestibulum. Cras vitae consequat orci. Morbi et laoreet lacus, in faucibus ex. Nulla facilisi. Donec suscipit nibh ut velit tristique, a rhoncus sapien porta. Morbi ex nisi, facilisis id purus quis, ultricies commodo purus. Ut egestas nulla sit amet tellus accumsan, dictum hendrerit mauris tristique. Etiam elit dolor, fringilla eget quam varius, dignissim maximus purus. Curabitur sed pulvinar risus.
-            
-            Phasellus eu elit ultricies erat dapibus finibus. Nulla hendrerit vestibulum augue in eleifend. Vestibulum sit amet faucibus elit. Sed sit amet ligula non orci bibendum condimentum sit amet eu lectus. Praesent non eros et justo tempor eleifend. Etiam ultricies velit elit, sit amet pharetra lacus luctus ut. Suspendisse consequat dui elit, quis accumsan ipsum finibus a. Donec quis odio risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            
-            Phasellus non purus sed libero sagittis dignissim. Morbi ornare leo faucibus turpis iaculis, gravida dignissim dolor semper. Maecenas facilisis tristique bibendum. Donec in tincidunt turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sit amet tortor vitae dolor mattis pellentesque. Vivamus non elit lobortis, egestas neque a, dictum metus. Donec finibus nulla lorem, vel suscipit dolor bibendum quis. Suspendisse vulputate vel libero et ultrices. Nam ac molestie massa.
-            
-            Curabitur tincidunt in dolor a maximus. Vestibulum commodo viverra suscipit. Nulla facilisi. Phasellus venenatis dignissim ante sit amet elementum. Cras massa ligula, tempor sit amet aliquam nec, dictum a quam. Phasellus pharetra euismod eros. Praesent ullamcorper quam felis, sit amet elementum elit hendrerit et. Vivamus faucibus et libero vitae pulvinar. Sed consectetur at arcu vel cursus. Pellentesque iaculis velit erat, et fringilla ipsum consequat vel. Nunc ut purus ac ipsum varius commodo lacinia vel nisi. In convallis tortor eros, non vestibulum risus rutrum ac.`],
-
-            
+            When provided with new data, the decision tree model goes down the tree following the branches according to the values in the data. The leaf node that it lands on would be the model’s prediction of the label of the new data.`],
         ],
         QuizPool: [
             ["QUESTION A", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
@@ -330,7 +338,7 @@ export const modulesData = [
         ],
         QuizSize: 2,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"]
+            ["computer.jpeg", "sigmoid-function.png", "computer.jpeg"]
     },
     {
         Title: "MODULE 7",
