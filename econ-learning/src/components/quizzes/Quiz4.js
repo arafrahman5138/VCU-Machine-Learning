@@ -106,17 +106,14 @@ export default function Quiz4() {
 	return (
         <>
 		<div className='app'>
-		Quiz 4
 			{showScore ? (
                 <>
+				<center>
 				<div className='score-section'>
 					You scored {score} out of {questions.length} <br/>
 					You earned {tokens = tokens + score * 5} tokens
 				</div>
-				<div className="credits">
-                        {/* <p className="credits_earnable" id="credits_earnable">Credits you can earn: 4</p> */}
-                        <p className="credits_total" id="credits_total"> Total tokens: {tokens}</p>
-                </div>
+				</center>
 				<div className="nextMod">
 				<form onClick={Quiz4}>
                 <h4 id = "leftMod"><Link to="/modules/3/0"><Styled.Button>Restart</Styled.Button></Link></h4>
@@ -124,6 +121,11 @@ export default function Quiz4() {
 				</form>
 				<br/>
 				</div>
+				<center>
+				<div className="credits">
+                        <p className="credits_total" id="credits_total"> Total tokens: {tokens}</p>
+                </div>
+				</center>
                 </>
 			) : (
 				<>
@@ -141,7 +143,7 @@ export default function Quiz4() {
 					</div>
 				</>
 			)}
-		</div> <br/>
+		</div> 
         <DragChart/>
         </>
 	);
