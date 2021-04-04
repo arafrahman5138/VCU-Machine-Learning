@@ -1,15 +1,3 @@
-.topNavigation {
-    padding: var(--global-pad);
-
-    display: flex;
-    align-items: baseline;
-}
-
-.topNavigation h1 {
-    flex-grow: 1;
-    text-align: center;
-}
-
 .pageContent {
     padding: var(--page-pad);
     /* padding-top: 20px; */
@@ -21,8 +9,9 @@
     white-space: pre-line;
 }
 
-.title {
+.modTitle {
     text-align: center;
+    padding: 10px 20%;
 }
 
 .image {
@@ -32,11 +21,12 @@
 .modImg {
     width: 35%;
     height: auto;
+    background-color: white;
 }
 
 .bottomNavigation {
     /* padding: var(--page-pad); */
-    padding: 1em 15em;
+    padding: 0.8em 20%;
     background-color: #F99D3A;
 
     display: flex;
@@ -52,6 +42,7 @@
 } */
 
 .bottomNavigation p {
+    padding: 0 20px;
     flex-grow: 1;
     text-align: center;
 }

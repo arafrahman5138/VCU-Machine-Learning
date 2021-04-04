@@ -344,29 +344,40 @@ export const modulesData = [
         Title: "MODULE 7",
         Image: "https://picsum.photos/id/22/300/200",
         Pages: [
-            ["TITLE", "CONTENT"],
+            ["Regression Algorithms - Linear Regression", 
+            `The most basic and simplest regression algorithm is linear regression. It is also usually the easiest to understand. The linear regression model is defined by its linear function which it applies to data to output a predicted value. The linear function is shown above and can be represented by a simple equation: 
             
-            ["TITLE 2", `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, nunc iaculis vulputate sagittis, sem tortor semper leo, at varius elit ipsum et metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Duis blandit risus mauris, sit amet pulvinar eros interdum in. Aliquam efficitur odio at suscipit viverra. Etiam nibh tellus, iaculis sed metus mattis, semper consequat felis. Donec elementum rhoncus ligula rhoncus aliquam. Praesent lacinia sapien ligula, semper vehicula libero pulvinar at. Maecenas nibh lorem, condimentum non justo in, imperdiet finibus nibh.
+            Y = B0 + B1 * X. 
+            
+            The Y represents the targeted value that we are trying to predict which is known as the dependent variable. 
+            The X represents the data value that is provided to the model which is also known as the independent variable. 
+            The B0 and B1 represent coefficients that the linear regression model will figure out through training data in order to best go from X to Y.`],
 
-            Sed ac condimentum urna. Cras nulla dui, rhoncus a euismod non, facilisis dapibus elit. Phasellus ut sodales mi. Cras tempus id nisl non efficitur. Nullam lorem tellus, imperdiet eu dui at, rhoncus tristique quam. Cras egestas, orci vitae hendrerit blandit, ipsum magna iaculis libero, placerat pharetra nulla velit eu magna. Duis consequat ut diam rhoncus vestibulum. Cras vitae consequat orci. Morbi et laoreet lacus, in faucibus ex. Nulla facilisi. Donec suscipit nibh ut velit tristique, a rhoncus sapien porta. Morbi ex nisi, facilisis id purus quis, ultricies commodo purus. Ut egestas nulla sit amet tellus accumsan, dictum hendrerit mauris tristique. Etiam elit dolor, fringilla eget quam varius, dignissim maximus purus. Curabitur sed pulvinar risus.
+            ["Regression Algorithms - Linear Regression", 
+            `The basic linear regression model takes in one variable input and returns a predicted output. When using a linear regression model, it is assumed that the relationship between X and Y is somewhat linear to begin with. If it is not, then the model will not predict accurate values. 
             
-            Phasellus eu elit ultricies erat dapibus finibus. Nulla hendrerit vestibulum augue in eleifend. Vestibulum sit amet faucibus elit. Sed sit amet ligula non orci bibendum condimentum sit amet eu lectus. Praesent non eros et justo tempor eleifend. Etiam ultricies velit elit, sit amet pharetra lacus luctus ut. Suspendisse consequat dui elit, quis accumsan ipsum finibus a. Donec quis odio risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            After taking in the training data and estimating the best coefficients for the linear function, the linear regression model can take in a new input X and just calculate Y using the equation with the learned coefficients.`],
             
-            Phasellus non purus sed libero sagittis dignissim. Morbi ornare leo faucibus turpis iaculis, gravida dignissim dolor semper. Maecenas facilisis tristique bibendum. Donec in tincidunt turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sit amet tortor vitae dolor mattis pellentesque. Vivamus non elit lobortis, egestas neque a, dictum metus. Donec finibus nulla lorem, vel suscipit dolor bibendum quis. Suspendisse vulputate vel libero et ultrices. Nam ac molestie massa.
+            ["Regression Algorithms - Linear Regression", 
+            `When you want to look at the relationship between multiple independent variables and a single dependent variable, it would be better to use a multiple linear regression model. 
             
-            Curabitur tincidunt in dolor a maximus. Vestibulum commodo viverra suscipit. Nulla facilisi. Phasellus venenatis dignissim ante sit amet elementum. Cras massa ligula, tempor sit amet aliquam nec, dictum a quam. Phasellus pharetra euismod eros. Praesent ullamcorper quam felis, sit amet elementum elit hendrerit et. Vivamus faucibus et libero vitae pulvinar. Sed consectetur at arcu vel cursus. Pellentesque iaculis velit erat, et fringilla ipsum consequat vel. Nunc ut purus ac ipsum varius commodo lacinia vel nisi. In convallis tortor eros, non vestibulum risus rutrum ac.`],
+            A multiple linear regression model is similar to the simple linear regression model except that the linear equation accommodates for the extra independent variables. So, instead of Y = B0 + B1 * X, the equation used in multiple linear regression is Y = B0 + B1 * X1 + B2 * X2 + … + Bn * Xn, where each X represents the value of each independent variable and n is the number of independent variables. 
             
-            ["TITLE 3", `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, nunc iaculis vulputate sagittis, sem tortor semper leo, at varius elit ipsum et metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Duis blandit risus mauris, sit amet pulvinar eros interdum in. Aliquam efficitur odio at suscipit viverra. Etiam nibh tellus, iaculis sed metus mattis, semper consequat felis. Donec elementum rhoncus ligula rhoncus aliquam. Praesent lacinia sapien ligula, semper vehicula libero pulvinar at. Maecenas nibh lorem, condimentum non justo in, imperdiet finibus nibh.
-
-            Sed ac condimentum urna. Cras nulla dui, rhoncus a euismod non, facilisis dapibus elit. Phasellus ut sodales mi. Cras tempus id nisl non efficitur. Nullam lorem tellus, imperdiet eu dui at, rhoncus tristique quam. Cras egestas, orci vitae hendrerit blandit, ipsum magna iaculis libero, placerat pharetra nulla velit eu magna. Duis consequat ut diam rhoncus vestibulum. Cras vitae consequat orci. Morbi et laoreet lacus, in faucibus ex. Nulla facilisi. Donec suscipit nibh ut velit tristique, a rhoncus sapien porta. Morbi ex nisi, facilisis id purus quis, ultricies commodo purus. Ut egestas nulla sit amet tellus accumsan, dictum hendrerit mauris tristique. Etiam elit dolor, fringilla eget quam varius, dignissim maximus purus. Curabitur sed pulvinar risus.
+            The rest of the process for predicting Y is the same as in basic linear regression where the algorithm plugs in the values for each X.`],
             
-            Phasellus eu elit ultricies erat dapibus finibus. Nulla hendrerit vestibulum augue in eleifend. Vestibulum sit amet faucibus elit. Sed sit amet ligula non orci bibendum condimentum sit amet eu lectus. Praesent non eros et justo tempor eleifend. Etiam ultricies velit elit, sit amet pharetra lacus luctus ut. Suspendisse consequat dui elit, quis accumsan ipsum finibus a. Donec quis odio risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            ["Regression Algorithms - Polynomial Regression", 
+            `Another regression algorithm that we will cover is the polynomial regression model. The polynomial regression model is based off of the linear regression model and adds additional terms to the core equation. Instead of the linear function of Y = B0 + B1 * X, the polynomial regression model uses the polynomial function of Y = B0 + B1 * X + B2 * X^2 + … + Bn * X^n. 
             
-            Phasellus non purus sed libero sagittis dignissim. Morbi ornare leo faucibus turpis iaculis, gravida dignissim dolor semper. Maecenas facilisis tristique bibendum. Donec in tincidunt turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sit amet tortor vitae dolor mattis pellentesque. Vivamus non elit lobortis, egestas neque a, dictum metus. Donec finibus nulla lorem, vel suscipit dolor bibendum quis. Suspendisse vulputate vel libero et ultrices. Nam ac molestie massa.
+            In addition, the degree of the polynomial is to be manually chosen. The rest of process for training and applying the polynomial regression model is the same as in the linear regression model. 
             
-            Curabitur tincidunt in dolor a maximus. Vestibulum commodo viverra suscipit. Nulla facilisi. Phasellus venenatis dignissim ante sit amet elementum. Cras massa ligula, tempor sit amet aliquam nec, dictum a quam. Phasellus pharetra euismod eros. Praesent ullamcorper quam felis, sit amet elementum elit hendrerit et. Vivamus faucibus et libero vitae pulvinar. Sed consectetur at arcu vel cursus. Pellentesque iaculis velit erat, et fringilla ipsum consequat vel. Nunc ut purus ac ipsum varius commodo lacinia vel nisi. In convallis tortor eros, non vestibulum risus rutrum ac.`],
-
+            So, what might be so reasons that we choose to use a polynomial regression model over a linear regression model?`],
             
+            ["Regression Algorithms - Polynomial Regression", 
+            `If you recall, linear regression only works well between independent and dependent variables that have a linear relationship. However, there are many other aspects that people might want to look at the correlation between that may not have a linear relationship. 
+            
+            For example, if we wanted to predict height based on age, using a linear regression model would not work too well since the relationship between height and age is not linear. 
+            
+            So, for cases where your input and output variables share a non-linear relationship, polynomial regression would perform with more accuracy. The polynomial regression model will analyze the data and adjust the coefficients to better fit a polynomial function to the data.`],
         ],
         QuizPool: [
             ["QUESTION A", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
@@ -375,7 +386,7 @@ export const modulesData = [
         ],
         QuizSize: 2,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"]
+            ["linear-function.png", "linear-regression.svg", "codeva.jpeg", "polynomial-function.png"]
     },
     {
         Title: "MODULE 8",

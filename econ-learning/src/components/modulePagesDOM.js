@@ -45,7 +45,7 @@ export default function ModulePagesDOM() {
           </div>
           
 
-          <h2 className="title">{modulesData[module].Pages[page][0]}</h2>
+          <h2 className="modTitle">{modulesData[module].Pages[page][0]}</h2>
           <div className="image" align="center">
             <img className = "modImg" src={`/images/${modulesData[module].ModuleImg[page]}`} />
           </div>
