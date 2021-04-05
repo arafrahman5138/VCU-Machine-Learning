@@ -123,10 +123,6 @@ export default function Quiz1() {
 					You earned {tokens = tokens + score * 5} tokens
 				</div>
 				</center>
-				<div className="credits">
-                        {/* <p className="credits_earnable" id="credits_earnable">Credits you can earn: 4</p> */}
-                        <p className="credits_total" id="credits_total"> Total tokens: {tokens}</p>
-                </div>
 				<div className="nextMod">
 				<form onClick={Quiz1}>
                 <h4 id = "leftMod"><Link to="/modules/0/0"><Styled.Button>Restart</Styled.Button></Link></h4>
@@ -134,6 +130,11 @@ export default function Quiz1() {
 				</form>
 				<br/>
 				</div>
+				<center>
+				<div className="credits">
+                        <p className="credits_total" id="credits_total"> Total tokens: {tokens}</p>
+                </div>
+				</center>
                 </>
 			) : (
 				<>
@@ -151,7 +152,7 @@ export default function Quiz1() {
 					</div>
 				</>
 			)}
-		</div> <br/> 
+		</div>  
         <DragChart/>
         </>
 	);

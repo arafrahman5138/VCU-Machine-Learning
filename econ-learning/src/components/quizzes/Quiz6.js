@@ -114,17 +114,14 @@ export default function Quiz6() {
 	return (
         <>
 		<div className='app'>
-		Quiz 6
 			{showScore ? (
                 <>
+				<center>
 				<div className='score-section'>
 					You scored {score} out of {questions.length} <br/>
 					You earned {tokens = tokens + score * 5} tokens
 				</div>
-				<div className="credits">
-                        {/* <p className="credits_earnable" id="credits_earnable">Credits you can earn: 4</p> */}
-                        <p className="credits_total" id="credits_total"> Total tokens: {tokens}</p>
-                </div>
+				</center>
                 <div className="nextMod">
 				<form onClick={Quiz6}>
                 <h4 id = "leftMod"><Link to="/modules/5/0"><Styled.Button>Restart</Styled.Button></Link></h4>
@@ -132,6 +129,11 @@ export default function Quiz6() {
 				</form>
 				<br/>
 				</div>
+				<center>
+				<div className="credits">
+                        <p className="credits_total" id="credits_total"> Total tokens: {tokens}</p>
+                </div>
+				</center>
                 </>
 			) : (
 				<>
@@ -149,7 +151,7 @@ export default function Quiz6() {
 					</div>
 				</>
 			)}
-		</div> <br/>
+		</div> 
         <DragChart/>
         </>
 	);
