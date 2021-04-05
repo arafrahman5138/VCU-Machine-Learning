@@ -13,7 +13,7 @@
 }
 
 .item-container{
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-flow: row;
     align-items: center;

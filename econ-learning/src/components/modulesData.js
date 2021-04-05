@@ -313,7 +313,7 @@ export const modulesData = [
             `A second popular classification algorithm is K-nearest neighbors (KNN). This algorithm takes advantage of the simple concept that objects in the same class usually have similar features. The KNN algorithm uses the training data to plot each labeled datapoint on a scatterplot. So, in theory, all points belonging to the same class should be at least somewhat close to each other, though this does not always happen. After the KNN algorithm plots all of the training data, it uses the scatterplot in order to predict the labels of new data.`],
             
             ["Classification Algorithms - K-Nearest Neighbors", 
-            `When given new data to predict the class of, the KNN algorithm plots the point and looks for its neighboring points. The “K” in “K-nearest neighbors” represents the number of nearby datapoints that the algorithm will consider when deciding on the class of a new datapoint, and this K value is pre-determined and manually set by an individual. 
+            `When given new data to predict the class of, the KNN algorithm plots the point and looks for its neighboring points. The “K” in “K-nearest neighbors” represents the number of nearby datapoints that the algorithm will consider when deciding on the class of a new datapoint, and this K value is predetermined and manually set by an individual. 
             
             The KNN algorithm will then examine the labels of the K neighboring datapoints to determine the label of the new datapoint. This is based on frequency, so the label that appears the most gets applied to the new point.`],
             
@@ -413,15 +413,52 @@ export const modulesData = [
             `In the present time, there exists astronomical amounts of raw data that would be impossible to manually label. This is where unsupervised learning comes in handy. 
             
             It can be used in recommendation systems to recommend you similar items. For example, Facebook clusters its users based on their friends, and you might be suggested new people to add as a friend based on mutual friends. Image identification is also a big field that uses unsupervised learning, which takes advantage of the clustering of similar features. Unsupervised learning can also be used to detect anomalies in data, which means that it can identity datapoints that do not belong to a cluster. This is very useful to detect cases such as fraudulent bank transactions.`],
+
+            ["Unsupervised Learning Algorithm - K-Means", 
+            `One of the most popular unsupervised learning algorithms used for clustering is K-means. The main function of the K-means algorithm is to take in an unlabeled set of data and group the datapoints that are similar together. The “K” in “K-means” represents the number of clusters that the data should be split into, and it is predetermined and manually set by an individual. Additionally, since this is an unsupervised learning algorithm, it is up to an individual to make sense of the outputted clusters through a method like labels.`],
+
+            ["Unsupervised Learning Algorithm - K-Means", 
+            `The way that the K-means algorithm works is by grouping datapoints that are close together. In the beginning, a K value is chosen, and the algorithm plots the datapoints of the training data. The K-means algorithm also generates K number of initial points, called centroids, that represents the center of each cluster and have random locations. Then the algorithm assigns each datapoint to the cluster based on the nearest centroid. 
+            
+            After each datapoint has been grouped into a cluster, the K-means algorithm relocates each centroid by calculating the mean of each cluster and using it to position the centroids in their respective clusters. Since the centroid has changed positions, there may be certain datapoints that are closer to a different centroid. So, each datapoint is reassigned to their nearest centroid, and new centroid positions will be recalculated afterwards. This process continues until the positions of the centroids no longer change due to successful clustering. 
+            
+            In addition, it is important to note that, since the initial centroid positions are randomly generated, running the K-means algorithm multiple times on the same data set many result in different clustering of datapoints.`],
+
+            ["Unsupervised Learning Algorithm - K-Means", 
+            `Now that we have talked about how the K-means algorithm works, we can try applying it. Say we have a data set of the daily stock movements of 22 different companies, and we want to group the companies based on the movements. Some of the companies in the data are Apple, Amazon, Honda, Exxon, and Bank of America. 
+            
+            To make it easier to visualize, we have plotted a section of the datapoints on the scatterplot above. In order to group the datapoints, we will use the K-means algorithm.`],
+
+            ["Unsupervised Learning Algorithm - K-Means", 
+            `To start, we will set K = 6, which mean that the algorithm will assign the datapoints to six different clusters based on their distance to the initial centroids that will be generated. In the scatterplot above, we can see how the K-means algorithm clustered the points. The red dots represent the centroids’ final positions, which are located at the center of each cluster. The other colors represent the different groups that the datapoints fall into.
+            
+            From the clusters that the K-means algorithm found, we can then analyze for certain traits or similarities. In this case, we found that there were a lot of technology companies, like Apple, Microsoft, and Sony, in one cluster. Additionally, there was a cluster with automobile companies, like Ford and Toyota. Not all clusters show interesting findings, but there was enough information from some clusters hypothesize that that companies within the same field may have similar daily stock movements.`]
         ],
         QuizPool: [
-            ["QUESTION A", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
-            ["QUESTION B", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
-            ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
+            ["What is the purpose of an unsupervised learning model?", 
+                "To find structure or patterns in a collection of unlabeled data",
+                "To classify data", 
+                "To predict labels based on labeled data", 
+                "To teach a machine how to perform certain actions"],
+            ["What is clustering?", 
+                "Grouping similar datapoints together", 
+                "Assigning a label to datapoints", 
+                "Finding a pattern in the data set", 
+                "Putting random datapoints into groups"],
+            ["Which is a disadvantage of unsupervised learning?", 
+                "Output or knowledge gained from the model may not be entirely accurate", 
+                "Difficult to gather unlabeled data", 
+                "Humans have to manually annotate the data set", 
+                "Can detect anomalies in the data set"],
+            ['What does the "K" in "K-means" represent?', 
+                "Number of clusters the algorithm should split the data set into", 
+                "Number of nearby datapoints to examine for a prediction", 
+                "Number of datapoints", 
+                "Number of times the algorithm should run"],
         ],
         QuizSize: 2,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"]
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg", "computer.jpeg", "clustering2.jpeg", "clustering1.jpeg", "kmeans-before.png", "kmeans-after.png"]
     },
 
     {
