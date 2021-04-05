@@ -15,6 +15,8 @@ import Quiz5 from './components/quizzes/Quiz5'
 import Quiz6 from './components/quizzes/Quiz6'
 import Quiz7 from './components/quizzes/Quiz7'
 import Quiz8 from './components/quizzes/Quiz8'
+import Quiz9 from './components/quizzes/Quiz9'
+import Quiz10 from './components/quizzes/Quiz10'
 
 import { render } from 'react-dom';
 import { IndexRoute, hashHistory } from 'react-router';
@@ -72,6 +74,12 @@ function App() {
       </Route>
       <Route path="/quiz8">
           <Quiz8/>
+      </Route>
+      <Route path="/quiz9">
+          <Quiz9/>
+      </Route>
+      <Route path="/quiz10">
+          <Quiz10/>
       </Route>
       
       <Route path="/help">

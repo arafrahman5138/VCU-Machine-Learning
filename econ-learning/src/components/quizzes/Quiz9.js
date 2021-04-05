@@ -9,10 +9,10 @@ import {
     useRouteMatch,
     Redirect
   } from "react-router-dom";
-  import DragChart from '../TestingDragChart'
-  import '../../components/quiz.css'
-  import * as Styled from '../../components/StyledButton'
-  import { modulesData } from '../../components/modulesData'
+import DragChart from '../TestingDragChart'
+import '../../components/quiz.css'
+import * as Styled from '../StyledButton'
+import { modulesData } from '../../components/modulesData'
 
 export const handleErrors = async (response) => {
   if (!response.ok) {
@@ -22,7 +22,7 @@ export const handleErrors = async (response) => {
   return response.json();
 };
 
-export default function Quiz7() {
+export default function Quiz9() {
   const [credentials, setCredentials] = useContext(CredentialsContext);
   const [username, setUsername] = useState(credentials && credentials.username);
   const [module, setModule] = useState("100"); 
@@ -30,39 +30,30 @@ export default function Quiz7() {
 
   const questions = [
 	{
-		questionText: modulesData[6].QuizPool[0][0],
+		questionText: modulesData[8].QuizPool[0][0],
 		answerOptions: [
-			{ answerText: modulesData[6].QuizPool[0][1], isCorrect: true },
-			{ answerText: modulesData[6].QuizPool[0][2], isCorrect: false },
-			{ answerText: modulesData[6].QuizPool[0][3], isCorrect: false },
-			{ answerText: modulesData[6].QuizPool[0][4], isCorrect: false },
+			{ answerText: modulesData[8].QuizPool[0][1], isCorrect: true },
+			{ answerText: modulesData[8].QuizPool[0][2], isCorrect: false },
+			{ answerText: modulesData[8].QuizPool[0][3], isCorrect: false },
+			{ answerText: modulesData[8].QuizPool[0][4], isCorrect: false },
 		],
 	},
 	{
-		questionText: modulesData[6].QuizPool[1][0],
+		questionText: modulesData[8].QuizPool[1][0],
 		answerOptions: [
-			{ answerText: modulesData[6].QuizPool[1][1], isCorrect: true },
-			{ answerText: modulesData[6].QuizPool[1][2], isCorrect: false },
-			{ answerText: modulesData[6].QuizPool[1][3], isCorrect: false },
-			{ answerText: modulesData[6].QuizPool[1][4], isCorrect: false },
-		],
-	},
-	{
-		questionText: modulesData[6].QuizPool[2][0],
-		answerOptions: [
-			{ answerText: modulesData[6].QuizPool[2][1], isCorrect: true },
-			{ answerText: modulesData[6].QuizPool[2][2], isCorrect: false },
-			{ answerText: modulesData[6].QuizPool[2][3], isCorrect: false },
-			{ answerText: modulesData[6].QuizPool[2][4], isCorrect: false },
+			{ answerText: modulesData[8].QuizPool[1][1], isCorrect: true },
+			{ answerText: modulesData[8].QuizPool[1][2], isCorrect: false },
+			{ answerText: modulesData[8].QuizPool[1][3], isCorrect: false },
+			{ answerText: modulesData[8].QuizPool[1][4], isCorrect: false },
 		],
 	},
 	{
 		questionText: modulesData[6].QuizPool[2][0],
 		answerOptions: [
-			{ answerText: modulesData[6].QuizPool[3][1], isCorrect: true },
-			{ answerText: modulesData[6].QuizPool[3][2], isCorrect: false },
-			{ answerText: modulesData[6].QuizPool[3][3], isCorrect: false },
-			{ answerText: modulesData[6].QuizPool[3][4], isCorrect: false },
+			{ answerText: modulesData[8].QuizPool[2][1], isCorrect: true },
+			{ answerText: modulesData[8].QuizPool[2][2], isCorrect: false },
+			{ answerText: modulesData[8].QuizPool[2][3], isCorrect: false },
+			{ answerText: modulesData[8].QuizPool[2][4], isCorrect: false },
 		],
 	},
 	];
@@ -85,9 +76,9 @@ export default function Quiz7() {
 		}
 	};
 
-  const Quiz7 = (e) => {
+  const Quiz8 = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:4000/Quiz7`, {
+    fetch(`http://localhost:4000/Quiz8`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -124,9 +115,9 @@ export default function Quiz7() {
 				</div>
 				</center>
                 <div className="nextMod">
-				<form onClick={Quiz7}>
-                <h4 id = "leftMod"><Link to="/modules/6/0"><Styled.Button>Restart</Styled.Button></Link></h4>
-				<h4 id = "rightMod"><Link to="/modules/7/0"><Styled.Button>Next Module</Styled.Button></Link></h4>
+				<form onClick={Quiz8}>
+                <h4 id = "leftMod"><Link to="/modules/7/0"><Styled.Button>Restart</Styled.Button></Link></h4>
+				<h4 id = "rightMod"><Link to="/modules/8/0"><Styled.Button>Next Module</Styled.Button></Link></h4>
 				</form>
 				<br/>
 				</div>
@@ -139,7 +130,7 @@ export default function Quiz7() {
 			) : (
 				<>
 					<div className='question-section'>
-					<h2 align="center">Quiz 7</h2>
+					<h2 align="center">Quiz 8</h2>
 						<div className='question-count'>
 							<span>Question {currentQuestion + 1}</span>/{questions.length}
 						</div>
@@ -152,7 +143,7 @@ export default function Quiz7() {
 					</div>
 				</>
 			)}
-		</div>
+		</div> 
         <DragChart/>
         </>
 	);
