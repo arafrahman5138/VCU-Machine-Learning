@@ -364,6 +364,17 @@ export const modulesData = [
             A multiple linear regression model is similar to the simple linear regression model except that the linear equation accommodates for the extra independent variables. So, instead of Y = B0 + B1 * X, the equation used in multiple linear regression is Y = B0 + B1 * X1 + B2 * X2 + … + Bn * Xn, where each X represents the value of each independent variable and n is the number of independent variables. 
             
             The rest of the process for predicting Y is the same as in basic linear regression where the algorithm plugs in the values for each X.`],
+
+            ["Regression Algorithms - Linear Regression", 
+            `Now that we have learned about linear regression, let’s try to use it to predict stock prices. In the graph above, we have the closing prices for Microsoft stocks from the year 2017. As you can see, the closing prices have a relatively linear incline. So, let’s apply a linear regression model and see how it fits.`],
+
+            ["Regression Algorithms - Linear Regression", 
+            `First, we supply the linear regression model with the data set of closing prices and dates from Microsoft. In this case, the independent variable would be the dates and the dependent variable would be the closing prices. The linear regression model then processed the data and chose the necessary coefficients. 
+            
+            In the graph above, you can see the line of best fit that the linear regression model came up with. The intercept of the line was chosen to be 61.93 and the slope was chosen to be 0.072, so the overall linear function is Y = 61.93 + 0.072 * X.`],
+
+            ["Regression Algorithms - Linear Regression", 
+            `In the graph above, we can see how the linear regression model would predict the closing prices based on the line of best fit. As you can see, the predictions are not very accurate, but, for a simple model, it shows us that the closing prices will continue to increase. It approximates the closing price and we could use that information in our decisions about buying or selling the stocks from Microsoft.`],
             
             ["Regression Algorithms - Polynomial Regression", 
             `Another regression algorithm that we will cover is the polynomial regression model. The polynomial regression model is based off of the linear regression model and adds additional terms to the core equation. Instead of the linear function of Y = B0 + B1 * X, the polynomial regression model uses the polynomial function of Y = B0 + B1 * X + B2 * X^2 + … + Bn * X^n. 
@@ -378,15 +389,40 @@ export const modulesData = [
             For example, if we wanted to predict height based on age, using a linear regression model would not work too well since the relationship between height and age is not linear. 
             
             So, for cases where your input and output variables share a non-linear relationship, polynomial regression would perform with more accuracy. The polynomial regression model will analyze the data and adjust the coefficients to better fit a polynomial function to the data.`],
+
+            ["Regression Algorithms - Polynomial Regression", 
+            `Now let’s apply a polynomial regression model. This time we will use the closing prices for the stock of McDonalds from the year 2018. The above graph visualizes this data. As you can see, this time the graph does not appear to follow a linear function. If we try to use linear regression on this data set, we will not get very good results. So, let us use polynomial regression instead.`],
+
+            ["Regression Algorithms - Polynomial Regression", 
+            `We will provide the polynomial regression model with the data set of closing prices and dates from McDonalds. The model will process the data in a similar manner as in a linear regression model, but, this time, there will be more coefficients to figure out. 
+            
+            In the graph to the left, we have shown how a linear regression model would perform. In the graph to the right, we have applied a polynomial regression model instead. We can easily compare the difference in the line of best fit that a linear regression model would build versus a polynomial regression model, and we can see that the line from the polynomial regression has a better fit.`],
         ],
         QuizPool: [
-            ["QUESTION A", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
-            ["QUESTION B", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
-            ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
+            ["What is the core mathematical equation that the linear regression model uses?", 
+                "Y = B0 + B1 * X", 
+                "Y = B0 + B1", 
+                "Y = B0 + B1 * X + B2 * X^2", 
+                "Y = X"],
+            ["When would you choose to use a multiple linear regression model over a simple linear regression model?", 
+                "When you have multiple independent variables and one dependent variable", 
+                "When you have a lot of data", 
+                "When you have multiple dependent variables and one independent variable", 
+                "When your variables have a linear relationship"],
+            ["How is a polynomial regression model different from a linear regression model?", 
+                "Performs better with variables in a non-linear relationship", 
+                "Uses a sigmoid function", 
+                "Works better with more data", 
+                "Performs better with variables in a linear relationship"],
+            ["Which is an example of variables that have a non-linear relationship?", 
+                "Age and height", 
+                "Number of hours spent studying and score on test", 
+                "Speed of car and distance traveled", 
+                "Number of hours spent working and amount of money gained"],
         ],
-        QuizSize: 2,
+        QuizSize: 4,
         ModuleImg: 
-            ["linear-function.png", "linear-regression.svg", "codeva.jpeg", "polynomial-function.png"]
+            ["linear-function.png", "linear-regression.svg", "codeva.jpeg", "lin-reg-line-graph.png", "lin-reg-line.png", "lin-reg-pred.png", "polynomial-function.png", "", "poly-reg-line-graph.png", "poly-reg-compare.png"]
     },
     {
         Title: "MODULE 8",
@@ -456,7 +492,7 @@ export const modulesData = [
                 "Number of datapoints", 
                 "Number of times the algorithm should run"],
         ],
-        QuizSize: 2,
+        QuizSize: 4,
         ModuleImg: 
             ["computer.jpeg", "codeva.jpeg", "computer.jpeg", "computer.jpeg", "clustering2.jpeg", "clustering1.jpeg", "kmeans-before.png", "kmeans-after.png"]
     },
