@@ -308,6 +308,20 @@ export const modulesData = [
             `So, why does logistic regression work so well with binary classification? Well, a logistic regression uses a logistic or sigmoid function as its core. A graph of a sigmoid function is shown above, and, as you can see, all values of the function fall between 0 and 1. 
             
             After receiving data, the model implicitly performs calculations on the inputs and passes them through the sigmoid function in order to return outputs between 0 and 1. Since only values between 0 and 1 can be returned, it is easy to think of any inputs that return values of 0.5 or greater as being grouped into one class and any inputs that returns values of 0.49 and lower as being grouped into the second class.`],
+
+            ["Classification Algorithms - Logistic Regression", 
+            `Let's try to build a logistic regression model now. The table above show a bit of the data that we will be providing to the model. 
+            
+            It has stock prices from the year 2018 for Google stocks, which included the daily high, low, opening, and closing prices. We also added the 10-day moving average, the difference between the closing prices of the current day and the prior day, and the difference between the opening price of the current day and the closing price of the prior day. 
+            
+            As you can see in the green column of the table, each row is also provided a label. The label of “Buy” is assigned to rows where the closing price of the next day is higher than the closing price of the current day. Otherwise, a label of “Sell” is assigned to the row. 
+            
+            Using this compilation of data, the logistic regression model will attempt to learn when to buy and sell stocks.`],
+
+            ["Classification Algorithms - Logistic Regression", 
+            `After giving the data to a logistic regression model, we get the table above when we make the model do some predictions. The “Label” column represents what the actual label should, and the “Prediction” column represents what the logistic regression model predicted the label to be based on its training. 
+            
+            You can also see how the model performed in the bottom section of the image above. The logistic regression model performed with a 57.02% accuracy. Additionally, we can see that the recall for “Sell” is 69.35%, which is significantly higher than the recall for “Buy” at 44.07%. This means that the model was able to correctly classify a higher number of rows that were actually labeled “Sell”. `],
             
             ["Classification Algorithms - K-Nearest Neighbors", 
             `A second popular classification algorithm is K-nearest neighbors (KNN). This algorithm takes advantage of the simple concept that objects in the same class usually have similar features. The KNN algorithm uses the training data to plot each labeled datapoint on a scatterplot. So, in theory, all points belonging to the same class should be at least somewhat close to each other, though this does not always happen. After the KNN algorithm plots all of the training data, it uses the scatterplot in order to predict the labels of new data.`],
@@ -316,6 +330,14 @@ export const modulesData = [
             `When given new data to predict the class of, the KNN algorithm plots the point and looks for its neighboring points. The “K” in “K-nearest neighbors” represents the number of nearby datapoints that the algorithm will consider when deciding on the class of a new datapoint, and this K value is predetermined and manually set by an individual. 
             
             The KNN algorithm will then examine the labels of the K neighboring datapoints to determine the label of the new datapoint. This is based on frequency, so the label that appears the most gets applied to the new point.`],
+
+            ["Classification Algorithms - K-Nearest Neighbors", 
+            `We will use the same data from the logistic regression model example, but this time we will apply the KNN algorithm. In the above scatterplot, we have plotted the data as points on the graph and we have also color-coded them by their “Buy” and “Sell” labels. Now let’s see how the KNN algorithm performed with the same data.`],
+
+            ["Classification Algorithms - K-Nearest Neighbors", 
+            `The KNN algorithm that we used has its K set to 3. This means that the algorithm will look at the three nearest datapoints to predict the label of a new datapoint. 
+            
+            In the table above, we can see how the KNN algorithm performed. The accuracy is 49.59% which is lower than the accuracy for our previous logistic regression model. Additionally, recall for “Sell” was higher in the logistic regression model, but, when using KNN, the recall for “Sell” is lower than even the recall for “Buy”. All of this information tells us that the logistic regression model is better suited for these types of tasks with the provided data.`],
             
             ["Classification Algorithms - Decision Tree", 
             `The last popular classification model we will learn is a decision tree. As the name implies, this model builds a tree of decisions that simulates the flow of decision-making. 
@@ -330,15 +352,45 @@ export const modulesData = [
             The order that each condition appears in the tree is also important. Conditions that appear near the top are more critical in the deduction of a class. So, the decision tree model also calculates the significance of each condition when building the tree with the root node being the most influential condition. 
             
             When provided with new data, the decision tree model goes down the tree following the branches according to the values in the data. The leaf node that it lands on would be the model’s prediction of the label of the new data.`],
+
+            ["Classification Algorithms - Decision Tree", 
+            `We will now try to apply a decision tree model on the Google stocks data. In the above image, we have a tree that the decision tree model constructed based on the data. 
+            
+            The topmost and most important deciding factor seems to be whether the high price in relation to 1038.640. If it is less than or equal to 1038.640, then it is automatically labeled as “Buy”. However, if it is greater than 1038.640, then many branches may be crossed before finding the best label.`],
+
+            ["Classification Algorithms - Decision Tree", 
+            `Now let’s take a closer look at how the decision tree model performed compared to the previous models. As you can see in the image above, the decision tree model achieved an accuracy of 69.42% which is the highest among the algorithms that we have covered. In addition, it seems that this model obtained a 100% recall for “Sell” and a 100% precision for “Buy”. Precision for “Sell” is also higher than in the previous models, but it seems that the recall for “Buy” is the lowest of all the models. This means that a the decision tree model mostly labeled the data as “Sell”, but, on the rare cases that it labeled a datapoint as “Buy”, the model is correct.`],
         ],
         QuizPool: [
-            ["QUESTION A", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
-            ["QUESTION B", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
-            ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
+            ["What is binary classification?",
+                "Classification that involves only two categorical outputs that can be predicted", 
+                "Classification that involves at least one numerical output that can be predicted", 
+                "Classification that involves multiple categorical outputs that can be predicted", 
+                "Classification that involves only one categorical output that can be predicted"],
+            ["What kind of mathematical function does a logistic regression model use?",
+                "Sigmoid function", 
+                "Linear function", 
+                "Cubic function", 
+                "Polynomial function"],
+            ['What does the "K" in "K-nearest neighbors" represent?', 
+                "Number of nearby datapoints to examine for a prediction", 
+                "Number of times the algorithm should run", 
+                "Type of equation to use", 
+                "Method to calculate distance between datapoints"],
+            ["Which of the following is not a part of a decision tree?",
+                "Sapling", 
+                "Root node", 
+                "Leaf node", 
+                "Branch"],
+            ["What section of a decision tree would an important condition appear in?",
+                "Top", 
+                "Middle", 
+                "Bottom", 
+                "Left"],
         ],
-        QuizSize: 2,
+        QuizSize: 5,
         ModuleImg: 
-            ["computer.jpeg", "sigmoid-function.png", "computer.jpeg"]
+            ["computer.jpeg", "sigmoid-function.png", "log-reg-data.png", "log-reg-results.png", "", "computer.jpeg", "knn-scatter.png", "knn-results.png", "", "", "dt-result-tree.png", "dt-results.png"]
     },
     {
         Title: "MODULE 7",
