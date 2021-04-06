@@ -21,10 +21,9 @@ export const handleErrors = async (response) => {
   return response.json();
 };
 
-export default function Quiz8() {
+export default function Quiz10() {
   const [credentials, setCredentials] = useContext(CredentialsContext);
   const [username, setUsername] = useState(credentials && credentials.username);
-  const [module, setModule] = useState("100"); 
   const [error, setError] = useState("");
 
 	const questions = [
@@ -69,11 +68,12 @@ export default function Quiz8() {
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
-	var tokens = 0;
+	const [tokens, setTokens] = useState(0);
 
 	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
 			setScore(score + 1);
+			setTokens((score + 1) * 5);
 		}
 
 		const nextQuestion = currentQuestion + 1;
@@ -84,7 +84,7 @@ export default function Quiz8() {
 		}
 	};
 
-  const Quiz8 = (e) => {
+  const storeQuiz10 = (e) => {
     e.preventDefault();
     fetch(`http://localhost:4000/Quiz8`, {
       method: "POST",
@@ -93,14 +93,14 @@ export default function Quiz8() {
       },
       body: JSON.stringify({
         username,
-        module,
+        tokens,
       }),
     })
       .then(handleErrors)
       .then(() => {
         setCredentials({
           username,
-          module,
+          tokens,
         });
         history.push("/");
       })
@@ -119,13 +119,13 @@ export default function Quiz8() {
 				<center>
 				<div className='score-section'>
 					You scored {score} out of {questions.length} <br/>
-					You earned {tokens = tokens + score * 5} tokens
+					You earned {tokens} tokens
 				</div>
 				</center>
                 <div className="nextMod">
-				<form onClick={Quiz8}>
-                <h4 id = "leftMod"><Link to="/modules/7/0"><Styled.Button>Restart</Styled.Button></Link></h4>
-				<h4 id = "rightMod"><Link to="/modules/8/0"><Styled.Button>Next Module</Styled.Button></Link></h4>
+				<form onClick={storeQuiz10}>
+                <h4 id = "leftMod"><Link to="/modules/9/0"><Styled.Button>Restart</Styled.Button></Link></h4>
+				<h4 id = "rightMod"><Link to="/modules"><Styled.Button>Next Module</Styled.Button></Link></h4>
 				</form>
 				<br/>
 				</div>
