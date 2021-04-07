@@ -12,6 +12,8 @@ import {
   import DragChart from '../TestingDragChart'
   import '../../components/quiz.css'
   import * as Styled from '../../components/StyledButton'
+  import {modulesData} from '../../components/modulesData'
+
 
 export const handleErrors = async (response) => {
   if (!response.ok) {
@@ -23,57 +25,66 @@ export const handleErrors = async (response) => {
 
 export default function Quiz6() {
   const [credentials, setCredentials] = useContext(CredentialsContext);
-  const [username, setUsername] = useState(credentials && credentials.username);
-  const [module, setModule] = useState("100"); 
+  const [username, setUsername] = useState(credentials && credentials.username); 
   const [error, setError] = useState("");
 
-	const questions = [
-		{
-			questionText: 'What is the capital of France?',
-			answerOptions: [
-				{ answerText: 'New York', isCorrect: false },
-				{ answerText: 'London', isCorrect: false },
-				{ answerText: 'Paris', isCorrect: true },
-				{ answerText: 'Dublin', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'Who is CEO of Tesla?',
-			answerOptions: [
-				{ answerText: 'Jeff Bezos', isCorrect: false },
-				{ answerText: 'Elon Musk', isCorrect: true },
-				{ answerText: 'Bill Gates', isCorrect: false },
-				{ answerText: 'Tony Stark', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'The iPhone was created by which company?',
-			answerOptions: [
-				{ answerText: 'Apple', isCorrect: true },
-				{ answerText: 'Intel', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Microsoft', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'How many Harry Potter books are there?',
-			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
-			],
-		},
+  const questions = [
+	{
+		questionText: modulesData[5].QuizPool[0][0],
+		answerOptions: [
+			{ answerText: modulesData[5].QuizPool[0][1], isCorrect: true },
+			{ answerText: modulesData[5].QuizPool[0][2], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[0][3], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[0][4], isCorrect: false },
+		],
+	},
+	{
+		questionText: modulesData[5].QuizPool[1][0],
+		answerOptions: [
+			{ answerText: modulesData[5].QuizPool[1][1], isCorrect: true },
+			{ answerText: modulesData[5].QuizPool[1][2], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[1][3], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[1][4], isCorrect: false },
+		],
+	},
+	{
+		questionText: modulesData[5].QuizPool[2][0],
+		answerOptions: [
+			{ answerText: modulesData[5].QuizPool[2][1], isCorrect: true },
+			{ answerText: modulesData[5].QuizPool[2][2], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[2][3], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[2][4], isCorrect: false },
+		],
+	},
+	{
+		questionText: modulesData[5].QuizPool[3][0],
+		answerOptions: [
+			{ answerText: modulesData[5].QuizPool[3][1], isCorrect: true },
+			{ answerText: modulesData[5].QuizPool[3][2], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[3][3], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[3][4], isCorrect: false },
+		],
+	},
+	{
+		questionText: modulesData[5].QuizPool[4][0],
+		answerOptions: [
+			{ answerText: modulesData[5].QuizPool[4][1], isCorrect: true },
+			{ answerText: modulesData[5].QuizPool[4][2], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[4][3], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[4][4], isCorrect: false },
+		],
+	},
 	];
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
-	var tokens = 0;
+	const [tokens, setTokens] = useState(0);
 
 	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
 			setScore(score + 1);
+			setTokens((score + 1) * 5);
 		}
 
 		const nextQuestion = currentQuestion + 1;
@@ -84,7 +95,7 @@ export default function Quiz6() {
 		}
 	};
 
-  const Quiz6 = (e) => {
+  const storeQuiz6 = (e) => {
     e.preventDefault();
     fetch(`http://localhost:4000/Quiz6`, {
       method: "POST",
@@ -93,14 +104,14 @@ export default function Quiz6() {
       },
       body: JSON.stringify({
         username,
-        module,
+        tokens,
       }),
     })
       .then(handleErrors)
       .then(() => {
         setCredentials({
           username,
-          module,
+          tokens,
         });
         history.push("/");
       })
@@ -119,11 +130,11 @@ export default function Quiz6() {
 				<center>
 				<div className='score-section'>
 					You scored {score} out of {questions.length} <br/>
-					You earned {tokens = tokens + score * 5} tokens
+					You earned {tokens} tokens
 				</div>
 				</center>
                 <div className="nextMod">
-				<form onClick={Quiz6}>
+				<form onClick={storeQuiz6}>
                 <h4 id = "leftMod"><Link to="/modules/5/0"><Styled.Button>Restart</Styled.Button></Link></h4>
 				<h4 id = "rightMod"><Link to="/modules/6/0"><Styled.Button>Next Module</Styled.Button></Link></h4>
 				</form>

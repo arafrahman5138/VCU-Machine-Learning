@@ -8,9 +8,21 @@ import {
 import ModulePages from './modulePagesDOM.js';
 import { modulesData } from "./modulesData.js";
 import './moduleSelection.css';
+import Tooltip from '@material-ui/core/Tooltip';
+import Zoom from '@material-ui/core/Zoom';
+import { withStyles, makeStyles } from '@material-ui/core/styles';
 
 export default function ModulesSelectionDOM() {
     let match = useRouteMatch();
+
+    const CustomTooltip = withStyles((theme) => ({
+        tooltip: {
+          backgroundColor: '#7ED2EF',
+          color: 'white',
+          boxShadow: theme.shadows[1],
+          fontSize: 20,
+        },
+      }))(Tooltip);
     
     return (
         <Switch>
@@ -30,12 +42,14 @@ export default function ModulesSelectionDOM() {
                     }
                     return (
                         <div className="modulesDisplay">
+                            <CustomTooltip title={data.Description} placement="right">
                             <Link to={`${match.url}/${key}`}>
                             <div className="modulesCard" style={style}>
                                 <div className="cardOverlay"></div>
                                 <p>{data.Title}</p>
                             </div>
                             </Link>
+                            </CustomTooltip>
                         </div>
                     )
                 })

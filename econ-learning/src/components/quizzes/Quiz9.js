@@ -25,7 +25,6 @@ export const handleErrors = async (response) => {
 export default function Quiz9() {
   const [credentials, setCredentials] = useContext(CredentialsContext);
   const [username, setUsername] = useState(credentials && credentials.username);
-  const [module, setModule] = useState("100"); 
   const [error, setError] = useState("");
 
   const questions = [
@@ -48,7 +47,7 @@ export default function Quiz9() {
 		],
 	},
 	{
-		questionText: modulesData[6].QuizPool[2][0],
+		questionText: modulesData[8].QuizPool[2][0],
 		answerOptions: [
 			{ answerText: modulesData[8].QuizPool[2][1], isCorrect: true },
 			{ answerText: modulesData[8].QuizPool[2][2], isCorrect: false },
@@ -56,16 +55,26 @@ export default function Quiz9() {
 			{ answerText: modulesData[8].QuizPool[2][4], isCorrect: false },
 		],
 	},
+	{
+		questionText: modulesData[8].QuizPool[3][0],
+		answerOptions: [
+			{ answerText: modulesData[8].QuizPool[3][1], isCorrect: true },
+			{ answerText: modulesData[8].QuizPool[3][2], isCorrect: false },
+			{ answerText: modulesData[8].QuizPool[3][3], isCorrect: false },
+			{ answerText: modulesData[8].QuizPool[3][4], isCorrect: false },
+		],
+	},
 	];
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
-	var tokens = 0;
+	const [tokens, setTokens] = useState(0);
 
 	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
 			setScore(score + 1);
+			setTokens((score + 1) * 5);
 		}
 
 		const nextQuestion = currentQuestion + 1;
@@ -76,23 +85,23 @@ export default function Quiz9() {
 		}
 	};
 
-  const Quiz8 = (e) => {
+  const storeQuiz9 = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:4000/Quiz8`, {
+    fetch(`http://localhost:4000/Quiz9`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
         username,
-        module,
+        tokens,
       }),
     })
       .then(handleErrors)
       .then(() => {
         setCredentials({
           username,
-          module,
+          tokens,
         });
         history.push("/");
       })
@@ -111,13 +120,13 @@ export default function Quiz9() {
 				<center>
 				<div className='score-section'>
 					You scored {score} out of {questions.length} <br/>
-					You earned {tokens = tokens + score * 5} tokens
+					You earned {tokens} tokens
 				</div>
 				</center>
                 <div className="nextMod">
-				<form onClick={Quiz8}>
-                <h4 id = "leftMod"><Link to="/modules/7/0"><Styled.Button>Restart</Styled.Button></Link></h4>
-				<h4 id = "rightMod"><Link to="/modules/8/0"><Styled.Button>Next Module</Styled.Button></Link></h4>
+				<form onClick={storeQuiz9}>
+                <h4 id = "leftMod"><Link to="/modules/8/0"><Styled.Button>Restart</Styled.Button></Link></h4>
+				<h4 id = "rightMod"><Link to="/modules/9/0"><Styled.Button>Next Module</Styled.Button></Link></h4>
 				</form>
 				<br/>
 				</div>
@@ -130,7 +139,7 @@ export default function Quiz9() {
 			) : (
 				<>
 					<div className='question-section'>
-					<h2 align="center">Quiz 8</h2>
+					<h2 align="center">Quiz 9</h2>
 						<div className='question-count'>
 							<span>Question {currentQuestion + 1}</span>/{questions.length}
 						</div>

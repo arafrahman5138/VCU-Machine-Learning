@@ -7,16 +7,17 @@ import './Register.css';
 export default function Register() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [module1] = useState("0");
-  const [module2] = useState("0");
-  const [module3] = useState("0");
-  const [module4] = useState("0");
-  const [module5] = useState("0");
-  const [module6] = useState("0");
-  const [module7] = useState("0");
-  const [module8] = useState("0");
-  const [module9] = useState("0");
-  const [module10] = useState("0");
+  const [tokens] = useState(0);
+  const [module1] = useState(0);
+  const [module2] = useState(0);
+  const [module3] = useState(0);
+  const [module4] = useState(0);
+  const [module5] = useState(0);
+  const [module6] = useState(0);
+  const [module7] = useState(0);
+  const [module8] = useState(0);
+  const [module9] = useState(0);
+  const [module10] = useState(0);
   const [error, setError] = useState("");
   const [, setCredentials] = useContext(CredentialsContext);
 
@@ -30,6 +31,7 @@ export default function Register() {
       body: JSON.stringify({
         username,
         password,
+        tokens,
         module1,
         module2,
         module3,
@@ -47,6 +49,7 @@ export default function Register() {
         setCredentials({
           username,
           password,
+          tokens,
           module1,
           module2,
           module3,

@@ -34,7 +34,8 @@ export const modulesData = [
         ],
         QuizSize: 2,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"]
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"],
+        Description: "Introduction to the Stock Market"
     },
 
     {
@@ -74,7 +75,8 @@ export const modulesData = [
         ],
         QuizSize: 1,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg", "codeva.jpeg"]
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg", "codeva.jpeg"],
+        Description: "Stock Market Basics Part 1"
     },
 
     {
@@ -112,7 +114,8 @@ export const modulesData = [
         ],
         QuizSize: 2,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"]
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"],
+        Description: "Stock Market Basics Part 2"
     },
 
     
@@ -198,7 +201,8 @@ export const modulesData = [
         ],
         QuizSize: 3,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg","codeva.jpeg","computer.jpeg","codeva.jpeg","computer.jpeg","codeva.jpeg","computer.jpeg","codeva.jpeg","computer.jpeg"]
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg","codeva.jpeg","computer.jpeg","codeva.jpeg","computer.jpeg","codeva.jpeg","computer.jpeg","codeva.jpeg","computer.jpeg"],
+        Description: "Introduction to Computer Science and Machine Learning"
     },
     
     {
@@ -293,7 +297,8 @@ export const modulesData = [
         ],
         QuizSize: 4,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"]
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"],
+        Description: "Supervised Learning"
     },
     {
         Title: "MODULE 6",
@@ -483,7 +488,8 @@ export const modulesData = [
         ],
         QuizSize: 5,
         ModuleImg: 
-            ["computer.jpeg", "sigmoid-function.png", "log-reg-data.png", "log-reg-results.png", "", "computer.jpeg", "knn-scatter.png", "knn-results.png", "", "", "dt-result-tree.png", "dt-results.png"]
+            ["computer.jpeg", "sigmoid-function.png", "log-reg-data.png", "log-reg-results.png", "", "computer.jpeg", "knn-scatter.png", "knn-results.png", "", "", "dt-result-tree.png", "dt-results.png"],
+        Description: "Classification Algorithms"
     },
     {
         Title: "MODULE 8",
@@ -567,7 +573,8 @@ export const modulesData = [
         ],
         QuizSize: 4,
         ModuleImg: 
-            ["linear-function.png", "linear-regression.svg", "codeva.jpeg", "lin-reg-line-graph.png", "lin-reg-line.png", "lin-reg-pred.png", "polynomial-function.png", "", "poly-reg-line-graph.png", "poly-reg-compare.png"]
+            ["linear-function.png", "linear-regression.svg", "codeva.jpeg", "lin-reg-line-graph.png", "lin-reg-line.png", "lin-reg-pred.png", "polynomial-function.png", "", "poly-reg-line-graph.png", "poly-reg-compare.png"],
+        Description: "Regression Algorithms"
     },
 
     {
@@ -640,7 +647,8 @@ export const modulesData = [
         ],
         QuizSize: 4,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg", "computer.jpeg", "clustering2.jpeg", "clustering1.jpeg", "kmeans-before.png", "kmeans-after.png"]
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg", "computer.jpeg", "clustering2.jpeg", "clustering1.jpeg", "kmeans-before.png", "kmeans-after.png"],
+        Description: "Unsupervised Learning"
     },
 
     {
@@ -725,6 +733,7 @@ export const modulesData = [
         ],
         QuizSize: 3,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"]
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"],
+        Description: "Semi-supervised Learning"
     },
 ];
