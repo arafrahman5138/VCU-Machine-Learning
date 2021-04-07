@@ -391,7 +391,8 @@ export const modulesData = [
         ],
         QuizSize: 5,
         ModuleImg: 
-            ["computer.jpeg", "sigmoid-function.png", "log-reg-data.png", "log-reg-results.png", "conf-matrx.png", "accuracy.png", "precision.png", "recall.png"]
+            ["computer.jpeg", "sigmoid-function.png", "log-reg-data.png", "log-reg-results.png", "conf-matrx.png", "accuracy.png", "precision.png", "recall.png"],
+        Description: "Evaluation of Models"
     },
     {
         Title: "MODULE 7",
