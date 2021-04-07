@@ -1,7 +1,7 @@
 export const modulesData = [
     {
         Title: "MODULE 1",
-        Image: "https://picsum.photos/id/237/300/200",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             ["TITLE", "CONTENT"],
             
@@ -40,7 +40,7 @@ export const modulesData = [
 
     {
         Title: "MODULE 2",
-        Image: "https://picsum.photos/id/17/300/200",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             ["TITLE", "CONTENT"],
             
@@ -81,7 +81,7 @@ export const modulesData = [
 
     {
         Title: "MODULE 3",
-        Image: "https://picsum.photos/id/69/300/200",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             ["TITLE", "CONTENT"],
             
@@ -121,7 +121,7 @@ export const modulesData = [
     
     {
         Title: "MODULE 4",
-        Image: "https://picsum.photos/id/5/300/200",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             ["Introduction to Computer Science and Machine Learning", 
             `In the current times, the use of technology has simplified and helped us improve our lifestyles, and it has advanced to the point where it is integrated in many aspects of our lives. We use technology to play games, create word documents, buy and sell goods online, and even control the lights in our houses through smart devices. Within the large field of technology, there is a wide variety of subfields that focus on its different applications. 
@@ -201,13 +201,13 @@ export const modulesData = [
         ],
         QuizSize: 3,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg","codeva.jpeg","computer.jpeg","codeva.jpeg","computer.jpeg","codeva.jpeg","computer.jpeg","codeva.jpeg","computer.jpeg"],
+            ["technology.jpg", "shopping.jpg", "gmail.jpg", "fruits.jpg", "apple.jpg", "ml.jpeg", "data.jpeg", "ml-types.png"],
         Description: "Introduction to Computer Science and Machine Learning"
     },
     
     {
         Title: "MODULE 5",
-        Image: "https://picsum.photos/id/22/300/200",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             ["Supervised Learning", 
             `Of the four machine learning techniques, supervised learning is the most popular and commonly used. Supervised learning algorithms are differentiated from the other algorithms through their exclusive use of “labeled” data. 
@@ -297,12 +297,12 @@ export const modulesData = [
         ],
         QuizSize: 4,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"],
+            ["label.jpg", "teacher.jpg", "apple-label.jpeg", "sl-types.png", "bins.jpg", "emotions.jpg", "network.jpeg", "line-graph.jpeg", "house.jpg", "busi-graph.jpg", "graphs.jpeg"],
         Description: "Supervised Learning"
     },
     {
         Title: "MODULE 6",
-        Image: "https://picsum.photos/id/22/300/200",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             ["Evaluation of Model Performance", 
             `Before we dive into the different types of algorithms, let’s discuss what makes a good model that works well for a specific task. There are many different algorithms that can be applied to the same task but may have varying levels of performance. Usually, it is best to try out different algorithms and see which one is better suited for the task. So, how can we measure the performance of each algorithm and see which one works better?`],
@@ -391,12 +391,12 @@ export const modulesData = [
         ],
         QuizSize: 5,
         ModuleImg: 
-            ["computer.jpeg", "sigmoid-function.png", "log-reg-data.png", "log-reg-results.png", "conf-matrx.png", "accuracy.png", "precision.png", "recall.png"],
+            ["performance.jpeg", "train-test.png", "data-split.png", "performance.jpeg", "conf-matrx.png", "accuracy.png", "precision.png", "recall.png"],
         Description: "Evaluation of Models"
     },
     {
         Title: "MODULE 7",
-        Image: "https://picsum.photos/id/22/300/200",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             ["Classification Algorithms - Logistic Regression", 
             `One of the simplest classification algorithms is logistic regression. Now you might wonder why it is called “logistic regression” if it is a classification algorithm. Well, logistic regression is technically considered a regression algorithm since it makes use of a mathematical function to output numerical values, but many people think of it as a classification algorithm because the model is mainly applied to classification tasks.
@@ -489,12 +489,12 @@ export const modulesData = [
         ],
         QuizSize: 5,
         ModuleImg: 
-            ["computer.jpeg", "sigmoid-function.png", "log-reg-data.png", "log-reg-results.png", "", "computer.jpeg", "knn-scatter.png", "knn-results.png", "", "", "dt-result-tree.png", "dt-results.png"],
+            ["binary-class.png", "sigmoid-function.png", "log-reg-data.png", "log-reg-results.png", "scatterplot.png", "knn.png", "knn-scatter.png", "knn-results.png", "tree.png", "dt.png", "dt-result-tree.png", "dt-results.png"],
         Description: "Classification Algorithms"
     },
     {
         Title: "MODULE 8",
-        Image: "https://picsum.photos/id/22/300/200",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             ["Regression Algorithms - Linear Regression", 
             `The most basic and simplest regression algorithm is linear regression. It is also usually the easiest to understand. The linear regression model is defined by its linear function which it applies to data to output a predicted value. The linear function is shown above and can be represented by a simple equation: 
@@ -574,13 +574,13 @@ export const modulesData = [
         ],
         QuizSize: 4,
         ModuleImg: 
-            ["linear-function.png", "linear-regression.svg", "codeva.jpeg", "lin-reg-line-graph.png", "lin-reg-line.png", "lin-reg-pred.png", "polynomial-function.png", "", "poly-reg-line-graph.png", "poly-reg-compare.png"],
+            ["linear-function.png", "linear-regression.svg", "mlr.png", "lin-reg-line-graph.png", "lin-reg-line.png", "lin-reg-pred.png", "polynomial-function.png", "height.jpeg", "poly-reg-line-graph.png", "poly-reg-compare.png"],
         Description: "Regression Algorithms"
     },
 
     {
         Title: "MODULE 9",
-        Image: "https://picsum.photos/id/22/300/200",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             ["Unsupervised Learning", 
             `The second type of machine learning that we will learn is unsupervised learning. While supervised learning uses labeled data to train the model, unsupervised learning uses unlabeled data, hence the name “unsupervised learning.” Additionally, while the purpose of a supervised learning model is to make predictions on new data based on its training data, an unsupervised learning model is forced to find patterns in the data on its own and categorize it based on similarities in the data.
@@ -648,13 +648,13 @@ export const modulesData = [
         ],
         QuizSize: 4,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg", "computer.jpeg", "clustering2.jpeg", "clustering1.jpeg", "kmeans-before.png", "kmeans-after.png"],
+            ["unlabeled.jpg", "cluster.png", "green-red-apple.jpg", "friend-network.jpg", "clustering2.jpeg", "clustering1.jpeg", "kmeans-before.png", "kmeans-after.png"],
         Description: "Unsupervised Learning"
     },
 
     {
         Title: "MODULE 10",
-        Image: "https://picsum.photos/id/22/300/200",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             ["Semi-supervised Learning", 
             `The third type of machine learning that we will briefly cover is semi-supervised learning. If you recall, supervised learning uses labeled data to train models and unsupervised learning uses unlabeled data. Accordingly, semi-supervised learning uses a mix of both labeled and unlabeled data when training models. 
@@ -734,7 +734,7 @@ export const modulesData = [
         ],
         QuizSize: 3,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"],
+            ["semi-sup.png", "data.jpeg", "ssl-data-split.png", "speech.jpg", "trial-error.jpeg", "dog.jpg", "ai-chess.jpg"],
         Description: "Semi-supervised Learning"
     },
 ];
