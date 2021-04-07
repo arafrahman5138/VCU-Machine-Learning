@@ -12,6 +12,8 @@ import {
   import DragChart from '../TestingDragChart'
   import '../../components/quiz.css'
   import * as Styled from '../../components/StyledButton'
+  import {modulesData} from '../../components/modulesData'
+
 
 export const handleErrors = async (response) => {
   if (!response.ok) {
@@ -26,43 +28,52 @@ export default function Quiz6() {
   const [username, setUsername] = useState(credentials && credentials.username); 
   const [error, setError] = useState("");
 
-	const questions = [
-		{
-			questionText: 'What is the capital of France?',
-			answerOptions: [
-				{ answerText: 'New York', isCorrect: false },
-				{ answerText: 'London', isCorrect: false },
-				{ answerText: 'Paris', isCorrect: true },
-				{ answerText: 'Dublin', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'Who is CEO of Tesla?',
-			answerOptions: [
-				{ answerText: 'Jeff Bezos', isCorrect: false },
-				{ answerText: 'Elon Musk', isCorrect: true },
-				{ answerText: 'Bill Gates', isCorrect: false },
-				{ answerText: 'Tony Stark', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'The iPhone was created by which company?',
-			answerOptions: [
-				{ answerText: 'Apple', isCorrect: true },
-				{ answerText: 'Intel', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Microsoft', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'How many Harry Potter books are there?',
-			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
-			],
-		},
+  const questions = [
+	{
+		questionText: modulesData[5].QuizPool[0][0],
+		answerOptions: [
+			{ answerText: modulesData[5].QuizPool[0][1], isCorrect: true },
+			{ answerText: modulesData[5].QuizPool[0][2], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[0][3], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[0][4], isCorrect: false },
+		],
+	},
+	{
+		questionText: modulesData[5].QuizPool[1][0],
+		answerOptions: [
+			{ answerText: modulesData[5].QuizPool[1][1], isCorrect: true },
+			{ answerText: modulesData[5].QuizPool[1][2], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[1][3], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[1][4], isCorrect: false },
+		],
+	},
+	{
+		questionText: modulesData[5].QuizPool[2][0],
+		answerOptions: [
+			{ answerText: modulesData[5].QuizPool[2][1], isCorrect: true },
+			{ answerText: modulesData[5].QuizPool[2][2], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[2][3], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[2][4], isCorrect: false },
+		],
+	},
+	{
+		questionText: modulesData[5].QuizPool[3][0],
+		answerOptions: [
+			{ answerText: modulesData[5].QuizPool[3][1], isCorrect: true },
+			{ answerText: modulesData[5].QuizPool[3][2], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[3][3], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[3][4], isCorrect: false },
+		],
+	},
+	{
+		questionText: modulesData[5].QuizPool[4][0],
+		answerOptions: [
+			{ answerText: modulesData[5].QuizPool[4][1], isCorrect: true },
+			{ answerText: modulesData[5].QuizPool[4][2], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[4][3], isCorrect: false },
+			{ answerText: modulesData[5].QuizPool[4][4], isCorrect: false },
+		],
+	},
 	];
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);

@@ -43,7 +43,7 @@ export default function ModulesSelectionDOM() {
                     return (
                         <div className="modulesDisplay">
                             <CustomTooltip title={data.Description} placement="right">
-                            <Link to={`${match.url}/${key}`} data-tip data-for="registerTip">
+                            <Link to={`${match.url}/${key}`}>
                             <div className="modulesCard" style={style}>
                                 <div className="cardOverlay"></div>
                                 <p>{data.Title}</p>
