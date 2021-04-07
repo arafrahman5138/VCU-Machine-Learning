@@ -130,12 +130,6 @@
   font-size: 100px;
 }
 
-.score-section {
-  display: flex;
-  font-size: 2em;
-  padding: var(--page-pad);
-  align-items: center;
-}
 
 /* QUESTION/TIMER/LEFT SECTION */
 .question-section {
@@ -206,5 +200,11 @@ button:focus {
 
 button svg {
   margin-right: 5px;
+}
+
+.modImg {
+  border: 5px solid #555;
+  width: 300px;
+  height: 200px;
 }
 

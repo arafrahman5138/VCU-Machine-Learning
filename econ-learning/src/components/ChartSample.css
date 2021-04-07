@@ -1,7 +1,6 @@
 ﻿.chartFormat {
     display: inline-block;
-    background-color: #F4ED9F;
-
+    background-color: #F99D3A;
     width: 100%;
 }
 
@@ -27,10 +26,11 @@
 }
 
 .python {
-    left: 10%;
+    left: 5%;
+    top: 6em;
 }
 
 .select {
-    left: 10%;
-    top: 1.5em;
+    left: 5%;
+    top: 4em;
 }

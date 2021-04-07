@@ -1,5 +1,6 @@
 import React from "react";
 import ModuleNavHeader from '../components/ModuleNavHeader.js'
+import * as Styled from './StyledButton'
 
 
 import {
@@ -44,12 +45,13 @@ export default function ModulePagesDOM() {
           </div>
           
 
-          <h2 className="title">{modulesData[module].Pages[page][0]}</h2>
+          <h2 className="modTitle">{modulesData[module].Pages[page][0]}</h2>
           <div className="image" align="center">
-            {/* <img src={`../images/${modulesData[module].ModuleImg[page][0]}`}/> */}
+            <img className = "modImg" src={`/images/${modulesData[module].ModuleImg[page]}`} />
           </div>
+          {console.log("name" + modulesData[module].ModuleImg[0])}
           <div className="pageContent">
-            <p>{modulesData[module].Pages[page][1]}</p>
+             {modulesData[module].Pages[page][1]}
           </div>
           
           <BottomNavGen module={module} page={page}/>
@@ -67,24 +69,49 @@ function BottomNavGen(props) {
     
     if ((len - pages - 1) === 0) {
       return (<div className="bottomNavigation">
-        <h4><Link to={`/modules/${module}/${pages - 1}`} replace>Previous Page</Link></h4>
+        {/* <h4><Link to={`/modules/${module}/${pages - 1}`} replace>Previous Page</Link></h4> */}
+        <Link to={`/modules/${module}/${pages - 1}`} replace>
+          <Styled.Button> Previous Page </Styled.Button>
+        </Link>
+
         <p>Page {pages + 1}/{len}</p>
-        <h4><Link to={`/quiz${module+1}`}>Start Quiz</Link></h4>
+        {/* <h4><Link to={`/quiz${module+1}`}>Start Quiz</Link></h4> */}
+
+        <Link to={`/quiz${module+1}`} replace>
+          <Styled.Button> Start Quiz </Styled.Button>
+        </Link>
       </div>)
     }
 
     if (pages === 0) {
       return (<div className="bottomNavigation">
-        <h4>Previous Page</h4>
+        {/* <h4>Previous Page</h4> */}
+        <Styled.Button> Previous Page </Styled.Button>
+
         <p>Page {pages + 1}/{len}</p>
-        <h4><Link to={`/modules/${module}/${pages + 1}`} replace>Next Page</Link></h4>
+        {/* <h4><Link to={`/modules/${module}/${pages + 1}`} replace>Next Page</Link></h4> */}
+
+        <Link to={`/modules/${module}/${pages + 1}`} replace>
+          <Styled.Button> Next Page </Styled.Button>
+        </Link>
       </div>)
     }
 
 
     return (<div className="bottomNavigation">
-        <h4><Link to={`/modules/${module}/${pages - 1}`} replace>Previous Page</Link></h4>
+        {/* <h4><Link to={`/modules/${module}/${pages - 1}`} replace>Previous Page</Link></h4>
         <p>Page {pages + 1}/{len}</p>
-        <h4><Link to={`/modules/${module}/${pages + 1}`} replace>Next Page</Link></h4>
+        <h4><Link to={`/modules/${module}/${pages + 1}`} replace>Next Page</Link></h4> */}
+
+        <Link to={`/modules/${module}/${pages - 1}`} replace>
+          <Styled.Button> Previous Page </Styled.Button>
+        </Link>
+
+        <p>Page {pages + 1}/{len}</p>
+
+        <Link to={`/modules/${module}/${pages + 1}`} replace>
+          <Styled.Button> Next Page </Styled.Button>
+        </Link>
+
     </div>)
 }

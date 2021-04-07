@@ -11,6 +11,8 @@ import {
   } from "react-router-dom";
 import DragChart from '../TestingDragChart'
 import {modulesData} from '../../components/modulesData'
+import '../../components/quiz.css'
+import * as Styled from '../../components/StyledButton'
 
 export const handleErrors = async (response) => {
   if (!response.ok) {
@@ -65,14 +67,16 @@ export default function Quiz1() {
 		},
 	];
 
+	const history = useHistory();
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
-	var tokens = 0;
+	const [tokens, setTokens] = useState(0);
 
 	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
 			setScore(score + 1);
+			setTokens((score + 1) * 5);
 		}
 
 		const nextQuestion = currentQuestion + 1;
@@ -83,7 +87,7 @@ export default function Quiz1() {
 		}
 	};
 
-  const Quiz1 = (e) => {
+  const storeQuiz1 = (e) => {
     e.preventDefault();
     fetch(`http://localhost:4000/Quiz1`, {
       method: "POST",
@@ -92,14 +96,14 @@ export default function Quiz1() {
       },
       body: JSON.stringify({
         username,
-        module,
+		tokens,
       }),
     })
       .then(handleErrors)
       .then(() => {
         setCredentials({
           username,
-          module,
+          tokens,
         });
         history.push("/");
       })
@@ -107,25 +111,30 @@ export default function Quiz1() {
         setError(error.message);
       });
   };
-
-  const history = useHistory();
-
+ 
 	return (
         <>
 		<div className='app'>
 			{showScore ? (
                 <>
+				<center>
 				<div className='score-section'>
 					You scored {score} out of {questions.length} <br/>
-					You earned {tokens = tokens + score * 5} tokens
+					You earned {tokens} tokens
 				</div>
+				</center>
+				<div className="nextMod">
+				<form onClick={storeQuiz1}>
+                <h4 id = "leftMod"><Link to="/modules/0/0"><Styled.Button>Restart</Styled.Button></Link></h4>
+				<h4 id = "rightMod"><Link to="/modules/1/0"><Styled.Button>Next Module</Styled.Button></Link></h4>
+				</form>
+				<br/>
+				</div>
+				<center>
 				<div className="credits">
-                        {/* <p className="credits_earnable" id="credits_earnable">Credits you can earn: 4</p> */}
                         <p className="credits_total" id="credits_total"> Total tokens: {tokens}</p>
                 </div>
-				<form onClick={Quiz1}>
-                <h4><Link to="/modules/1/0">Next Module</Link></h4>
-				</form>
+				</center>
                 </>
 			) : (
 				<>
@@ -143,7 +152,7 @@ export default function Quiz1() {
 					</div>
 				</>
 			)}
-		</div> <br/>
+		</div>  
         <DragChart/>
         </>
 	);

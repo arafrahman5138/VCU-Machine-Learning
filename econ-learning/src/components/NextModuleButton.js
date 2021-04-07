@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // import '../../home/home-components/Button.css';
-import * as Styled from './StyledModuleButton'
+import * as Styled from './StyledButton'
 
 // Comment this section if using styled buttons -->
 // const STYLES = ['btn--primary', 'btn-outline'];

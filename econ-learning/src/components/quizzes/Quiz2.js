@@ -10,6 +10,8 @@ import {
     Redirect
   } from "react-router-dom";
   import DragChart from '../TestingDragChart'
+  import '../../components/quiz.css'
+  import * as Styled from '../../components/StyledButton'
 
 export const handleErrors = async (response) => {
   if (!response.ok) {
@@ -22,7 +24,6 @@ export const handleErrors = async (response) => {
 export default function Quiz2() {
   const [credentials, setCredentials] = useContext(CredentialsContext);
   const [username, setUsername] = useState(credentials && credentials.username);
-  const [module, setModule] = useState("100"); 
   const [error, setError] = useState("");
 
 	const questions = [
@@ -67,11 +68,12 @@ export default function Quiz2() {
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
-	var tokens = 0;
+	const [tokens, setTokens] = useState(0);
 
 	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
 			setScore(score + 1);
+			setTokens((score + 1) * 5);
 		}
 
 		const nextQuestion = currentQuestion + 1;
@@ -82,7 +84,7 @@ export default function Quiz2() {
 		}
 	};
 
-  const Quiz2 = (e) => {
+  const storeQuiz2 = (e) => {
     e.preventDefault();
     fetch(`http://localhost:4000/Quiz2`, {
       method: "POST",
@@ -91,14 +93,14 @@ export default function Quiz2() {
       },
       body: JSON.stringify({
         username,
-        module,
+        tokens,
       }),
     })
       .then(handleErrors)
       .then(() => {
         setCredentials({
           username,
-          module,
+          tokens,
         });
         history.push("/");
       })
@@ -114,21 +116,29 @@ export default function Quiz2() {
 		<div className='app'>
 			{showScore ? (
                 <>
+				<center>
 				<div className='score-section'>
 					You scored {score} out of {questions.length} <br/>
-					You earned {tokens = tokens + score * 5} tokens
+					You earned {tokens} tokens
 				</div>
+				</center>
+                <div className="nextMod">
+				<form onClick={storeQuiz2}>
+                <h4 id = "leftMod"><Link to="/modules/1/0"><Styled.Button>Restart</Styled.Button></Link></h4>
+				<h4 id = "rightMod"><Link to="/modules/2/0"><Styled.Button>Next Module</Styled.Button></Link></h4>
+				</form>
+				<br/>
+				</div>
+				<center>
 				<div className="credits">
-                        {/* <p className="credits_earnable" id="credits_earnable">Credits you can earn: 4</p> */}
                         <p className="credits_total" id="credits_total"> Total tokens: {tokens}</p>
                 </div>
-                <form onClick={Quiz2}>
-                <h4><Link to="/modules/2/0">Next Module</Link></h4>
-				</form>
+				</center>
                 </>
 			) : (
 				<>
 					<div className='question-section'>
+					<h2 align="center">Quiz 2</h2>
 						<div className='question-count'>
 							<span>Question {currentQuestion + 1}</span>/{questions.length}
 						</div>
@@ -141,7 +151,7 @@ export default function Quiz2() {
 					</div>
 				</>
 			)}
-		</div> <br/>
+		</div>
         <DragChart/>
         </>
 	);

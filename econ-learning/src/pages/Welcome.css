@@ -1,3 +1,7 @@
+.body {
+  background-color: #F4ED9F;
+}
+
 h1 {
   font-size: 50px;
   text-align: center;
@@ -5,7 +9,9 @@ h1 {
 
 .wrapper {
   text-align: center;
-  display: inline-block;
+  /* display: flex;
+  align-items: center; */
+  justify-content: center;
 }
 
 .logoutBtn {
@@ -18,12 +24,12 @@ h1 {
   border-radius: 10px;
   transition: all 0.3s ease-out;
   position: absolute;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .loginBt {
-  padding: 8px 20px;
+  padding: 20px 20px;
   font-size: 20px;
   cursor: pointer;
   color: #fff;
@@ -31,13 +37,14 @@ h1 {
   border: 1px solid var(--blue-3);
   border-radius: 10px;
   transition: all 0.3s ease-out;
-  position: absolute;
-    left: 50%;
-    transform: translateX(-50%) translateY(100%);
+  text-decoration: none;
+  left: 5%;
+  transform: translateX(-50%) translateY(100%);
+  margin-left: 100px;
 }
 
 .registerBt {
-  padding: 8px 20px;
+  padding: 20px 20px;
   font-size: 20px;
   cursor: pointer;
   color: #fff;
@@ -45,7 +52,18 @@ h1 {
   border: 1px solid var(--blue-3);
   border-radius: 10px;
   transition: all 0.3s ease-out;
-  position: absolute;
-    left: 50%;
-    transform: translateX(-50%) translateY(20%);
+  text-decoration: none;
+  left: 50%;
+  transform: translateX(-50%) translateY(20%);
+  margin: 0, auto;
+}
+
+.credentials {
+  top: 5em;
+  color:black;
+}
+
+.LRBtns {
+  columns: 2;
+  gap: 10%;
 }

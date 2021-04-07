@@ -8,4 +8,35 @@
   .progress {
     font-family: sans-serif;
     text-align: center;
+    font-size: large;
+    column-count: 5;
+    column-gap: 100px;
+    column-rule-width: 1px;
+    column-span: all;
+    border-radius: 6px;
+    padding: 48px 66px;
+    background: #7ED2EF;
+    box-shadow: 0 4px 10px #00000012;
+    width: 75%;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
   }
+
+  .modbtn {
+    padding: 2px 5px;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #85C55A;
+    text-decoration: none;
+  }
+
+  .linkbtn {
+    text-decoration: none;
+    color: white;
+  }
+
+
+  
+  
