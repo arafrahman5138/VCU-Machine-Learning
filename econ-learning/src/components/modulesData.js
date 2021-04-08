@@ -3,38 +3,33 @@ export const modulesData = [
         Title: "MODULE 1",
         Image: "https://picsum.photos/id/237/300/200",
         Pages: [
-            ["TITLE", "CONTENT"],
-            
-            ["TITLE 2", `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, nunc iaculis vulputate sagittis, sem tortor semper leo, at varius elit ipsum et metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Duis blandit risus mauris, sit amet pulvinar eros interdum in. Aliquam efficitur odio at suscipit viverra. Etiam nibh tellus, iaculis sed metus mattis, semper consequat felis. Donec elementum rhoncus ligula rhoncus aliquam. Praesent lacinia sapien ligula, semper vehicula libero pulvinar at. Maecenas nibh lorem, condimentum non justo in, imperdiet finibus nibh.
-
-            Sed ac condimentum urna. Cras nulla dui, rhoncus a euismod non, facilisis dapibus elit. Phasellus ut sodales mi. Cras tempus id nisl non efficitur. Nullam lorem tellus, imperdiet eu dui at, rhoncus tristique quam. Cras egestas, orci vitae hendrerit blandit, ipsum magna iaculis libero, placerat pharetra nulla velit eu magna. Duis consequat ut diam rhoncus vestibulum. Cras vitae consequat orci. Morbi et laoreet lacus, in faucibus ex. Nulla facilisi. Donec suscipit nibh ut velit tristique, a rhoncus sapien porta. Morbi ex nisi, facilisis id purus quis, ultricies commodo purus. Ut egestas nulla sit amet tellus accumsan, dictum hendrerit mauris tristique. Etiam elit dolor, fringilla eget quam varius, dignissim maximus purus. Curabitur sed pulvinar risus.
-            
-            Phasellus eu elit ultricies erat dapibus finibus. Nulla hendrerit vestibulum augue in eleifend. Vestibulum sit amet faucibus elit. Sed sit amet ligula non orci bibendum condimentum sit amet eu lectus. Praesent non eros et justo tempor eleifend. Etiam ultricies velit elit, sit amet pharetra lacus luctus ut. Suspendisse consequat dui elit, quis accumsan ipsum finibus a. Donec quis odio risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            
-            Phasellus non purus sed libero sagittis dignissim. Morbi ornare leo faucibus turpis iaculis, gravida dignissim dolor semper. Maecenas facilisis tristique bibendum. Donec in tincidunt turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sit amet tortor vitae dolor mattis pellentesque. Vivamus non elit lobortis, egestas neque a, dictum metus. Donec finibus nulla lorem, vel suscipit dolor bibendum quis. Suspendisse vulputate vel libero et ultrices. Nam ac molestie massa.
-            
-            Curabitur tincidunt in dolor a maximus. Vestibulum commodo viverra suscipit. Nulla facilisi. Phasellus venenatis dignissim ante sit amet elementum. Cras massa ligula, tempor sit amet aliquam nec, dictum a quam. Phasellus pharetra euismod eros. Praesent ullamcorper quam felis, sit amet elementum elit hendrerit et. Vivamus faucibus et libero vitae pulvinar. Sed consectetur at arcu vel cursus. Pellentesque iaculis velit erat, et fringilla ipsum consequat vel. Nunc ut purus ac ipsum varius commodo lacinia vel nisi. In convallis tortor eros, non vestibulum risus rutrum ac.`],
-            
-            ["TITLE 3", `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, nunc iaculis vulputate sagittis, sem tortor semper leo, at varius elit ipsum et metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Duis blandit risus mauris, sit amet pulvinar eros interdum in. Aliquam efficitur odio at suscipit viverra. Etiam nibh tellus, iaculis sed metus mattis, semper consequat felis. Donec elementum rhoncus ligula rhoncus aliquam. Praesent lacinia sapien ligula, semper vehicula libero pulvinar at. Maecenas nibh lorem, condimentum non justo in, imperdiet finibus nibh.
-
-            Sed ac condimentum urna. Cras nulla dui, rhoncus a euismod non, facilisis dapibus elit. Phasellus ut sodales mi. Cras tempus id nisl non efficitur. Nullam lorem tellus, imperdiet eu dui at, rhoncus tristique quam. Cras egestas, orci vitae hendrerit blandit, ipsum magna iaculis libero, placerat pharetra nulla velit eu magna. Duis consequat ut diam rhoncus vestibulum. Cras vitae consequat orci. Morbi et laoreet lacus, in faucibus ex. Nulla facilisi. Donec suscipit nibh ut velit tristique, a rhoncus sapien porta. Morbi ex nisi, facilisis id purus quis, ultricies commodo purus. Ut egestas nulla sit amet tellus accumsan, dictum hendrerit mauris tristique. Etiam elit dolor, fringilla eget quam varius, dignissim maximus purus. Curabitur sed pulvinar risus.
-            
-            Phasellus eu elit ultricies erat dapibus finibus. Nulla hendrerit vestibulum augue in eleifend. Vestibulum sit amet faucibus elit. Sed sit amet ligula non orci bibendum condimentum sit amet eu lectus. Praesent non eros et justo tempor eleifend. Etiam ultricies velit elit, sit amet pharetra lacus luctus ut. Suspendisse consequat dui elit, quis accumsan ipsum finibus a. Donec quis odio risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            
-            Phasellus non purus sed libero sagittis dignissim. Morbi ornare leo faucibus turpis iaculis, gravida dignissim dolor semper. Maecenas facilisis tristique bibendum. Donec in tincidunt turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sit amet tortor vitae dolor mattis pellentesque. Vivamus non elit lobortis, egestas neque a, dictum metus. Donec finibus nulla lorem, vel suscipit dolor bibendum quis. Suspendisse vulputate vel libero et ultrices. Nam ac molestie massa.
-            
-            Curabitur tincidunt in dolor a maximus. Vestibulum commodo viverra suscipit. Nulla facilisi. Phasellus venenatis dignissim ante sit amet elementum. Cras massa ligula, tempor sit amet aliquam nec, dictum a quam. Phasellus pharetra euismod eros. Praesent ullamcorper quam felis, sit amet elementum elit hendrerit et. Vivamus faucibus et libero vitae pulvinar. Sed consectetur at arcu vel cursus. Pellentesque iaculis velit erat, et fringilla ipsum consequat vel. Nunc ut purus ac ipsum varius commodo lacinia vel nisi. In convallis tortor eros, non vestibulum risus rutrum ac.`],
-
+            ["To recap what the stock market is and what its purpose is from your economics class: the stock market is when individuals, like you and myself, can buy shares, or just little titles that grant them a small ownership of a company. And, as the owner, you are entitled to its profits. If you invest stock in a company and the company performs very well, your stock will perform very well."],
+            ["Another thing is that there is a limited amount of stock per company. So, a company that is doing really well may have lots of people go and purchase stock from it. Much like other economic goods, the stocks follow the law of supply and demand, meaning when the demand goes up, the supply goes lower. And when that is the case, the price increases. Consequently, when demand is low, supply is high, and the price drops."],
+            ["Computes have made many aspects of our lives easier, they essentially act as an all purpose tool or a really, really complex swiss army knife. Before in the 50’s and 60’s you had an insurance company, for example, holding warehouses of documents, but now you can store them on a computer. Before in a grocery store people would need to check each gallon of milk hand-by-hand to see what is about to go bad, and sell that before the stuff that expires later on. Now, a computer can scan barcodes on each of the milk, and tell you if you should sell it or not. It really automates this process."],
+            ["People try to use automation from computers on the stock market. After all, if a machine can tell the grocery store what milk should go on the shelves, can a machine tell me what stock to purchase if I am trying to make profit? Can a machine predict a stock price going up? Can a machine predict when I need to sell?"],
+            ["Maybe. The process of a machine learning is, intuitively, machine learning. The goal of this course is to explain to you how and why machines will learn and how you can use that in a real life example, the stock market."],
             
         ],
         QuizPool: [
-            ["QUESTION A", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
-            ["QUESTION B", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
-            ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
+            ["What is a program?",
+                "A set of instructions that tells a machine how to execute a task",
+                "A study of computers and how we can use them to solve problems",
+                "A machine that takes in an input and produces an output",
+                "A physical component of a computer"],
+            ["What is the function of a machine learning model?",
+                "To take in an input, apply the patterns learned from the training data, and produce an output, such as a prediction",
+                "To follow the exact instructions set by programmers to complete a task",
+                "To control a robot",
+                "To make human-like machines"],
+            ["Which of these are examples of training data?",
+                "All of the choices",
+                "Text",
+                "Images",
+                "Numbers"],
         ],
-        QuizSize: 2,
+        QuizSize: 3,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"],
+            ["computer.jpeg", "codeva.jpeg", "computer.jpeg", "codeva.jpeg", "computer.jpeg"],
         Description: "Introduction to the Stock Market"
     },
 
@@ -42,38 +37,35 @@ export const modulesData = [
         Title: "MODULE 2",
         Image: "https://picsum.photos/id/17/300/200",
         Pages: [
-            ["TITLE", "CONTENT"],
             
-            ["TITLE 2", `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, nunc iaculis vulputate sagittis, sem tortor semper leo, at varius elit ipsum et metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Duis blandit risus mauris, sit amet pulvinar eros interdum in. Aliquam efficitur odio at suscipit viverra. Etiam nibh tellus, iaculis sed metus mattis, semper consequat felis. Donec elementum rhoncus ligula rhoncus aliquam. Praesent lacinia sapien ligula, semper vehicula libero pulvinar at. Maecenas nibh lorem, condimentum non justo in, imperdiet finibus nibh.
-
-            Sed ac condimentum urna. Cras nulla dui, rhoncus a euismod non, facilisis dapibus elit. Phasellus ut sodales mi. Cras tempus id nisl non efficitur. Nullam lorem tellus, imperdiet eu dui at, rhoncus tristique quam. Cras egestas, orci vitae hendrerit blandit, ipsum magna iaculis libero, placerat pharetra nulla velit eu magna. Duis consequat ut diam rhoncus vestibulum. Cras vitae consequat orci. Morbi et laoreet lacus, in faucibus ex. Nulla facilisi. Donec suscipit nibh ut velit tristique, a rhoncus sapien porta. Morbi ex nisi, facilisis id purus quis, ultricies commodo purus. Ut egestas nulla sit amet tellus accumsan, dictum hendrerit mauris tristique. Etiam elit dolor, fringilla eget quam varius, dignissim maximus purus. Curabitur sed pulvinar risus.
-            
-            Phasellus eu elit ultricies erat dapibus finibus. Nulla hendrerit vestibulum augue in eleifend. Vestibulum sit amet faucibus elit. Sed sit amet ligula non orci bibendum condimentum sit amet eu lectus. Praesent non eros et justo tempor eleifend. Etiam ultricies velit elit, sit amet pharetra lacus luctus ut. Suspendisse consequat dui elit, quis accumsan ipsum finibus a. Donec quis odio risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            
-            Phasellus non purus sed libero sagittis dignissim. Morbi ornare leo faucibus turpis iaculis, gravida dignissim dolor semper. Maecenas facilisis tristique bibendum. Donec in tincidunt turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sit amet tortor vitae dolor mattis pellentesque. Vivamus non elit lobortis, egestas neque a, dictum metus. Donec finibus nulla lorem, vel suscipit dolor bibendum quis. Suspendisse vulputate vel libero et ultrices. Nam ac molestie massa.
-            
-            Curabitur tincidunt in dolor a maximus. Vestibulum commodo viverra suscipit. Nulla facilisi. Phasellus venenatis dignissim ante sit amet elementum. Cras massa ligula, tempor sit amet aliquam nec, dictum a quam. Phasellus pharetra euismod eros. Praesent ullamcorper quam felis, sit amet elementum elit hendrerit et. Vivamus faucibus et libero vitae pulvinar. Sed consectetur at arcu vel cursus. Pellentesque iaculis velit erat, et fringilla ipsum consequat vel. Nunc ut purus ac ipsum varius commodo lacinia vel nisi. In convallis tortor eros, non vestibulum risus rutrum ac.`],
-            
-            ["TITLE 3", `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, nunc iaculis vulputate sagittis, sem tortor semper leo, at varius elit ipsum et metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Duis blandit risus mauris, sit amet pulvinar eros interdum in. Aliquam efficitur odio at suscipit viverra. Etiam nibh tellus, iaculis sed metus mattis, semper consequat felis. Donec elementum rhoncus ligula rhoncus aliquam. Praesent lacinia sapien ligula, semper vehicula libero pulvinar at. Maecenas nibh lorem, condimentum non justo in, imperdiet finibus nibh.
-
-            Sed ac condimentum urna. Cras nulla dui, rhoncus a euismod non, facilisis dapibus elit. Phasellus ut sodales mi. Cras tempus id nisl non efficitur. Nullam lorem tellus, imperdiet eu dui at, rhoncus tristique quam. Cras egestas, orci vitae hendrerit blandit, ipsum magna iaculis libero, placerat pharetra nulla velit eu magna. Duis consequat ut diam rhoncus vestibulum. Cras vitae consequat orci. Morbi et laoreet lacus, in faucibus ex. Nulla facilisi. Donec suscipit nibh ut velit tristique, a rhoncus sapien porta. Morbi ex nisi, facilisis id purus quis, ultricies commodo purus. Ut egestas nulla sit amet tellus accumsan, dictum hendrerit mauris tristique. Etiam elit dolor, fringilla eget quam varius, dignissim maximus purus. Curabitur sed pulvinar risus.
-            
-            Phasellus eu elit ultricies erat dapibus finibus. Nulla hendrerit vestibulum augue in eleifend. Vestibulum sit amet faucibus elit. Sed sit amet ligula non orci bibendum condimentum sit amet eu lectus. Praesent non eros et justo tempor eleifend. Etiam ultricies velit elit, sit amet pharetra lacus luctus ut. Suspendisse consequat dui elit, quis accumsan ipsum finibus a. Donec quis odio risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            
-            Phasellus non purus sed libero sagittis dignissim. Morbi ornare leo faucibus turpis iaculis, gravida dignissim dolor semper. Maecenas facilisis tristique bibendum. Donec in tincidunt turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sit amet tortor vitae dolor mattis pellentesque. Vivamus non elit lobortis, egestas neque a, dictum metus. Donec finibus nulla lorem, vel suscipit dolor bibendum quis. Suspendisse vulputate vel libero et ultrices. Nam ac molestie massa.
-            
-            Curabitur tincidunt in dolor a maximus. Vestibulum commodo viverra suscipit. Nulla facilisi. Phasellus venenatis dignissim ante sit amet elementum. Cras massa ligula, tempor sit amet aliquam nec, dictum a quam. Phasellus pharetra euismod eros. Praesent ullamcorper quam felis, sit amet elementum elit hendrerit et. Vivamus faucibus et libero vitae pulvinar. Sed consectetur at arcu vel cursus. Pellentesque iaculis velit erat, et fringilla ipsum consequat vel. Nunc ut purus ac ipsum varius commodo lacinia vel nisi. In convallis tortor eros, non vestibulum risus rutrum ac.`],
-
-            ['Title', 'Hello']
-
-            
+            ["In machine learning and the stock market, there are a couple of variables that must be gone over before we continue. So, we already know what a stock is. It is described as a portion of a company that is shared with you. Some common stock market lingo may be thrown around in this course."],
+            ["For example, a crash is when a stock in particular, or all stocks, seem to lose their value. This can happen for an array of reasons, and there is never a clear cut answer. There are real life people in the world that control maybe 50%, 80%, or however much of a stock of one single company. If they were to sell all of their stock one day, let's say this person is retiring, supply would be astronomically high, but demand for the consumer has not changed and so the price of that stock will crash a lot."],
+            ["If we use our computer to tell us when to buy and sell stocks, our computer is a broker. A broker is someone (or in our case something) that tells you when to buy and sell stocks, simple as that. These types of people exist because they spend every moment of their day looking at what companies are doing and how they are performing, and can have a much clearer answer for what the price of a stock is going to be compared to someone who has googled it once."],
+            ["There is day trading in the stock market, which is buying and selling a share in a single day. The prices of stocks are always shifting, and something as arbitrary as 5 PM rolling around may make the prices of stocks go up or go down. In this course we will go over machine learning principles that can help with day trading and with longer term investments."],
+            ["Dividends are payments to stock shareholders that companies pay. Obviously if your company is a billion dollar company, you could expect a lot of money in the dividends. This is one of the key aspects that determines what people buy and sell."],
+            ["Highs and Lows are, intuitively, prices a stock is reaching for the first time. It may be the first time a price is the most expensive it has been, or the first time a price is the lowest it has been."],
+            ["As for machine learning, you probably have heard the term algorithm before. An algorithm is basically a set of instructions that the computer follows. Many people who go to study computer science will learn of sorting algorithms, or algorithms that basically sort things from smallest to largest. This is one of the most basic kinds of algorithms and also one that's very practical. Much like how when making a cake, you need ingredients and then need to prepare them in a certain order, algorithms need something to work with (ingredients) and instructions (the recipe for the cake). For example, if I owned a grocery store, I could sort all of my gallons of milk in order to know what is going to expire the soonest to latest, so I know what order to sell them in."],
+            ["A machine is said to learn when its performance gets better with the more data I give it. Machine learning is often used with image detection and is one of the key principles in self-driving cars. Self-driving cars need to know how to recognize what is a stop sign, what is a pedestrian, and so on. So, one way to train it is to feed the algorithm 100,000 pictures of stop signs and then let it decide what is what. If it is a picture of a stop sign and it says it's a stop sign, then it succeeded.. If it says it not a picture and but it turns out it was a picture of a stop sign, then the algorithm will know it made a mistake and tweak itself slightly in hopes of making more correct answers."],
+            ["When machines learn quickly, they make many mistakes, but do more tweaking to their algorithm and can ultimately start making fewer mistakes as a whole sooner. Consequently machines learning slowly means they make fewer mistakes but take a much longer time to reach as few mistakes as possible."]
         ],
         QuizPool: [
-            ["QUESTION A", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
-            ["QUESTION B", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
-            ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
+            ["What is a program?",
+                "A set of instructions that tells a machine how to execute a task",
+                "A study of computers and how we can use them to solve problems",
+                "A machine that takes in an input and produces an output",
+                "A physical component of a computer"],
+            ["What is the function of a machine learning model?",
+                "To take in an input, apply the patterns learned from the training data, and produce an output, such as a prediction",
+                "To follow the exact instructions set by programmers to complete a task",
+                "To control a robot",
+                "To make human-like machines"],
+            ["Which of these are examples of training data?",
+                "All of the choices",
+                "Text",
+                "Images",
+                "Numbers"],
         ],
-        QuizSize: 1,
+        QuizSize: 3,
         ModuleImg: 
             ["computer.jpeg", "codeva.jpeg", "computer.jpeg", "codeva.jpeg"],
         Description: "Stock Market Basics Part 1"
@@ -108,11 +100,23 @@ export const modulesData = [
             
         ],
         QuizPool: [
-            ["QUESTION A", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
-            ["QUESTION B", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
-            ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
+            ["What is a program?",
+                "A set of instructions that tells a machine how to execute a task",
+                "A study of computers and how we can use them to solve problems",
+                "A machine that takes in an input and produces an output",
+                "A physical component of a computer"],
+            ["What is the function of a machine learning model?",
+                "To take in an input, apply the patterns learned from the training data, and produce an output, such as a prediction",
+                "To follow the exact instructions set by programmers to complete a task",
+                "To control a robot",
+                "To make human-like machines"],
+            ["Which of these are examples of training data?",
+                "All of the choices",
+                "Text",
+                "Images",
+                "Numbers"],
         ],
-        QuizSize: 2,
+        QuizSize: 3,
         ModuleImg: 
             ["computer.jpeg", "codeva.jpeg", "computer.jpeg"],
         Description: "Stock Market Basics Part 2"
