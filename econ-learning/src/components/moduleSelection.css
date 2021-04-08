@@ -41,7 +41,7 @@
 }
 
 .modulesCard:hover .cardOverlay {
-    opacity: 0.1;
+    opacity: 0;
 }
 
 
