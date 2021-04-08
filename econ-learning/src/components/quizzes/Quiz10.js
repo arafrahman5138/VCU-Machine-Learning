@@ -8,7 +8,8 @@ import {
     useParams,
     useRouteMatch,
     Redirect
-  } from "react-router-dom";
+} from "react-router-dom";
+import { modulesData } from '../../components/modulesData'
   import DragChart from '../TestingDragChart'
   import '../../components/quiz.css'
   import * as Styled from '../StyledButton'
