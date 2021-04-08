@@ -28,39 +28,30 @@ export default function Quiz10() {
 
 	const questions = [
 		{
-			questionText: 'What is the capital of France?',
+			questionText: modulesData[9].QuizPool[0][0],
 			answerOptions: [
-				{ answerText: 'New York', isCorrect: false },
-				{ answerText: 'London', isCorrect: false },
-				{ answerText: 'Paris', isCorrect: true },
-				{ answerText: 'Dublin', isCorrect: false },
+				{ answerText: modulesData[9].QuizPool[0][1], isCorrect: true },
+				{ answerText: modulesData[9].QuizPool[0][2], isCorrect: false },
+				{ answerText: modulesData[9].QuizPool[0][3], isCorrect: false },
+				{ answerText: modulesData[9].QuizPool[0][4], isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Who is CEO of Tesla?',
+			questionText: modulesData[9].QuizPool[1][0],
 			answerOptions: [
-				{ answerText: 'Jeff Bezos', isCorrect: false },
-				{ answerText: 'Elon Musk', isCorrect: true },
-				{ answerText: 'Bill Gates', isCorrect: false },
-				{ answerText: 'Tony Stark', isCorrect: false },
+				{ answerText: modulesData[9].QuizPool[1][1], isCorrect: true },
+				{ answerText: modulesData[9].QuizPool[1][2], isCorrect: false },
+				{ answerText: modulesData[9].QuizPool[1][3], isCorrect: false },
+				{ answerText: modulesData[9].QuizPool[1][4], isCorrect: false },
 			],
 		},
 		{
-			questionText: 'The iPhone was created by which company?',
+			questionText: modulesData[9].QuizPool[2][0],
 			answerOptions: [
-				{ answerText: 'Apple', isCorrect: true },
-				{ answerText: 'Intel', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Microsoft', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'How many Harry Potter books are there?',
-			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
+				{ answerText: modulesData[9].QuizPool[2][1], isCorrect: true },
+				{ answerText: modulesData[9].QuizPool[2][2], isCorrect: false },
+				{ answerText: modulesData[9].QuizPool[2][3], isCorrect: false },
+				{ answerText: modulesData[9].QuizPool[2][4], isCorrect: false },
 			],
 		},
 	];
@@ -86,7 +77,7 @@ export default function Quiz10() {
 
   const storeQuiz10 = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:4000/Quiz8`, {
+    fetch(`http://localhost:4000/Quiz10`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -138,7 +129,7 @@ export default function Quiz10() {
 			) : (
 				<>
 					<div className='question-section'>
-					<h2 align="center">Quiz 8</h2>
+					<h2 align="center">Quiz 10</h2>
 						<div className='question-count'>
 							<span>Question {currentQuestion + 1}</span>/{questions.length}
 						</div>

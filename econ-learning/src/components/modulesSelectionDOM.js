@@ -38,7 +38,7 @@ export default function ModulesSelectionDOM() {
                 {
                 modulesData.map((data, key) => {
                     var style = {
-                        backgroundImage: `url(${data.Image})`,
+                        backgroundImage: `url(/images/${data.Image})`,
                     }
                     return (
                         <div className="modulesDisplay">

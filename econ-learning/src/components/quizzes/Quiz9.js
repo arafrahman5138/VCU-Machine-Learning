@@ -47,12 +47,21 @@ export default function Quiz9() {
 		],
 	},
 	{
-		questionText: modulesData[6].QuizPool[2][0],
+		questionText: modulesData[8].QuizPool[2][0],
 		answerOptions: [
 			{ answerText: modulesData[8].QuizPool[2][1], isCorrect: true },
 			{ answerText: modulesData[8].QuizPool[2][2], isCorrect: false },
 			{ answerText: modulesData[8].QuizPool[2][3], isCorrect: false },
 			{ answerText: modulesData[8].QuizPool[2][4], isCorrect: false },
+		],
+	},
+	{
+		questionText: modulesData[8].QuizPool[3][0],
+		answerOptions: [
+			{ answerText: modulesData[8].QuizPool[3][1], isCorrect: true },
+			{ answerText: modulesData[8].QuizPool[3][2], isCorrect: false },
+			{ answerText: modulesData[8].QuizPool[3][3], isCorrect: false },
+			{ answerText: modulesData[8].QuizPool[3][4], isCorrect: false },
 		],
 	},
 	];
@@ -78,7 +87,7 @@ export default function Quiz9() {
 
   const storeQuiz9 = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:4000/Quiz8`, {
+    fetch(`http://localhost:4000/Quiz9`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -130,7 +139,7 @@ export default function Quiz9() {
 			) : (
 				<>
 					<div className='question-section'>
-					<h2 align="center">Quiz 8</h2>
+					<h2 align="center">Quiz 9</h2>
 						<div className='question-count'>
 							<span>Question {currentQuestion + 1}</span>/{questions.length}
 						</div>

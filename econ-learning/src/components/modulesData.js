@@ -1,7 +1,7 @@
 export const modulesData = [
     {
         Title: "MODULE 1",
-        Image: "https://picsum.photos/id/237/300/200",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             ["To recap what the stock market is and what its purpose is from your economics class: the stock market is when individuals, like you and myself, can buy shares, or just little titles that grant them a small ownership of a company. And, as the owner, you are entitled to its profits. If you invest stock in a company and the company performs very well, your stock will perform very well."],
             ["Another thing is that there is a limited amount of stock per company. So, a company that is doing really well may have lots of people go and purchase stock from it. Much like other economic goods, the stocks follow the law of supply and demand, meaning when the demand goes up, the supply goes lower. And when that is the case, the price increases. Consequently, when demand is low, supply is high, and the price drops."],
@@ -35,7 +35,7 @@ export const modulesData = [
 
     {
         Title: "MODULE 2",
-        Image: "https://picsum.photos/id/17/300/200",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             
             ["In machine learning and the stock market, there are a couple of variables that must be gone over before we continue. So, we already know what a stock is. It is described as a portion of a company that is shared with you. Some common stock market lingo may be thrown around in this course."],
@@ -73,7 +73,7 @@ export const modulesData = [
 
     {
         Title: "MODULE 3",
-        Image: "https://picsum.photos/id/69/300/200",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             ["TITLE", "CONTENT"],
             
@@ -125,7 +125,7 @@ export const modulesData = [
     
     {
         Title: "MODULE 4",
-        Image: "https://picsum.photos/id/5/300/200",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             ["Introduction to Computer Science and Machine Learning", 
             `In the current times, the use of technology has simplified and helped us improve our lifestyles, and it has advanced to the point where it is integrated in many aspects of our lives. We use technology to play games, create word documents, buy and sell goods online, and even control the lights in our houses through smart devices. Within the large field of technology, there is a wide variety of subfields that focus on its different applications. 
@@ -205,13 +205,13 @@ export const modulesData = [
         ],
         QuizSize: 3,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg","codeva.jpeg","computer.jpeg","codeva.jpeg","computer.jpeg","codeva.jpeg","computer.jpeg","codeva.jpeg","computer.jpeg"],
+            ["technology.jpg", "shopping.jpg", "gmail.jpg", "fruits.jpg", "apple.jpg", "ml.jpeg", "data.jpeg", "ml-types.png"],
         Description: "Introduction to Computer Science and Machine Learning"
     },
     
     {
         Title: "MODULE 5",
-        Image: "https://picsum.photos/id/22/300/200",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             ["Supervised Learning", 
             `Of the four machine learning techniques, supervised learning is the most popular and commonly used. Supervised learning algorithms are differentiated from the other algorithms through their exclusive use of “labeled” data. 
@@ -301,12 +301,106 @@ export const modulesData = [
         ],
         QuizSize: 4,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"],
+            ["label.jpg", "teacher.jpg", "apple-label.jpeg", "sl-types.png", "bins.jpg", "emotions.jpg", "network.jpeg", "line-graph.jpeg", "house.jpg", "busi-graph.jpg", "graphs.jpeg"],
         Description: "Supervised Learning"
     },
     {
         Title: "MODULE 6",
-        Image: "https://picsum.photos/id/22/300/200",
+        Image: "module-thumbnail.jpeg",
+        Pages: [
+            ["Evaluation of Model Performance", 
+            `Before we dive into the different types of algorithms, let’s discuss what makes a good model that works well for a specific task. There are many different algorithms that can be applied to the same task but may have varying levels of performance. Usually, it is best to try out different algorithms and see which one is better suited for the task. So, how can we measure the performance of each algorithm and see which one works better?`],
+
+            ["Evaluation of Model Performance", 
+            `In a previous module, we learned that a collection of data is given to a model in order to teach the algorithms how to perform their intended task. However, instead of providing all of that data to the algorithm in the form of training data, we can also split the data into two subsets: training data and test data. 
+            
+            While the training data is used to help the algorithm learn, the test data is used to evaluate and test how the model will perform on new data. As opposed to providing both the data and correct labels to the algorithm, only the data will be given to the trained model for it to predict the labels. Then, we can compare the predictions from the model to the actual labels and measure its performance.`],
+            
+            ["Evaluation of Model Performance", 
+            `The training set is usually a lot larger in size than the test set. This reason for this is because it is important to properly train a model in order for it to function well. The more data spent to train a model, the better it performs. The test data is just used to check on its progress and performance. The most common splits between training and test sets are 80%-20% and 60%-40%.`],
+            
+            ["Evaluation of Model Performance", 
+            `So, once we give the model the test data and get the results back, how do we evaluate the model’s performance? There are many different ways to evaluate algorithms. The most common evaluation metrics for classification tasks are accuracy, precision, and recall. In order to calculate these metrics, we use a special table called a confusion matrix that will condense the information on what the model predicted and what the actual results should be.`],
+            
+            ["Evaluation of Model Performance", 
+            `The structure of a confusion matrix is shown above in the image. The confusion matrix is set up for a binary classifier, but it can be extended to suit more classes. We have the labels that a model could predict on the horizontal axis and the actual labels in the data set on the vertical axis. 
+            
+            True positives (TP) are the number of instances where the model predicts positive, and the result is actually positive. For example, going back to our fruit image example, the TP would be the number of times our algorithm correctly predicted that an image is of an apple. 
+            
+            False positives (FP) are the number of instances where the model predicts positive, but the result is actually negative. An example would be if our algorithm incorrectly predicted that an image is of an apple. 
+            
+            True negatives (TN) are the number of instances where the model predicts negative, and the result is actually negative. So, that means our algorithm correctly predicted that an image is not of an apple. 
+            
+            False negatives (FN) are the number of instances where the model predicts negative, but the result is actually positive. That would mean that our algorithm incorrectly predicted that an image is not of an apple.`],
+            
+            ["Evaluation of Model Performance", 
+            `The first evaluation metric we will discuss is accuracy. Accuracy measures how many predictions are correct out of the total amount of predictions. The formula for accuracy using the values from a confusion matrix is: 
+            Accuracy = (TP + TN) / (TP + TN + FP + FN). 
+            
+            Another way to look at the formula is: Number of correct predictions / Total number of predictions. 
+            
+            Let’s try calculating the accuracy based on the confusion matrix above. This is what we get after plugging in all of the values: 
+            Accuracy = (10 + 15) / (10 + 15 + 2 + 5) = 25/32 = 0.78. 
+            
+            So, in this example, our model achieved an accuracy of 78%.`],
+            
+            ["Evaluation of Model Performance", 
+            `Another popular evaluation metric is precision. Precision measures how many of the positive predictions are actually positive. The formula for precision is: 
+            Precision = TP / (TP + FP). 
+            
+            Now, let’s try calculating the precision of our model. A way to think about precision for this example is: Number of correct predictions for “Apple” / Total number of predictions for “Apple”. 
+            
+            What we get when we use the formula is: 
+            Precision = 10 / (10 + 2) = 10/12 = 0.83. 
+            
+            So, that means that our model was correct 83% of the times that it predicted “Apple”.`],
+            
+            ["Evaluation of Model Performance", 
+            `The last evaluation metric that we will cover is recall. Recall measures how many of the actual positives are identified correctly. The formula for recall is: 
+            Recall = TP / (TP + FN). 
+            
+            Let’s calculate the recall of our model. We can think of recall in this example as: Number of correct predictions for “Apple” / Total number of actual “Apple” images. 
+            
+            After plugging in the values in the formula, we get: 
+            Recall = 10 / (10 + 5) = 10/15 = 0.67. 
+            
+            So, our model only correctly identified 67% of all images presented to it with apples.`],
+        ],
+        QuizPool: [
+            ["What is test data?",
+                "Data used to evaluate a model's performance", 
+                "Data used to train a model", 
+                "Data that is labeled", 
+                "Data used to calculate accuracy"],
+            ["What is a confusion matrix?",
+                "Table that displays what a model predicted vs what the actual label is", 
+                "Table that shows accuracy, precision, and recall", 
+                "Table that contains all of the test data", 
+                "Table that contains all of the training data"],
+            ['Compute the accuracy if TP = 5, TN = 1, FP = 1, and FN = 5 using the formula Accuracy = (TP + TN) / (TP + TN + FP + FN).', 
+                "50%", 
+                "30%", 
+                "63%", 
+                "25%"],
+            ['Compute the precision if TP = 5, TN = 1, FP = 1, and FN = 5 using the formula Precision = TP / (TP + FP).', 
+                "83%", 
+                "57%", 
+                "32%", 
+                "61%"],
+            ['Compute the recall if TP = 5, TN = 1, FP = 1, and FN = 5 using the formula Recall = TP / (TP + FN).', 
+                "50%", 
+                "41%", 
+                "60%", 
+                "75%"],
+        ],
+        QuizSize: 5,
+        ModuleImg: 
+            ["performance.jpeg", "train-test.png", "data-split.png", "performance.jpeg", "conf-matrx.png", "accuracy.png", "precision.png", "recall.png"],
+        Description: "Evaluation of Models"
+    },
+    {
+        Title: "MODULE 7",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             ["Classification Algorithms - Logistic Regression", 
             `One of the simplest classification algorithms is logistic regression. Now you might wonder why it is called “logistic regression” if it is a classification algorithm. Well, logistic regression is technically considered a regression algorithm since it makes use of a mathematical function to output numerical values, but many people think of it as a classification algorithm because the model is mainly applied to classification tasks.
@@ -399,12 +493,12 @@ export const modulesData = [
         ],
         QuizSize: 5,
         ModuleImg: 
-            ["computer.jpeg", "sigmoid-function.png", "log-reg-data.png", "log-reg-results.png", "", "computer.jpeg", "knn-scatter.png", "knn-results.png", "", "", "dt-result-tree.png", "dt-results.png"],
+            ["binary-class.png", "sigmoid-function.png", "log-reg-data.png", "log-reg-results.png", "scatterplot.png", "knn.png", "knn-scatter.png", "knn-results.png", "tree.png", "dt.png", "dt-result-tree.png", "dt-results.png"],
         Description: "Classification Algorithms"
     },
     {
-        Title: "MODULE 7",
-        Image: "https://picsum.photos/id/22/300/200",
+        Title: "MODULE 8",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             ["Regression Algorithms - Linear Regression", 
             `The most basic and simplest regression algorithm is linear regression. It is also usually the easiest to understand. The linear regression model is defined by its linear function which it applies to data to output a predicted value. The linear function is shown above and can be represented by a simple equation: 
@@ -484,12 +578,13 @@ export const modulesData = [
         ],
         QuizSize: 4,
         ModuleImg: 
-            ["linear-function.png", "linear-regression.svg", "codeva.jpeg", "lin-reg-line-graph.png", "lin-reg-line.png", "lin-reg-pred.png", "polynomial-function.png", "", "poly-reg-line-graph.png", "poly-reg-compare.png"],
+            ["linear-function.png", "linear-regression.svg", "mlr.png", "lin-reg-line-graph.png", "lin-reg-line.png", "lin-reg-pred.png", "polynomial-function.png", "height.jpeg", "poly-reg-line-graph.png", "poly-reg-compare.png"],
         Description: "Regression Algorithms"
     },
+
     {
-        Title: "MODULE 8",
-        Image: "https://picsum.photos/id/22/300/200",
+        Title: "MODULE 9",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             ["Unsupervised Learning", 
             `The second type of machine learning that we will learn is unsupervised learning. While supervised learning uses labeled data to train the model, unsupervised learning uses unlabeled data, hence the name “unsupervised learning.” Additionally, while the purpose of a supervised learning model is to make predictions on new data based on its training data, an unsupervised learning model is forced to find patterns in the data on its own and categorize it based on similarities in the data.
@@ -557,13 +652,13 @@ export const modulesData = [
         ],
         QuizSize: 4,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg", "computer.jpeg", "clustering2.jpeg", "clustering1.jpeg", "kmeans-before.png", "kmeans-after.png"],
+            ["unlabeled.jpg", "cluster.png", "green-red-apple.jpg", "friend-network.jpg", "clustering2.jpeg", "clustering1.jpeg", "kmeans-before.png", "kmeans-after.png"],
         Description: "Unsupervised Learning"
     },
 
     {
-        Title: "MODULE 9",
-        Image: "https://picsum.photos/id/22/300/200",
+        Title: "MODULE 10",
+        Image: "module-thumbnail.jpeg",
         Pages: [
             ["Semi-supervised Learning", 
             `The third type of machine learning that we will briefly cover is semi-supervised learning. If you recall, supervised learning uses labeled data to train models and unsupervised learning uses unlabeled data. Accordingly, semi-supervised learning uses a mix of both labeled and unlabeled data when training models. 
@@ -643,46 +738,7 @@ export const modulesData = [
         ],
         QuizSize: 3,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"],
+            ["semi-sup.png", "data.jpeg", "ssl-data-split.png", "speech.jpg", "trial-error.jpeg", "dog.jpg", "ai-chess.jpg"],
         Description: "Semi-supervised Learning"
-    },
-
-    {
-        Title: "MODULE 10",
-        Image: "https://picsum.photos/id/22/300/200",
-        Pages: [
-            ["TITLE", "CONTENT"],
-            
-            ["TITLE 2", `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, nunc iaculis vulputate sagittis, sem tortor semper leo, at varius elit ipsum et metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Duis blandit risus mauris, sit amet pulvinar eros interdum in. Aliquam efficitur odio at suscipit viverra. Etiam nibh tellus, iaculis sed metus mattis, semper consequat felis. Donec elementum rhoncus ligula rhoncus aliquam. Praesent lacinia sapien ligula, semper vehicula libero pulvinar at. Maecenas nibh lorem, condimentum non justo in, imperdiet finibus nibh.
-
-            Sed ac condimentum urna. Cras nulla dui, rhoncus a euismod non, facilisis dapibus elit. Phasellus ut sodales mi. Cras tempus id nisl non efficitur. Nullam lorem tellus, imperdiet eu dui at, rhoncus tristique quam. Cras egestas, orci vitae hendrerit blandit, ipsum magna iaculis libero, placerat pharetra nulla velit eu magna. Duis consequat ut diam rhoncus vestibulum. Cras vitae consequat orci. Morbi et laoreet lacus, in faucibus ex. Nulla facilisi. Donec suscipit nibh ut velit tristique, a rhoncus sapien porta. Morbi ex nisi, facilisis id purus quis, ultricies commodo purus. Ut egestas nulla sit amet tellus accumsan, dictum hendrerit mauris tristique. Etiam elit dolor, fringilla eget quam varius, dignissim maximus purus. Curabitur sed pulvinar risus.
-            
-            Phasellus eu elit ultricies erat dapibus finibus. Nulla hendrerit vestibulum augue in eleifend. Vestibulum sit amet faucibus elit. Sed sit amet ligula non orci bibendum condimentum sit amet eu lectus. Praesent non eros et justo tempor eleifend. Etiam ultricies velit elit, sit amet pharetra lacus luctus ut. Suspendisse consequat dui elit, quis accumsan ipsum finibus a. Donec quis odio risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            
-            Phasellus non purus sed libero sagittis dignissim. Morbi ornare leo faucibus turpis iaculis, gravida dignissim dolor semper. Maecenas facilisis tristique bibendum. Donec in tincidunt turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sit amet tortor vitae dolor mattis pellentesque. Vivamus non elit lobortis, egestas neque a, dictum metus. Donec finibus nulla lorem, vel suscipit dolor bibendum quis. Suspendisse vulputate vel libero et ultrices. Nam ac molestie massa.
-            
-            Curabitur tincidunt in dolor a maximus. Vestibulum commodo viverra suscipit. Nulla facilisi. Phasellus venenatis dignissim ante sit amet elementum. Cras massa ligula, tempor sit amet aliquam nec, dictum a quam. Phasellus pharetra euismod eros. Praesent ullamcorper quam felis, sit amet elementum elit hendrerit et. Vivamus faucibus et libero vitae pulvinar. Sed consectetur at arcu vel cursus. Pellentesque iaculis velit erat, et fringilla ipsum consequat vel. Nunc ut purus ac ipsum varius commodo lacinia vel nisi. In convallis tortor eros, non vestibulum risus rutrum ac.`],
-            
-            ["TITLE 3", `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, nunc iaculis vulputate sagittis, sem tortor semper leo, at varius elit ipsum et metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Duis blandit risus mauris, sit amet pulvinar eros interdum in. Aliquam efficitur odio at suscipit viverra. Etiam nibh tellus, iaculis sed metus mattis, semper consequat felis. Donec elementum rhoncus ligula rhoncus aliquam. Praesent lacinia sapien ligula, semper vehicula libero pulvinar at. Maecenas nibh lorem, condimentum non justo in, imperdiet finibus nibh.
-
-            Sed ac condimentum urna. Cras nulla dui, rhoncus a euismod non, facilisis dapibus elit. Phasellus ut sodales mi. Cras tempus id nisl non efficitur. Nullam lorem tellus, imperdiet eu dui at, rhoncus tristique quam. Cras egestas, orci vitae hendrerit blandit, ipsum magna iaculis libero, placerat pharetra nulla velit eu magna. Duis consequat ut diam rhoncus vestibulum. Cras vitae consequat orci. Morbi et laoreet lacus, in faucibus ex. Nulla facilisi. Donec suscipit nibh ut velit tristique, a rhoncus sapien porta. Morbi ex nisi, facilisis id purus quis, ultricies commodo purus. Ut egestas nulla sit amet tellus accumsan, dictum hendrerit mauris tristique. Etiam elit dolor, fringilla eget quam varius, dignissim maximus purus. Curabitur sed pulvinar risus.
-            
-            Phasellus eu elit ultricies erat dapibus finibus. Nulla hendrerit vestibulum augue in eleifend. Vestibulum sit amet faucibus elit. Sed sit amet ligula non orci bibendum condimentum sit amet eu lectus. Praesent non eros et justo tempor eleifend. Etiam ultricies velit elit, sit amet pharetra lacus luctus ut. Suspendisse consequat dui elit, quis accumsan ipsum finibus a. Donec quis odio risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            
-            Phasellus non purus sed libero sagittis dignissim. Morbi ornare leo faucibus turpis iaculis, gravida dignissim dolor semper. Maecenas facilisis tristique bibendum. Donec in tincidunt turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sit amet tortor vitae dolor mattis pellentesque. Vivamus non elit lobortis, egestas neque a, dictum metus. Donec finibus nulla lorem, vel suscipit dolor bibendum quis. Suspendisse vulputate vel libero et ultrices. Nam ac molestie massa.
-            
-            Curabitur tincidunt in dolor a maximus. Vestibulum commodo viverra suscipit. Nulla facilisi. Phasellus venenatis dignissim ante sit amet elementum. Cras massa ligula, tempor sit amet aliquam nec, dictum a quam. Phasellus pharetra euismod eros. Praesent ullamcorper quam felis, sit amet elementum elit hendrerit et. Vivamus faucibus et libero vitae pulvinar. Sed consectetur at arcu vel cursus. Pellentesque iaculis velit erat, et fringilla ipsum consequat vel. Nunc ut purus ac ipsum varius commodo lacinia vel nisi. In convallis tortor eros, non vestibulum risus rutrum ac.`],
-
-            
-        ],
-        QuizPool: [
-            ["QUESTION A", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
-            ["QUESTION B", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
-            ["QUESTION C", "CORRECT ANSWER", "OPTION", "OPTION", "OPTION"],
-        ],
-        QuizSize: 2,
-        ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"],
-        Description: "Module 10"
     },
 ];
