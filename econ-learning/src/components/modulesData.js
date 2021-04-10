@@ -4,37 +4,42 @@ export const modulesData = [
         Image: "module-thumbnail.jpeg",
         Pages: [
             ["Introduction to the Stock Market", 
-            `To recap what the stock market is and what its purpose is from your economics class: the stock market is when individuals, like you and myself, can buy shares, or just little titles that grant them a small ownership of a company. And, as the owner, you are entitled to its profits. If you invest stock in a company and the company performs very well, your stock will perform very well.`],
+            `A stock market is a place where individuals come together to buy and sell stocks. Stocks are an investment in a company, and it grants the buyer a small ownership of a company which is otherwise known as a share. As the shareholder, the buyer is then entitled to the benefits of a company’s success. If you invest stock in a company and the company performs very well, your stock will perform very well.`],
 
             ["Introduction to the Stock Market", 
-            `Another thing is that there is a limited amount of stock per company. So, a company that is doing really well may have lots of people go and purchase stock from it. Much like other economic goods, the stocks follow the law of supply and demand, meaning when the demand goes up, the supply goes lower. And when that is the case, the price increases. Consequently, when demand is low, supply is high, and the price drops.`],
+            `There is also limited amount of stock per company. So, a company that is doing really well may have lots of people go and purchase stock from it. Much like other economic goods, the stocks follow the law of supply and demand, meaning when the demand goes up, the supply goes lower. When that is the case, the price increases. Consequently, when demand is low, supply is high, and the price drops.`],
 
             ["Introduction to the Stock Market", 
-            `Computes have made many aspects of our lives easier, they essentially act as an all purpose tool or a really, really complex swiss army knife. Before in the 50’s and 60’s you had an insurance company, for example, holding warehouses of documents, but now you can store them on a computer. Before in a grocery store people would need to check each gallon of milk hand-by-hand to see what is about to go bad, and sell that before the stuff that expires later on. Now, a computer can scan barcodes on each of the milk, and tell you if you should sell it or not. It really automates this process.`],
-
-            ["Introduction to the Stock Market", 
-            `People try to use automation from computers on the stock market. After all, if a machine can tell the grocery store what milk should go on the shelves, can a machine tell me what stock to purchase if I am trying to make profit? Can a machine predict a stock price going up? Can a machine predict when I need to sell?`],
-
-            ["Introduction to the Stock Market", 
-            `Maybe. The process of a machine learning is, intuitively, machine learning. The goal of this course is to explain to you how and why machines will learn and how you can use that in a real life example, the stock market.`],
+            `All of the stocks and the changes in prices, supply, and demand are tracked in exchanges on the stock market. Some of the biggest stock exchanges in the world are the New York Stock Exchange (NYSE) and the Nasdaq. These particular exchanges track the stocks of many of the world’s leading companies, such as Google, Apple, and Amazon. 
             
+            Additionally, the overall performance of a group of stocks is tracked by a market index. The indexes indicate whether the value of the stocks has been increasing or decreasing compared to the previous day. This information from the indexes assists individuals in determining whether to buy or sell stocks. Some of the biggest indexes include the Dow Jones Industrial Average (DJIA) and the S&P 500.`],
+
+            ["Introduction to the Stock Market", 
+            `Another thing to consider is that stock prices change over time. The goal of investing in a company is to gain more money back. Some companies may perform well, and you can reap its benefits through the stocks you bought. However, other companies may not perform so well and might even go bankrupt. In the case that you had bought shares of the company, this means that you may lose some or all of your money that you invested in the company. 
+            
+            So, a better way to reduce this risk may be to buy stocks from multiple companies instead of going all-in on one. This way, even if a company you invested in does poorly, you will have other companies to rely on and you will not lose all of your investments.`],
+
+            ["Introduction to the Stock Market", 
+            `For example, an instance of the worst-case scenario that could occur when investing all of your money in one company is a stock market crash. A crash is when the value of a particular stock or all stocks drop very sharply. This can happen for various reasons, and there is never a clear-cut answer. 
+            
+            There are people in the world that control 50%, 80%, or more of the shares from a single company. In one instance, if they were to sell all of their stocks one day, the supply of the stocks would become astronomically high. However, the demand for the stocks would not have changed. As a result, the price of that stock will plunge, and selling the stock at that point might lead to losing more money than you invested.`],
         ],
         QuizPool: [
-            ["What is a program?",
-                "A set of instructions that tells a machine how to execute a task",
-                "A study of computers and how we can use them to solve problems",
-                "A machine that takes in an input and produces an output",
-                "A physical component of a computer"],
-            ["What is the function of a machine learning model?",
-                "To take in an input, apply the patterns learned from the training data, and produce an output, such as a prediction",
-                "To follow the exact instructions set by programmers to complete a task",
-                "To control a robot",
-                "To make human-like machines"],
-            ["Which of these are examples of training data?",
-                "All of the choices",
-                "Text",
-                "Images",
-                "Numbers"],
+            ["What is a stock?",
+                "An investment that grants the buyer a share of a company",
+                "A place to trade shares of companies",
+                "The money you get back from an investment",
+                "A value that tracks the performance of the stock market"],
+            ["What happens to the price of a stock when supply is high and demand is low?",
+                "The price drops",
+                "The price stays the same",
+                "The price rises",
+                "The price goes to 0"],
+            ["What is the risk in investing all of your money into buying stocks from one company?",
+                "You could lose all of your money if the company goes bankrupt",
+                "You gain a lot of money",
+                "It is easier to trade stocks with other buyers",
+                "The company you invested in will always perform well"],
         ],
         QuizSize: 3,
         ModuleImg: 
