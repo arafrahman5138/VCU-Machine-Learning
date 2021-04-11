@@ -7,7 +7,7 @@ export const modulesData = [
             `A stock market is a place where individuals come together to buy and sell stocks. Stocks are an investment in a company, and it grants the buyer a small ownership of a company which is otherwise known as a share. As the shareholder, the buyer is then entitled to the benefits of a company’s success. If you invest stock in a company and the company performs very well, your stock will perform very well.`],
 
             ["Introduction to the Stock Market", 
-            `There is also limited amount of stock per company. So, a company that is doing really well may have lots of people go and purchase stock from it. Much like other economic goods, the stocks follow the law of supply and demand, meaning when the demand goes up, the supply goes lower. When that is the case, the price increases. Consequently, when demand is low, supply is high, and the price drops.`],
+            `There is also limited amount of stock per company. So, a company that is doing really well may have lots of people go and purchase stock from it. Much like other economic goods, the stocks follow the law of supply and demand. This means that when the demand for stocks increases and the supply decreases, the price of stocks increases. Additionally, when the demand for stocks decreases and the supply increases, the price of stocks decreases.`],
 
             ["Introduction to the Stock Market", 
             `All of the stocks and the changes in prices, supply, and demand are tracked in exchanges on the stock market. Some of the biggest stock exchanges in the world are the New York Stock Exchange (NYSE) and the Nasdaq. These particular exchanges track the stocks of many of the world’s leading companies, such as Google, Apple, and Amazon. 
@@ -52,54 +52,50 @@ export const modulesData = [
         Image: "module-thumbnail.jpeg",
         Pages: [
             
-            ["Stock Market Basics Part 1", 
-            `In machine learning and the stock market, there are a couple of variables that must be gone over before we continue. So, we already know what a stock is. It is described as a portion of a company that is shared with you. Some common stock market lingo may be thrown around in this course.`],
+            ["Stock Market Terminology", 
+            `Now that we have discussed the basics of the stock market, we will cover important terminologies related to the stock market. You may come across many of these terms in the future if you decide to become involved in the trading of stocks. Additionally, several of these terms may be referred to in later modules when we learn how to use machine learning to assist us in the matters of the stock market.`],
 
-            ["Stock Market Basics Part 1", 
-            `For example, a crash is when a stock in particular, or all stocks, seem to lose their value. This can happen for an array of reasons, and there is never a clear cut answer. There are real life people in the world that control maybe 50%, 80%, or however much of a stock of one single company. If they were to sell all of their stock one day, let's say this person is retiring, supply would be astronomically high, but demand for the consumer has not changed and so the price of that stock will crash a lot.`],
-
-            ["Stock Market Basics Part 1", 
-            `If we use our computer to tell us when to buy and sell stocks, our computer is a broker. A broker is someone (or in our case something) that tells you when to buy and sell stocks, simple as that. These types of people exist because they spend every moment of their day looking at what companies are doing and how they are performing, and can have a much clearer answer for what the price of a stock is going to be compared to someone who has googled it once.`],
-
-            ["Stock Market Basics Part 1", 
-            `There is day trading in the stock market, which is buying and selling a share in a single day. The prices of stocks are always shifting, and something as arbitrary as 5 PM rolling around may make the prices of stocks go up or go down. In this course we will go over machine learning principles that can help with day trading and with longer term investments.`],
-
-            ["Stock Market Basics Part 1", 
-            `Dividends are payments to stock shareholders that companies pay. Obviously if your company is a billion dollar company, you could expect a lot of money in the dividends. This is one of the key aspects that determines what people buy and sell.`],
-
-            ["Stock Market Basics Part 1", 
-            `Highs and Lows are, intuitively, prices a stock is reaching for the first time. It may be the first time a price is the most expensive it has been, or the first time a price is the lowest it has been.`],
-
-            ["Stock Market Basics Part 1", 
-            `As for machine learning, you probably have heard the term algorithm before. An algorithm is basically a set of instructions that the computer follows. Many people who go to study computer science will learn of sorting algorithms, or algorithms that basically sort things from smallest to largest. This is one of the most basic kinds of algorithms and also one that's very practical. Much like how when making a cake, you need ingredients and then need to prepare them in a certain order, algorithms need something to work with (ingredients) and instructions (the recipe for the cake). For example, if I owned a grocery store, I could sort all of my gallons of milk in order to know what is going to expire the soonest to latest, so I know what order to sell them in.`],
-
-            ["Stock Market Basics Part 1", 
-            `A machine is said to learn when its performance gets better with the more data I give it. Machine learning is often used with image detection and is one of the key principles in self-driving cars. Self-driving cars need to know how to recognize what is a stop sign, what is a pedestrian, and so on. So, one way to train it is to feed the algorithm 100,000 pictures of stop signs and then let it decide what is what. If it is a picture of a stop sign and it says it's a stop sign, then it succeeded.. If it says it not a picture and but it turns out it was a picture of a stop sign, then the algorithm will know it made a mistake and tweak itself slightly in hopes of making more correct answers.`],
-
-            ["Stock Market Basics Part 1", 
-            `When machines learn quickly, they make many mistakes, but do more tweaking to their algorithm and can ultimately start making fewer mistakes as a whole sooner. Consequently machines learning slowly means they make fewer mistakes but take a much longer time to reach as few mistakes as possible.`],
+            ["Stock Market Terminology", 
+            `Dividends are portions of a company’s profits that are paid to their shareholders. In other words, dividends are the income an individual would receive for owning the stock of a company. The amount of money gain from a dividend depends on the company’s earnings. The higher the earnings of a company, the higher the dividends that their shareholders receive. This is one of the key factors in determining which companies to buy stocks from. However, it is also important to realize that not all companies pay dividends to their shareholders.`],
+            
+            ["Stock Market Terminology", 
+            `Day trading is the buying and selling of stocks in a single trading day. This is considered a short-term strategy to earn money from stocks. Usually, day traders buy stocks in the morning when the stock market opens and sell them in the afternoon before the stock market closes. The prices of stocks are always shifting, even throughout the period of one day. Although the shift in prices may not be significant, day trading is a good method to quickly maximize returns.`],
+            
+            ["Stock Market Terminology", 
+            `An opening price is the price of the first trading of stocks that occur after the stock market opens up for the day. For example, right after the market opens for trading, the first stock trade of the day involved the buying and selling of stocks priced at $40. Then, the opening price of the day would be $40. 
+            
+            On the other hand, a closing price is the price of the last trading of stocks that occur before the stock market closes up for the day. Now let’s say, right before the market closes for trading, the last stock trade of the day involved the buying and selling of stocks priced at $50. Then, the closing price of the day would be $50. These values are especially useful for day trading since they can be analyzed to measure day-to-day results.`],
+            
+            ["Stock Market Terminology", 
+            `A high price is the highest price that a stock was traded for in a given period of time. Accordingly, a low price is the lowest price that a stock was traded for in a given period of time. You could easily see a stock’s high and low prices for any period of time. A common period of time that many people keep track of the high and low prices is one day. Looking at the daily highs and lows is important for day trading. Another common period of time is 52 weeks or one year. This helps with looking at a stock’s annual performance.`],
+            
+            ["Stock Market Terminology", 
+            `A moving average is the average price for a share over a period of time for a stock. The time period for a moving average can be 10 days, 30 minutes, 50 days, or any range that a trader might want. A moving average is a good indicator of whether a stock is performing well overall or not. If it increases, then the stock has an overall upward trend. On the other hand, if it decreases, then the stock has an overall downward trend. This allows traders to determine whether it is a good idea to buy or sell the stock.`],
+            
+            ["Stock Market Terminology", 
+            `The volume of a stock is the number of shares that is traded within a particular period of time. That means that every time shares get traded between buyers and sellers, that number of shares gets added to the total volume. So, volume is also a way to gauge market strength. The higher the volume, the stronger a market is. Additionally, the volume can also indicate a new trend in the market.`],
         ],
         QuizPool: [
-            ["What is a program?",
-                "A set of instructions that tells a machine how to execute a task",
-                "A study of computers and how we can use them to solve problems",
-                "A machine that takes in an input and produces an output",
-                "A physical component of a computer"],
-            ["What is the function of a machine learning model?",
-                "To take in an input, apply the patterns learned from the training data, and produce an output, such as a prediction",
-                "To follow the exact instructions set by programmers to complete a task",
-                "To control a robot",
-                "To make human-like machines"],
-            ["Which of these are examples of training data?",
-                "All of the choices",
-                "Text",
-                "Images",
-                "Numbers"],
+            ["What is a dividend?",
+                "A portion of a company’s profits that are paid to their shareholders",
+                "The buying and selling of stocks in a single trading day",
+                "The number of shares that is traded within a particular period of time",
+                "The highest price that a stock was traded for in a given period of time"],
+            ["What is the term for the number of shares that is traded within a particular period of time?",
+                "Volume",
+                "Moving average",
+                "High price",
+                "Open price"],
+            ["What is closing price?",
+                "The price of the first trading of stocks that occur after the stock market opens up for the day",
+                "The average price for a share over a period of time for a stock",
+                "The lowest price that a stock was traded for in a given period of time",
+                "The price of the last trading of stocks that occur before the stock market closes up for the day"],
         ],
         QuizSize: 3,
         ModuleImg: 
             ["computer.jpeg", "codeva.jpeg", "computer.jpeg", "codeva.jpeg"],
-        Description: "Stock Market Basics Part 1"
+        Description: "Stock Market Terminology"
     },
 
     {
