@@ -56,7 +56,7 @@ export default function Quiz8() {
 		],
 	},
 	{
-		questionText: modulesData[7].QuizPool[2][0],
+		questionText: modulesData[7].QuizPool[3][0],
 		answerOptions: [
 			{ answerText: modulesData[7].QuizPool[3][1], isCorrect: true },
 			{ answerText: modulesData[7].QuizPool[3][2], isCorrect: false },

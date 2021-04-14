@@ -41,7 +41,7 @@
 }
 
 .modulesCard:hover .cardOverlay {
-    opacity: 0.1;
+    opacity: 0;
 }
 
 
@@ -63,7 +63,7 @@
 
 .modulesCard .cardOverlay {
     background: rgb(68,68,68);
-    background: linear-gradient(135deg, rgba(68,68,68,1) 0%, rgba(68,68,68,0) 75%);
+    background: linear-gradient(180deg, rgba(68,68,68,0.75) 0%, rgba(68,68,68,0) 50%);
 
     transition: 0.4s;
 

@@ -56,12 +56,21 @@ export default function Quiz7() {
 		],
 	},
 	{
-		questionText: modulesData[6].QuizPool[2][0],
+		questionText: modulesData[6].QuizPool[3][0],
 		answerOptions: [
 			{ answerText: modulesData[6].QuizPool[3][1], isCorrect: true },
 			{ answerText: modulesData[6].QuizPool[3][2], isCorrect: false },
 			{ answerText: modulesData[6].QuizPool[3][3], isCorrect: false },
 			{ answerText: modulesData[6].QuizPool[3][4], isCorrect: false },
+		],
+	},
+	{
+		questionText: modulesData[6].QuizPool[4][0],
+		answerOptions: [
+			{ answerText: modulesData[6].QuizPool[4][1], isCorrect: true },
+			{ answerText: modulesData[6].QuizPool[4][2], isCorrect: false },
+			{ answerText: modulesData[6].QuizPool[4][3], isCorrect: false },
+			{ answerText: modulesData[6].QuizPool[4][4], isCorrect: false },
 		],
 	},
 	];

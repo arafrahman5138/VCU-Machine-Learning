@@ -3,10 +3,21 @@
     "",
     "\\econ-learning",
     "\\econ-learning\\src",
+<<<<<<< HEAD
     "\\econ-learning\\src\\components",
     "\\econ-learning\\src\\components\\quizzes",
+||||||| abc7845
+=======
+    "\\econ-learning\\src\\components",
+>>>>>>> 596949a899cae3110aaecce98ff0a67ab2cedf06
     "\\econ-learning\\src\\pages"
   ],
+<<<<<<< HEAD
   "SelectedNode": "\\econ-learning\\src\\components\\quizzes\\Quiz1.js",
+||||||| abc7845
+  "SelectedNode": "\\econ-learning\\src\\pages\\Register.css",
+=======
+  "SelectedNode": "\\econ-learning",
+>>>>>>> 596949a899cae3110aaecce98ff0a67ab2cedf06
   "PreviewInSolutionExplorer": false
 }
