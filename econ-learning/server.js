@@ -62,6 +62,42 @@ app.post("/login", async (req, res) => {
   });
 });
 
+/////////////// DATA COLLECTION ///////////////
+app.get("/ModuleProgress", async (req, res) => {
+  const { authorization } = req.headers;
+  const [, token] = authorization.split(" ");
+  const [username, password, module1] = token.split(":");
+  const user = await User.findOne({ username }).exec();
+  if (!user || user.password !== password) {
+    res.status(403);
+    res.json({
+      message: "invalid access",
+    });
+    return;
+  }
+  const todo = await User.findOne({username: username}).exec();
+  var todos = [todo]
+  res.json(todos);
+});
+
+app.get("/TestingDragChart", async (req, res) => {
+  const { authorization } = req.headers;
+  const [, token] = authorization.split(" ");
+  const [username, password, module1] = token.split(":");
+  const user = await User.findOne({ username }).exec();
+  if (!user || user.password !== password) {
+    res.status(403);
+    res.json({
+      message: "invalid access",
+    });
+    return;
+  }
+  const todo = await User.findOne({username: username}).exec();
+  var todos = [todo]
+  res.json(todos);
+});
+////////////////////////////////////////////////
+
 ////////////////// MODULE 1 //////////////////
 app.post("/Quiz1", async (req, res) => {
   const { username, password, tokens} = req.body;

@@ -3,8 +3,10 @@
     "",
     "\\econ-learning",
     "\\econ-learning\\src",
+    "\\econ-learning\\src\\components",
+    "\\econ-learning\\src\\components\\quizzes",
     "\\econ-learning\\src\\pages"
   ],
-  "SelectedNode": "\\econ-learning\\src\\pages\\Register.css",
+  "SelectedNode": "\\econ-learning\\src\\components\\quizzes\\Quiz1.js",
   "PreviewInSolutionExplorer": false
 }
