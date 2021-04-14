@@ -7,6 +7,7 @@ import ModuleProgress from '../components/ModuleProgress'
 import Footer from '../components/Footer'
 import PageHeader from '../components/PageHeader/PageHeader'
 import SlideShow from '../components/SlideShow'
+import DisplayData from '../components/DisplayData'
 
 export const handleErrors = async (response) => {
   if (!response.ok) {
@@ -28,6 +29,7 @@ export default function Welcome() {
       <PageHeader title="Welcome to the CodeVa Machine Learning Course"></PageHeader><br/><br/><br/><br/>
       <div className ="wrapper">
       {credentials && <h2 className="credentials"><br/><br/>Welcome {credentials.username}</h2>}<br/><br/>
+      {credentials && <DisplayData />}
       <div id ="LRbtns">
       <br/>
       {!credentials && <Link class="registerBt" to="/register">Register</Link>}

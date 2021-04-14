@@ -1,21 +1,18 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { CredentialsContext } from "../App";
-import { v4 as uuidv4 } from "uuid";
 
-export default function DisplayData() {
-  const [tokens, setTokens] = useState([]);
-  const [todoText, setTodoText] = useState("");
-  const [credentials] = useContext(CredentialsContext);
-  const [filter, setFilter] = useState(100);
+const DisplayData = (props) => {
+    const [todos, setTodos] = useState([]);
+    const [credentials] = useContext(CredentialsContext);
 
-  const persist = (e) => {
+    const persist = () => {
     fetch(`http://localhost:4000/DisplayData`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Authorization: `Basic ${credentials.username}:${credentials.password}:${credentials.module1}`,
       },
-      body: JSON.stringify(e),
+      body: JSON.stringify(),
     }).then(() => {});
   };
 
@@ -28,36 +25,17 @@ export default function DisplayData() {
       },
     })
       .then((response) => response.json())
-      .then((tokens) => setTokens(tokens));
+      .then((todos) => setTodos(todos));
   }, []);
-
-  const getTodos = () => {
-    return users.filter(() =>
-      filter === "completed" ? todo.checked : !todo.checked
-    );
-  };
-
-  const changeFilter = (newFilter) => {
-    setFilter(newFilter);
-  };
 
   return (
     <div>
-      <select value={filter} onChange={(e) => changeFilter(e.target.value)}>
-        <option value="completed">Completed</option>
-        <option value="uncompleted">Uncompleted</option>
-      </select>
-
-      {getTodos().map((todo) => (
-        <div key={todo.id}>
-          <input
-            checked={todo.checked}
-            onChange={() => toggleTodo(todo.id)}
-            type="checkbox"
-          />
-          <label>{todo.text}</label>
-        </div>
+      {todos.map((todo) => (
+          <p>Account ID: {todo.accountid}</p>
       ))}
+      <br/><br/>
     </div>
   );
 }
+
+export default DisplayData

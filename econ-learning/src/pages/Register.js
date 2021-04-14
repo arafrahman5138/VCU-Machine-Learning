@@ -4,9 +4,19 @@ import { CredentialsContext } from "../App";
 import { handleErrors } from "./Login";
 import './Register.css';
 
+function getRandomString(length) {
+    var randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var result = '';
+    for ( var i = 0; i < length; i++ ) {
+        result += randomChars.charAt(Math.floor(Math.random() * randomChars.length));
+    }
+    return result;
+}
+
 export default function Register() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [accountid] = useState(getRandomString(8));
   const [tokens] = useState(0);
   const [module1] = useState(0);
   const [module2] = useState(0);
@@ -31,6 +41,7 @@ export default function Register() {
       body: JSON.stringify({
         username,
         password,
+        accountid,
         tokens,
         module1,
         module2,
@@ -49,6 +60,7 @@ export default function Register() {
         setCredentials({
           username,
           password,
+          accountid,
           tokens,
           module1,
           module2,
