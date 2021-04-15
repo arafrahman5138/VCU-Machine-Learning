@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Backend",
     "\\econ-learning",
     "\\econ-learning\\src",
     "\\econ-learning\\src\\components",
     "\\econ-learning\\src\\pages"
   ],
-  "SelectedNode": "\\econ-learning",
+  "SelectedNode": "\\econ-learning\\src\\pages\\Welcome.js",
   "PreviewInSolutionExplorer": false
 }

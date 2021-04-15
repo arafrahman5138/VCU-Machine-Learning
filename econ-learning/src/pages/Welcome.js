@@ -7,6 +7,7 @@ import ModuleProgress from '../components/ModuleProgress'
 import Footer from '../components/Footer'
 import PageHeader from '../components/PageHeader/PageHeader'
 import SlideShow from '../components/SlideShow'
+import DisplayData from '../components/DisplayData'
 
 export const handleErrors = async (response) => {
   if (!response.ok) {
@@ -28,6 +29,7 @@ export default function Welcome() {
       <PageHeader title="Welcome to the CodeVa Machine Learning Course"></PageHeader><br/><br/><br/><br/>
       <div className ="wrapper">
       {credentials && <h2 className="credentials"><br/><br/>Welcome {credentials.username}</h2>}<br/><br/>
+      {credentials && <DisplayData />}
       <div id ="LRbtns">
       <br/>
       {!credentials && <Link class="registerBt" to="/register">Register</Link>}
@@ -40,10 +42,7 @@ export default function Welcome() {
     // <center><img width = "1000px" height = "550px" src="images/codeva.jpeg"/></center>
     <center><SlideShow/></center>
     }
-    {credentials && <ModuleProgress m1={50} m2={40} m3={20} m4={80} m5={100} m6={90} m7={10} m8={50} m9={30} m10={40}/> }
-    
-    {credentials && '<br/><br/><br/>' && <DragChart/>} 
-    {credentials && `Tokens:`}
+    {credentials && <ModuleProgress/>}
     {!credentials && <Footer/>}
     </div>
     </>

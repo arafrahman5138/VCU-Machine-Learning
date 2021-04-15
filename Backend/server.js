@@ -14,6 +14,7 @@ mongoose.connect("mongodb+srv://fil:admin@cluster0.jqnnp.mongodb.net/myFirstData
 const userSchema = new mongoose.Schema({
   username: String,
   password: String,
+  accountid: String,
   tokens: Number,
   module1: Number,
   module2: Number,
@@ -31,8 +32,9 @@ const User = mongoose.model("User", userSchema);
 app.use(cors());
 app.use(express.json());
 
+/////////////// USER CREATION ///////////////
 app.post("/register", async (req, res) => {
-  const { username, password, tokens, module1, module2, module3, module4, module5, module6, module7, module8, module9, module10 } = req.body;
+  const { username, password, accountid, tokens, module1, module2, module3, module4, module5, module6, module7, module8, module9, module10 } = req.body;
   const user = await User.findOne({ username }).exec();
   if (user) {
     res.status(500);
@@ -41,7 +43,7 @@ app.post("/register", async (req, res) => {
     });
     return;
   }
-  await User.create({ username, password, tokens, module1, module2, module3, module4, module5, module6, module7, module8, module9, module10});
+  await User.create({ username, password, accountid, tokens, module1, module2, module3, module4, module5, module6, module7, module8, module9, module10});
   res.json({
     message: "success",
   });
@@ -61,6 +63,60 @@ app.post("/login", async (req, res) => {
     message: "success",
   });
 });
+////////////////////////////////////////////////
+
+/////////////// DATA COLLECTION ///////////////
+app.get("/DisplayData", async (req, res) => {
+  const { authorization } = req.headers;
+  const [, token] = authorization.split(" ");
+  const [username, password, module1] = token.split(":");
+  const user = await User.findOne({ username }).exec();
+  if (!user || user.password !== password) {
+    res.status(403);
+    res.json({
+      message: "invalid access",
+    });
+    return;
+  }
+  const todo = await User.findOne({username: username}).exec();
+  var todos = [todo]
+  res.json(todos);
+});
+
+app.get("/ModuleProgress", async (req, res) => {
+  const { authorization } = req.headers;
+  const [, token] = authorization.split(" ");
+  const [username, password, module1] = token.split(":");
+  const user = await User.findOne({ username }).exec();
+  if (!user || user.password !== password) {
+    res.status(403);
+    res.json({
+      message: "invalid access",
+    });
+    return;
+  }
+  const todo = await User.findOne({username: username}).exec();
+  var todos = [todo]
+  res.json(todos);
+});
+
+app.get("/TestingDragChart", async (req, res) => {
+  const { authorization } = req.headers;
+  const [, token] = authorization.split(" ");
+  const [username, password, module1] = token.split(":");
+  const user = await User.findOne({ username }).exec();
+  if (!user || user.password !== password) {
+    res.status(403);
+    res.json({
+      message: "invalid access",
+    });
+    return;
+  }
+  const todo = await User.findOne({username: username}).exec();
+  var todos = [todo]
+  res.json(todos);
+});
+////////////////////////////////////////////////
 
 ////////////////// MODULE 1 //////////////////
 app.post("/Quiz1", async (req, res) => {
