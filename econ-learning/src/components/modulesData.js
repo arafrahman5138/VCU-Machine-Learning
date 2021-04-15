@@ -43,7 +43,7 @@ export const modulesData = [
         ],
         QuizSize: 3,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg", "codeva.jpeg", "computer.jpeg"],
+            ["stock-market.jpeg", "demand.jpeg", "stock.jpg", "calculate.jpg", "crash.jpeg"],
         Description: "Introduction to the Stock Market"
     },
 
@@ -94,7 +94,7 @@ export const modulesData = [
         ],
         QuizSize: 3,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg", "codeva.jpeg"],
+            ["stock-graph.jpg", "money.jpg", "trade.jpg", "clock.jpg", "dollars.jpg", "stock-details.jpg", "volume.jpeg"],
         Description: "Stock Market Terminology"
     },
 
@@ -102,54 +102,43 @@ export const modulesData = [
         Title: "MODULE 3",
         Image: "module-thumbnail.jpeg",
         Pages: [
-            ["TITLE", "CONTENT"],
+            ["Stock Market and Machine Learning",
+            `In the past several decades, technology has made many advancements. These advancements have also changed the way people interact with the stock market. It used to be the case that you would have to rely on experts to manually analyze data on the stock market and give you advice on how certain stocks may perform. Now, we can use computers to analyze data in order to help us make investment decisions. This means that the analyzation process will be faster and more accurate.`],
             
-            ["TITLE 2", `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, nunc iaculis vulputate sagittis, sem tortor semper leo, at varius elit ipsum et metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Duis blandit risus mauris, sit amet pulvinar eros interdum in. Aliquam efficitur odio at suscipit viverra. Etiam nibh tellus, iaculis sed metus mattis, semper consequat felis. Donec elementum rhoncus ligula rhoncus aliquam. Praesent lacinia sapien ligula, semper vehicula libero pulvinar at. Maecenas nibh lorem, condimentum non justo in, imperdiet finibus nibh.
+            ["Stock Market and Machine Learning", 
+            `By providing a large amount of relevant data to a computer, the computer can observe and analyze the data to find trends and patterns. These findings can then be used to predict future trends and patterns. These are ways of how we can use a concept called machine learning to help us learn more about the movements of the stock market. We will discuss more about the topic of machine learning in the next module, but let’s talk more about some specific ways we can apply machine learning.`],
+            
+            ["Stock Market and Machine Learning", 
+            `One of the simplest ways that we can apply machine learning to data from the stock market is by predicting the stock prices. A computer can look through the previous prices of a particular stock. The stock prices can be within a period of one month, one year, or whatever an individual chooses. Then, the computer analyzes the historical stock prices to attempt to find a trend or pattern in the data. After it performs the analysis and finds a suitable explanation for the movement of the stock prices, the computer then uses its findings to predict the likely price of a stock in the future. 
+            
+            However, this method may not be very accurate since there are many possible spontaneous circumstances that might influence the stock market. Generally, though, using machine learning to predict stock prices is great as a guide to estimate how stocks will perform in the future.`],
 
-            Sed ac condimentum urna. Cras nulla dui, rhoncus a euismod non, facilisis dapibus elit. Phasellus ut sodales mi. Cras tempus id nisl non efficitur. Nullam lorem tellus, imperdiet eu dui at, rhoncus tristique quam. Cras egestas, orci vitae hendrerit blandit, ipsum magna iaculis libero, placerat pharetra nulla velit eu magna. Duis consequat ut diam rhoncus vestibulum. Cras vitae consequat orci. Morbi et laoreet lacus, in faucibus ex. Nulla facilisi. Donec suscipit nibh ut velit tristique, a rhoncus sapien porta. Morbi ex nisi, facilisis id purus quis, ultricies commodo purus. Ut egestas nulla sit amet tellus accumsan, dictum hendrerit mauris tristique. Etiam elit dolor, fringilla eget quam varius, dignissim maximus purus. Curabitur sed pulvinar risus.
+            ["Stock Market and Machine Learning", 
+            `In tandem with using machine learning to predict stock prices, we could also use machine learning to help us decide when to buy or sell stocks. The computer could estimate the future prices of a stock and then use that information to assist us in deciding whether it is a good idea to buy or sell. The computer will base their choice of buying or selling on the maximization of profit. This means that the computer will attempt to tell us when to buy or sell in a way that will get us the most amount of money. 
             
-            Phasellus eu elit ultricies erat dapibus finibus. Nulla hendrerit vestibulum augue in eleifend. Vestibulum sit amet faucibus elit. Sed sit amet ligula non orci bibendum condimentum sit amet eu lectus. Praesent non eros et justo tempor eleifend. Etiam ultricies velit elit, sit amet pharetra lacus luctus ut. Suspendisse consequat dui elit, quis accumsan ipsum finibus a. Donec quis odio risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            
-            Phasellus non purus sed libero sagittis dignissim. Morbi ornare leo faucibus turpis iaculis, gravida dignissim dolor semper. Maecenas facilisis tristique bibendum. Donec in tincidunt turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sit amet tortor vitae dolor mattis pellentesque. Vivamus non elit lobortis, egestas neque a, dictum metus. Donec finibus nulla lorem, vel suscipit dolor bibendum quis. Suspendisse vulputate vel libero et ultrices. Nam ac molestie massa.
-            
-            Curabitur tincidunt in dolor a maximus. Vestibulum commodo viverra suscipit. Nulla facilisi. Phasellus venenatis dignissim ante sit amet elementum. Cras massa ligula, tempor sit amet aliquam nec, dictum a quam. Phasellus pharetra euismod eros. Praesent ullamcorper quam felis, sit amet elementum elit hendrerit et. Vivamus faucibus et libero vitae pulvinar. Sed consectetur at arcu vel cursus. Pellentesque iaculis velit erat, et fringilla ipsum consequat vel. Nunc ut purus ac ipsum varius commodo lacinia vel nisi. In convallis tortor eros, non vestibulum risus rutrum ac.`],
-            
-            ["TITLE 3", `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, nunc iaculis vulputate sagittis, sem tortor semper leo, at varius elit ipsum et metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Duis blandit risus mauris, sit amet pulvinar eros interdum in. Aliquam efficitur odio at suscipit viverra. Etiam nibh tellus, iaculis sed metus mattis, semper consequat felis. Donec elementum rhoncus ligula rhoncus aliquam. Praesent lacinia sapien ligula, semper vehicula libero pulvinar at. Maecenas nibh lorem, condimentum non justo in, imperdiet finibus nibh.
+            So, a simple way to do this might be to buy a stock if the price today is lower than the price in the future. Additionally, if the price of a stock is higher than the price in the future, there may be a suggestion to sell the stock.`],
 
-            Sed ac condimentum urna. Cras nulla dui, rhoncus a euismod non, facilisis dapibus elit. Phasellus ut sodales mi. Cras tempus id nisl non efficitur. Nullam lorem tellus, imperdiet eu dui at, rhoncus tristique quam. Cras egestas, orci vitae hendrerit blandit, ipsum magna iaculis libero, placerat pharetra nulla velit eu magna. Duis consequat ut diam rhoncus vestibulum. Cras vitae consequat orci. Morbi et laoreet lacus, in faucibus ex. Nulla facilisi. Donec suscipit nibh ut velit tristique, a rhoncus sapien porta. Morbi ex nisi, facilisis id purus quis, ultricies commodo purus. Ut egestas nulla sit amet tellus accumsan, dictum hendrerit mauris tristique. Etiam elit dolor, fringilla eget quam varius, dignissim maximus purus. Curabitur sed pulvinar risus.
-            
-            Phasellus eu elit ultricies erat dapibus finibus. Nulla hendrerit vestibulum augue in eleifend. Vestibulum sit amet faucibus elit. Sed sit amet ligula non orci bibendum condimentum sit amet eu lectus. Praesent non eros et justo tempor eleifend. Etiam ultricies velit elit, sit amet pharetra lacus luctus ut. Suspendisse consequat dui elit, quis accumsan ipsum finibus a. Donec quis odio risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            
-            Phasellus non purus sed libero sagittis dignissim. Morbi ornare leo faucibus turpis iaculis, gravida dignissim dolor semper. Maecenas facilisis tristique bibendum. Donec in tincidunt turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sit amet tortor vitae dolor mattis pellentesque. Vivamus non elit lobortis, egestas neque a, dictum metus. Donec finibus nulla lorem, vel suscipit dolor bibendum quis. Suspendisse vulputate vel libero et ultrices. Nam ac molestie massa.
-            
-            Curabitur tincidunt in dolor a maximus. Vestibulum commodo viverra suscipit. Nulla facilisi. Phasellus venenatis dignissim ante sit amet elementum. Cras massa ligula, tempor sit amet aliquam nec, dictum a quam. Phasellus pharetra euismod eros. Praesent ullamcorper quam felis, sit amet elementum elit hendrerit et. Vivamus faucibus et libero vitae pulvinar. Sed consectetur at arcu vel cursus. Pellentesque iaculis velit erat, et fringilla ipsum consequat vel. Nunc ut purus ac ipsum varius commodo lacinia vel nisi. In convallis tortor eros, non vestibulum risus rutrum ac.`],
-
-            
+            ["Stock Market and Machine Learning", 
+            `We can also use machine learning to look through social media posts, news articles, or other online resources to see how people feel towards a certain company. You might wonder how the people’s sentiment towards a company would relate to the stock market. The public’s opinion can greatly influence the stocks of a company. If people view a company more positively, there is a higher chance that their stock prices might rise. On the other hand, if people view a company more negatively, there is a higher chance that their stock prices might drop. So, machine learning can also be used to evaluate how certain events or people’s outlook on a company can affect the stock market.`],
         ],
         QuizPool: [
-            ["What is a program?",
-                "A set of instructions that tells a machine how to execute a task",
-                "A study of computers and how we can use them to solve problems",
-                "A machine that takes in an input and produces an output",
-                "A physical component of a computer"],
-            ["What is the function of a machine learning model?",
-                "To take in an input, apply the patterns learned from the training data, and produce an output, such as a prediction",
-                "To follow the exact instructions set by programmers to complete a task",
-                "To control a robot",
-                "To make human-like machines"],
-            ["Which of these are examples of training data?",
-                "All of the choices",
-                "Text",
-                "Images",
-                "Numbers"],
+            ["Which is not an advantage of using computers to analyze stock market data?",
+                "The process involves more human resources",
+                "The analysis is faster",
+                "The computer can quickly look through a large amount of data",
+                "The analysis is more accurate"],
+            ["What is not a way to apply machine learning to stock market data?",
+                "To display the data on a graph",
+                "To find trends and patterns in data",
+                "To predict future stock prices",
+                "To analyze the people's feelings towards a certain company"],
         ],
-        QuizSize: 3,
+        QuizSize: 2,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"],
-        Description: "Stock Market Basics Part 2"
+            ["person-computer.jpg", "stock-market.jpg", "stock.jpg", "stocks.jpg", "social-media.jpg"],
+        Description: "Stock Market and Machine Learning"
     },
 
-    
     {
         Title: "MODULE 4",
         Image: "module-thumbnail.jpeg",
