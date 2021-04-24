@@ -1,3 +1,14 @@
+/*  Holds all of the module content, quiz content, and thumbnails.
+
+    Title - module number that will appear between the next and previous module buttons
+    Image - thumbnail of the module that will appear on the modules page
+    Pages - array of pages that belong in a module; the format of a page is ["Title of Page", `Content`]; adding or removing an item from the pages array also adds or removes page from the module
+    QuizPool - array of quiz questions and answers; the format of a quiz item is ["Question", "Correct answer", "Option B", "Option C", "Option D"]; in order to update the quizzes, go to the quizzes folder under components to edit
+    QuizSize - the number of elements in a quiz
+    ModuleImg - array of images sourced from public/images folder; the order of the images should follow the pages you want the images to correspond to; should have the same number of images as pages
+    Description - short description of the module that will appear when you hover over the thumbnail of a module in the modules page
+*/
+
 export const modulesData = [
     {
         Title: "MODULE 1",
