@@ -1,4 +1,4 @@
-// Uncomment all of the commented code and follow the instructions on the StyledButton.js file if you want to see styled buttons
+// Option between styled buttons or normal buttons
 
 import React from 'react';
 import { Link } from 'react-router-dom';

@@ -1,4 +1,4 @@
-// Uncomment commented code on this file and the page button files if you want styled buttons
+// For next and previous module buttons and there is a choice between normal and styled buttons
 
 import React from "react";
 import './ModuleNavHeader.css'

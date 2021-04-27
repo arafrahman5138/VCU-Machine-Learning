@@ -1,44 +1,60 @@
+/*  Holds all of the module content, quiz content, and thumbnails.
+
+    Title - module number that will appear between the next and previous module buttons
+    Image - thumbnail of the module that will appear on the modules page
+    Pages - array of pages that belong in a module; the format of a page is ["Title of Page", `Content`]; adding or removing an item from the pages array also adds or removes page from the module
+    QuizPool - array of quiz questions and answers; the format of a quiz item is ["Question", "Correct answer", "Option B", "Option C", "Option D"]; in order to update the quizzes, go to the quizzes folder under components to edit
+    QuizSize - the number of elements in a quiz
+    ModuleImg - array of images sourced from public/images folder; the order of the images should follow the pages you want the images to correspond to; should have the same number of images as pages
+    Description - short description of the module that will appear when you hover over the thumbnail of a module in the modules page
+*/
+
 export const modulesData = [
     {
         Title: "MODULE 1",
         Image: "module-thumbnail.jpeg",
         Pages: [
             ["Introduction to the Stock Market", 
-            `To recap what the stock market is and what its purpose is from your economics class: the stock market is when individuals, like you and myself, can buy shares, or just little titles that grant them a small ownership of a company. And, as the owner, you are entitled to its profits. If you invest stock in a company and the company performs very well, your stock will perform very well.`],
+            `A stock market is a place where individuals come together to buy and sell stocks. Stocks are an investment in a company, and it grants the buyer a small ownership of a company which is otherwise known as a share. As the shareholder, the buyer is then entitled to the benefits of a company’s success. If you invest stock in a company and the company performs very well, your stock will perform very well.`],
 
             ["Introduction to the Stock Market", 
-            `Another thing is that there is a limited amount of stock per company. So, a company that is doing really well may have lots of people go and purchase stock from it. Much like other economic goods, the stocks follow the law of supply and demand, meaning when the demand goes up, the supply goes lower. And when that is the case, the price increases. Consequently, when demand is low, supply is high, and the price drops.`],
+            `There is also limited amount of stock per company. So, a company that is doing really well may have lots of people go and purchase stock from it. Much like other economic goods, the stocks follow the law of supply and demand. This means that when the demand for stocks increases and the supply decreases, the price of stocks increases. Additionally, when the demand for stocks decreases and the supply increases, the price of stocks decreases.`],
 
             ["Introduction to the Stock Market", 
-            `Computes have made many aspects of our lives easier, they essentially act as an all purpose tool or a really, really complex swiss army knife. Before in the 50’s and 60’s you had an insurance company, for example, holding warehouses of documents, but now you can store them on a computer. Before in a grocery store people would need to check each gallon of milk hand-by-hand to see what is about to go bad, and sell that before the stuff that expires later on. Now, a computer can scan barcodes on each of the milk, and tell you if you should sell it or not. It really automates this process.`],
-
-            ["Introduction to the Stock Market", 
-            `People try to use automation from computers on the stock market. After all, if a machine can tell the grocery store what milk should go on the shelves, can a machine tell me what stock to purchase if I am trying to make profit? Can a machine predict a stock price going up? Can a machine predict when I need to sell?`],
-
-            ["Introduction to the Stock Market", 
-            `Maybe. The process of a machine learning is, intuitively, machine learning. The goal of this course is to explain to you how and why machines will learn and how you can use that in a real life example, the stock market.`],
+            `All of the stocks and the changes in prices, supply, and demand are tracked in exchanges on the stock market. Some of the biggest stock exchanges in the world are the New York Stock Exchange (NYSE) and the Nasdaq. These particular exchanges track the stocks of many of the world’s leading companies, such as Google, Apple, and Amazon. 
             
+            Additionally, the overall performance of a group of stocks is tracked by a market index. The indexes indicate whether the value of the stocks has been increasing or decreasing compared to the previous day. This information from the indexes assists individuals in determining whether to buy or sell stocks. Some of the biggest indexes include the Dow Jones Industrial Average (DJIA) and the S&P 500.`],
+
+            ["Introduction to the Stock Market", 
+            `Another thing to consider is that stock prices change over time. The goal of investing in a company is to gain more money back. Some companies may perform well, and you can reap its benefits through the stocks you bought. However, other companies may not perform so well and might even go bankrupt. In the case that you had bought shares of the company, this means that you may lose some or all of your money that you invested in the company. 
+            
+            So, a better way to reduce this risk may be to buy stocks from multiple companies instead of going all-in on one. This way, even if a company you invested in does poorly, you will have other companies to rely on and you will not lose all of your investments.`],
+
+            ["Introduction to the Stock Market", 
+            `For example, an instance of the worst-case scenario that could occur when investing all of your money in one company is a stock market crash. A crash is when the value of a particular stock or all stocks drop very sharply. This can happen for various reasons, and there is never a clear-cut answer. 
+            
+            There are people in the world that control 50%, 80%, or more of the shares from a single company. In one instance, if they were to sell all of their stocks one day, the supply of the stocks would become astronomically high. However, the demand for the stocks would not have changed. As a result, the price of that stock will plunge, and selling the stock at that point might lead to losing more money than you invested.`],
         ],
         QuizPool: [
-            ["What is a program?",
-                "A set of instructions that tells a machine how to execute a task",
-                "A study of computers and how we can use them to solve problems",
-                "A machine that takes in an input and produces an output",
-                "A physical component of a computer"],
-            ["What is the function of a machine learning model?",
-                "To take in an input, apply the patterns learned from the training data, and produce an output, such as a prediction",
-                "To follow the exact instructions set by programmers to complete a task",
-                "To control a robot",
-                "To make human-like machines"],
-            ["Which of these are examples of training data?",
-                "All of the choices",
-                "Text",
-                "Images",
-                "Numbers"],
+            ["What is a stock?",
+                "An investment that grants the buyer a share of a company",
+                "A place to trade shares of companies",
+                "The money you get back from an investment",
+                "A value that tracks the performance of the stock market"],
+            ["What happens to the price of a stock when supply is high and demand is low?",
+                "The price drops",
+                "The price stays the same",
+                "The price rises",
+                "The price goes to 0"],
+            ["What is the risk in investing all of your money into buying stocks from one company?",
+                "You could lose all of your money if the company goes bankrupt",
+                "You gain a lot of money",
+                "It is easier to trade stocks with other buyers",
+                "The company you invested in will always perform well"],
         ],
         QuizSize: 3,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg", "codeva.jpeg", "computer.jpeg"],
+            ["stock-market.jpeg", "demand.jpeg", "stock.jpg", "calculate.jpg", "crash.jpeg"],
         Description: "Introduction to the Stock Market"
     },
 
@@ -47,108 +63,93 @@ export const modulesData = [
         Image: "module-thumbnail.jpeg",
         Pages: [
             
-            ["Stock Market Basics Part 1", 
-            `In machine learning and the stock market, there are a couple of variables that must be gone over before we continue. So, we already know what a stock is. It is described as a portion of a company that is shared with you. Some common stock market lingo may be thrown around in this course.`],
+            ["Stock Market Terminology", 
+            `Now that we have discussed the basics of the stock market, we will cover important terminologies related to the stock market. You may come across many of these terms in the future if you decide to become involved in the trading of stocks. Additionally, several of these terms may be referred to in later modules when we learn how to use machine learning to assist us in the matters of the stock market.`],
 
-            ["Stock Market Basics Part 1", 
-            `For example, a crash is when a stock in particular, or all stocks, seem to lose their value. This can happen for an array of reasons, and there is never a clear cut answer. There are real life people in the world that control maybe 50%, 80%, or however much of a stock of one single company. If they were to sell all of their stock one day, let's say this person is retiring, supply would be astronomically high, but demand for the consumer has not changed and so the price of that stock will crash a lot.`],
-
-            ["Stock Market Basics Part 1", 
-            `If we use our computer to tell us when to buy and sell stocks, our computer is a broker. A broker is someone (or in our case something) that tells you when to buy and sell stocks, simple as that. These types of people exist because they spend every moment of their day looking at what companies are doing and how they are performing, and can have a much clearer answer for what the price of a stock is going to be compared to someone who has googled it once.`],
-
-            ["Stock Market Basics Part 1", 
-            `There is day trading in the stock market, which is buying and selling a share in a single day. The prices of stocks are always shifting, and something as arbitrary as 5 PM rolling around may make the prices of stocks go up or go down. In this course we will go over machine learning principles that can help with day trading and with longer term investments.`],
-
-            ["Stock Market Basics Part 1", 
-            `Dividends are payments to stock shareholders that companies pay. Obviously if your company is a billion dollar company, you could expect a lot of money in the dividends. This is one of the key aspects that determines what people buy and sell.`],
-
-            ["Stock Market Basics Part 1", 
-            `Highs and Lows are, intuitively, prices a stock is reaching for the first time. It may be the first time a price is the most expensive it has been, or the first time a price is the lowest it has been.`],
-
-            ["Stock Market Basics Part 1", 
-            `As for machine learning, you probably have heard the term algorithm before. An algorithm is basically a set of instructions that the computer follows. Many people who go to study computer science will learn of sorting algorithms, or algorithms that basically sort things from smallest to largest. This is one of the most basic kinds of algorithms and also one that's very practical. Much like how when making a cake, you need ingredients and then need to prepare them in a certain order, algorithms need something to work with (ingredients) and instructions (the recipe for the cake). For example, if I owned a grocery store, I could sort all of my gallons of milk in order to know what is going to expire the soonest to latest, so I know what order to sell them in.`],
-
-            ["Stock Market Basics Part 1", 
-            `A machine is said to learn when its performance gets better with the more data I give it. Machine learning is often used with image detection and is one of the key principles in self-driving cars. Self-driving cars need to know how to recognize what is a stop sign, what is a pedestrian, and so on. So, one way to train it is to feed the algorithm 100,000 pictures of stop signs and then let it decide what is what. If it is a picture of a stop sign and it says it's a stop sign, then it succeeded.. If it says it not a picture and but it turns out it was a picture of a stop sign, then the algorithm will know it made a mistake and tweak itself slightly in hopes of making more correct answers.`],
-
-            ["Stock Market Basics Part 1", 
-            `When machines learn quickly, they make many mistakes, but do more tweaking to their algorithm and can ultimately start making fewer mistakes as a whole sooner. Consequently machines learning slowly means they make fewer mistakes but take a much longer time to reach as few mistakes as possible.`],
+            ["Stock Market Terminology", 
+            `Dividends are portions of a company’s profits that are paid to their shareholders. In other words, dividends are the income an individual would receive for owning the stock of a company. The amount of money gain from a dividend depends on the company’s earnings. The higher the earnings of a company, the higher the dividends that their shareholders receive. This is one of the key factors in determining which companies to buy stocks from. However, it is also important to realize that not all companies pay dividends to their shareholders.`],
+            
+            ["Stock Market Terminology", 
+            `Day trading is the buying and selling of stocks in a single trading day. This is considered a short-term strategy to earn money from stocks. Usually, day traders buy stocks in the morning when the stock market opens and sell them in the afternoon before the stock market closes. The prices of stocks are always shifting, even throughout the period of one day. Although the shift in prices may not be significant, day trading is a good method to quickly maximize returns.`],
+            
+            ["Stock Market Terminology", 
+            `An opening price is the price of the first trading of stocks that occur after the stock market opens up for the day. For example, right after the market opens for trading, the first stock trade of the day involved the buying and selling of stocks priced at $40. Then, the opening price of the day would be $40. 
+            
+            On the other hand, a closing price is the price of the last trading of stocks that occur before the stock market closes up for the day. Now let’s say, right before the market closes for trading, the last stock trade of the day involved the buying and selling of stocks priced at $50. Then, the closing price of the day would be $50. These values are especially useful for day trading since they can be analyzed to measure day-to-day results.`],
+            
+            ["Stock Market Terminology", 
+            `A high price is the highest price that a stock was traded for in a given period of time. Accordingly, a low price is the lowest price that a stock was traded for in a given period of time. You could easily see a stock’s high and low prices for any period of time. A common period of time that many people keep track of the high and low prices is one day. Looking at the daily highs and lows is important for day trading. Another common period of time is 52 weeks or one year. This helps with looking at a stock’s annual performance.`],
+            
+            ["Stock Market Terminology", 
+            `A moving average is the average price for a share over a period of time for a stock. The time period for a moving average can be 10 days, 30 minutes, 50 days, or any range that a trader might want. A moving average is a good indicator of whether a stock is performing well overall or not. If it increases, then the stock has an overall upward trend. On the other hand, if it decreases, then the stock has an overall downward trend. This allows traders to determine whether it is a good idea to buy or sell the stock.`],
+            
+            ["Stock Market Terminology", 
+            `The volume of a stock is the number of shares that is traded within a particular period of time. That means that every time shares get traded between buyers and sellers, that number of shares gets added to the total volume. So, volume is also a way to gauge market strength. The higher the volume, the stronger a market is. Additionally, the volume can also indicate a new trend in the market.`],
         ],
         QuizPool: [
-            ["What is a program?",
-                "A set of instructions that tells a machine how to execute a task",
-                "A study of computers and how we can use them to solve problems",
-                "A machine that takes in an input and produces an output",
-                "A physical component of a computer"],
-            ["What is the function of a machine learning model?",
-                "To take in an input, apply the patterns learned from the training data, and produce an output, such as a prediction",
-                "To follow the exact instructions set by programmers to complete a task",
-                "To control a robot",
-                "To make human-like machines"],
-            ["Which of these are examples of training data?",
-                "All of the choices",
-                "Text",
-                "Images",
-                "Numbers"],
+            ["What is a dividend?",
+                "A portion of a company’s profits that are paid to their shareholders",
+                "The buying and selling of stocks in a single trading day",
+                "The number of shares that is traded within a particular period of time",
+                "The highest price that a stock was traded for in a given period of time"],
+            ["What is the term for the number of shares that is traded within a particular period of time?",
+                "Volume",
+                "Moving average",
+                "High price",
+                "Open price"],
+            ["What is closing price?",
+                "The price of the first trading of stocks that occur after the stock market opens up for the day",
+                "The average price for a share over a period of time for a stock",
+                "The lowest price that a stock was traded for in a given period of time",
+                "The price of the last trading of stocks that occur before the stock market closes up for the day"],
         ],
         QuizSize: 3,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg", "codeva.jpeg"],
-        Description: "Stock Market Basics Part 1"
+            ["stock-graph.jpg", "money.jpg", "trade.jpg", "clock.jpg", "dollars.jpg", "stock-details.jpg", "volume.jpeg"],
+        Description: "Stock Market Terminology"
     },
 
     {
         Title: "MODULE 3",
         Image: "module-thumbnail.jpeg",
         Pages: [
-            ["TITLE", "CONTENT"],
+            ["Stock Market and Machine Learning",
+            `In the past several decades, technology has made many advancements. These advancements have also changed the way people interact with the stock market. It used to be the case that you would have to rely on experts to manually analyze data on the stock market and give you advice on how certain stocks may perform. Now, we can use computers to analyze data in order to help us make investment decisions. This means that the analyzation process will be faster and more accurate.`],
             
-            ["TITLE 2", `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, nunc iaculis vulputate sagittis, sem tortor semper leo, at varius elit ipsum et metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Duis blandit risus mauris, sit amet pulvinar eros interdum in. Aliquam efficitur odio at suscipit viverra. Etiam nibh tellus, iaculis sed metus mattis, semper consequat felis. Donec elementum rhoncus ligula rhoncus aliquam. Praesent lacinia sapien ligula, semper vehicula libero pulvinar at. Maecenas nibh lorem, condimentum non justo in, imperdiet finibus nibh.
+            ["Stock Market and Machine Learning", 
+            `By providing a large amount of relevant data to a computer, the computer can observe and analyze the data to find trends and patterns. These findings can then be used to predict future trends and patterns. These are ways of how we can use a concept called machine learning to help us learn more about the movements of the stock market. We will discuss more about the topic of machine learning in the next module, but let’s talk more about some specific ways we can apply machine learning.`],
+            
+            ["Stock Market and Machine Learning", 
+            `One of the simplest ways that we can apply machine learning to data from the stock market is by predicting the stock prices. A computer can look through the previous prices of a particular stock. The stock prices can be within a period of one month, one year, or whatever an individual chooses. Then, the computer analyzes the historical stock prices to attempt to find a trend or pattern in the data. After it performs the analysis and finds a suitable explanation for the movement of the stock prices, the computer then uses its findings to predict the likely price of a stock in the future. 
+            
+            However, this method may not be very accurate since there are many possible spontaneous circumstances that might influence the stock market. Generally, though, using machine learning to predict stock prices is great as a guide to estimate how stocks will perform in the future.`],
 
-            Sed ac condimentum urna. Cras nulla dui, rhoncus a euismod non, facilisis dapibus elit. Phasellus ut sodales mi. Cras tempus id nisl non efficitur. Nullam lorem tellus, imperdiet eu dui at, rhoncus tristique quam. Cras egestas, orci vitae hendrerit blandit, ipsum magna iaculis libero, placerat pharetra nulla velit eu magna. Duis consequat ut diam rhoncus vestibulum. Cras vitae consequat orci. Morbi et laoreet lacus, in faucibus ex. Nulla facilisi. Donec suscipit nibh ut velit tristique, a rhoncus sapien porta. Morbi ex nisi, facilisis id purus quis, ultricies commodo purus. Ut egestas nulla sit amet tellus accumsan, dictum hendrerit mauris tristique. Etiam elit dolor, fringilla eget quam varius, dignissim maximus purus. Curabitur sed pulvinar risus.
+            ["Stock Market and Machine Learning", 
+            `In tandem with using machine learning to predict stock prices, we could also use machine learning to help us decide when to buy or sell stocks. The computer could estimate the future prices of a stock and then use that information to assist us in deciding whether it is a good idea to buy or sell. The computer will base their choice of buying or selling on the maximization of profit. This means that the computer will attempt to tell us when to buy or sell in a way that will get us the most amount of money. 
             
-            Phasellus eu elit ultricies erat dapibus finibus. Nulla hendrerit vestibulum augue in eleifend. Vestibulum sit amet faucibus elit. Sed sit amet ligula non orci bibendum condimentum sit amet eu lectus. Praesent non eros et justo tempor eleifend. Etiam ultricies velit elit, sit amet pharetra lacus luctus ut. Suspendisse consequat dui elit, quis accumsan ipsum finibus a. Donec quis odio risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            
-            Phasellus non purus sed libero sagittis dignissim. Morbi ornare leo faucibus turpis iaculis, gravida dignissim dolor semper. Maecenas facilisis tristique bibendum. Donec in tincidunt turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sit amet tortor vitae dolor mattis pellentesque. Vivamus non elit lobortis, egestas neque a, dictum metus. Donec finibus nulla lorem, vel suscipit dolor bibendum quis. Suspendisse vulputate vel libero et ultrices. Nam ac molestie massa.
-            
-            Curabitur tincidunt in dolor a maximus. Vestibulum commodo viverra suscipit. Nulla facilisi. Phasellus venenatis dignissim ante sit amet elementum. Cras massa ligula, tempor sit amet aliquam nec, dictum a quam. Phasellus pharetra euismod eros. Praesent ullamcorper quam felis, sit amet elementum elit hendrerit et. Vivamus faucibus et libero vitae pulvinar. Sed consectetur at arcu vel cursus. Pellentesque iaculis velit erat, et fringilla ipsum consequat vel. Nunc ut purus ac ipsum varius commodo lacinia vel nisi. In convallis tortor eros, non vestibulum risus rutrum ac.`],
-            
-            ["TITLE 3", `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, nunc iaculis vulputate sagittis, sem tortor semper leo, at varius elit ipsum et metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Duis blandit risus mauris, sit amet pulvinar eros interdum in. Aliquam efficitur odio at suscipit viverra. Etiam nibh tellus, iaculis sed metus mattis, semper consequat felis. Donec elementum rhoncus ligula rhoncus aliquam. Praesent lacinia sapien ligula, semper vehicula libero pulvinar at. Maecenas nibh lorem, condimentum non justo in, imperdiet finibus nibh.
+            So, a simple way to do this might be to buy a stock if the price today is lower than the price in the future. Additionally, if the price of a stock is higher than the price in the future, there may be a suggestion to sell the stock.`],
 
-            Sed ac condimentum urna. Cras nulla dui, rhoncus a euismod non, facilisis dapibus elit. Phasellus ut sodales mi. Cras tempus id nisl non efficitur. Nullam lorem tellus, imperdiet eu dui at, rhoncus tristique quam. Cras egestas, orci vitae hendrerit blandit, ipsum magna iaculis libero, placerat pharetra nulla velit eu magna. Duis consequat ut diam rhoncus vestibulum. Cras vitae consequat orci. Morbi et laoreet lacus, in faucibus ex. Nulla facilisi. Donec suscipit nibh ut velit tristique, a rhoncus sapien porta. Morbi ex nisi, facilisis id purus quis, ultricies commodo purus. Ut egestas nulla sit amet tellus accumsan, dictum hendrerit mauris tristique. Etiam elit dolor, fringilla eget quam varius, dignissim maximus purus. Curabitur sed pulvinar risus.
-            
-            Phasellus eu elit ultricies erat dapibus finibus. Nulla hendrerit vestibulum augue in eleifend. Vestibulum sit amet faucibus elit. Sed sit amet ligula non orci bibendum condimentum sit amet eu lectus. Praesent non eros et justo tempor eleifend. Etiam ultricies velit elit, sit amet pharetra lacus luctus ut. Suspendisse consequat dui elit, quis accumsan ipsum finibus a. Donec quis odio risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            
-            Phasellus non purus sed libero sagittis dignissim. Morbi ornare leo faucibus turpis iaculis, gravida dignissim dolor semper. Maecenas facilisis tristique bibendum. Donec in tincidunt turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sit amet tortor vitae dolor mattis pellentesque. Vivamus non elit lobortis, egestas neque a, dictum metus. Donec finibus nulla lorem, vel suscipit dolor bibendum quis. Suspendisse vulputate vel libero et ultrices. Nam ac molestie massa.
-            
-            Curabitur tincidunt in dolor a maximus. Vestibulum commodo viverra suscipit. Nulla facilisi. Phasellus venenatis dignissim ante sit amet elementum. Cras massa ligula, tempor sit amet aliquam nec, dictum a quam. Phasellus pharetra euismod eros. Praesent ullamcorper quam felis, sit amet elementum elit hendrerit et. Vivamus faucibus et libero vitae pulvinar. Sed consectetur at arcu vel cursus. Pellentesque iaculis velit erat, et fringilla ipsum consequat vel. Nunc ut purus ac ipsum varius commodo lacinia vel nisi. In convallis tortor eros, non vestibulum risus rutrum ac.`],
-
-            
+            ["Stock Market and Machine Learning", 
+            `We can also use machine learning to look through social media posts, news articles, or other online resources to see how people feel towards a certain company. You might wonder how the people’s sentiment towards a company would relate to the stock market. The public’s opinion can greatly influence the stocks of a company. If people view a company more positively, there is a higher chance that their stock prices might rise. On the other hand, if people view a company more negatively, there is a higher chance that their stock prices might drop. So, machine learning can also be used to evaluate how certain events or people’s outlook on a company can affect the stock market.`],
         ],
         QuizPool: [
-            ["What is a program?",
-                "A set of instructions that tells a machine how to execute a task",
-                "A study of computers and how we can use them to solve problems",
-                "A machine that takes in an input and produces an output",
-                "A physical component of a computer"],
-            ["What is the function of a machine learning model?",
-                "To take in an input, apply the patterns learned from the training data, and produce an output, such as a prediction",
-                "To follow the exact instructions set by programmers to complete a task",
-                "To control a robot",
-                "To make human-like machines"],
-            ["Which of these are examples of training data?",
-                "All of the choices",
-                "Text",
-                "Images",
-                "Numbers"],
+            ["Which is not an advantage of using computers to analyze stock market data?",
+                "The process involves more human resources",
+                "The analysis is faster",
+                "The computer can quickly look through a large amount of data",
+                "The analysis is more accurate"],
+            ["What is not a way to apply machine learning to stock market data?",
+                "To display the data on a graph",
+                "To find trends and patterns in data",
+                "To predict future stock prices",
+                "To analyze the people's feelings towards a certain company"],
         ],
-        QuizSize: 3,
+        QuizSize: 2,
         ModuleImg: 
-            ["computer.jpeg", "codeva.jpeg", "computer.jpeg"],
-        Description: "Stock Market Basics Part 2"
+            ["person-computer.jpg", "stock-market.jpg", "stock.jpg", "stocks.jpg", "social-media.jpg"],
+        Description: "Stock Market and Machine Learning"
     },
 
-    
     {
         Title: "MODULE 4",
         Image: "module-thumbnail.jpeg",

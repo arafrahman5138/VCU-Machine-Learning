@@ -1,3 +1,5 @@
+// Scrolls view to the top of the page everytime the page is reloaded
+
 import { useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
 

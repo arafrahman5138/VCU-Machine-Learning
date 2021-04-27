@@ -30,30 +30,30 @@ export default function Quiz1() {
 
 	const questions = [
 		{
-			questionText: modulesData[3].QuizPool[0][0],
+			questionText: modulesData[0].QuizPool[0][0],
 			answerOptions: [
-				{ answerText: modulesData[3].QuizPool[0][1], isCorrect: true },
-				{ answerText: modulesData[3].QuizPool[0][2], isCorrect: false },
-				{ answerText: modulesData[3].QuizPool[0][3], isCorrect: false },
-				{ answerText: modulesData[3].QuizPool[0][4], isCorrect: false },
+				{ answerText: modulesData[0].QuizPool[0][1], isCorrect: true },
+				{ answerText: modulesData[0].QuizPool[0][2], isCorrect: false },
+				{ answerText: modulesData[0].QuizPool[0][3], isCorrect: false },
+				{ answerText: modulesData[0].QuizPool[0][4], isCorrect: false },
 			],
 		},
 		{
-			questionText: modulesData[3].QuizPool[1][0],
+			questionText: modulesData[0].QuizPool[1][0],
 			answerOptions: [
-				{ answerText: modulesData[3].QuizPool[1][1], isCorrect: true },
-				{ answerText: modulesData[3].QuizPool[1][2], isCorrect: false },
-				{ answerText: modulesData[3].QuizPool[1][3], isCorrect: false },
-				{ answerText: modulesData[3].QuizPool[1][4], isCorrect: false },
+				{ answerText: modulesData[0].QuizPool[1][1], isCorrect: true },
+				{ answerText: modulesData[0].QuizPool[1][2], isCorrect: false },
+				{ answerText: modulesData[0].QuizPool[1][3], isCorrect: false },
+				{ answerText: modulesData[0].QuizPool[1][4], isCorrect: false },
 			],
 		},
 		{
-			questionText: modulesData[3].QuizPool[2][0],
+			questionText: modulesData[0].QuizPool[2][0],
 			answerOptions: [
-				{ answerText: modulesData[3].QuizPool[2][1], isCorrect: true },
-				{ answerText: modulesData[3].QuizPool[2][2], isCorrect: false },
-				{ answerText: modulesData[3].QuizPool[2][3], isCorrect: false },
-				{ answerText: modulesData[3].QuizPool[2][4], isCorrect: false },
+				{ answerText: modulesData[0].QuizPool[2][1], isCorrect: true },
+				{ answerText: modulesData[0].QuizPool[2][2], isCorrect: false },
+				{ answerText: modulesData[0].QuizPool[2][3], isCorrect: false },
+				{ answerText: modulesData[0].QuizPool[2][4], isCorrect: false },
 			],
 		},
 	];
