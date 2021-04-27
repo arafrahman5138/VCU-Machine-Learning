@@ -2,8 +2,11 @@ import React from 'react';
 import { Line } from 'react-chartjs-2';
 import './ChartSample.css';
 import { create, all } from 'mathjs';
-const math = create(all)
+const math = create(all) //allowed to make your own functions, used for ML
 
+/**
+ * These are used for the settings for how each graph displays
+ * */
 var options = {
     title: {
         display: true,
@@ -139,6 +142,9 @@ var options3 = {
     responsive: true
 };
 
+/*
+ * These are used as the x axis for each graph. five being first graph, 10 being 2nd, 15 being 3rd.
+ * */
 var fiveLabel = {
     labels: [
         '1 / 3 / 2017',
@@ -656,6 +662,9 @@ var fifteenLabel = {
     ]
 };
 
+/**
+ * Actual stock price from each graph (paypal 2017)
+ * */
 var fiveActual = {
     dataSet: [
         40.290001,
@@ -1171,8 +1180,9 @@ var fifteenActual = {
     ]
 };
 
-var numbers;
-
+/**
+ * Used by ML alg for each graph
+ * */
 var MLArrayFiveGraph = [
     1,
     2,
@@ -1679,6 +1689,9 @@ var MLArrayFifteenGraph = [
     250,
     251]
 
+/**
+ * Used to calculate line of best fit for each graph
+ * */
 var fiveMachine = {
     dataSet: findLineByLeastSquares(MLArrayFiveGraph, fiveActual.dataSet)
 };
@@ -1691,6 +1704,9 @@ var fifteenMachine = {
     dataSet: findLineByLeastSquares(MLArrayFifteenGraph, fifteenActual.dataSet)
 };
 
+/**
+ * Line of best fit function
+ * */
 function findLineByLeastSquares(values_x, values_y) {
     var sum_x = 0;
     var sum_y = 0;
@@ -1754,6 +1770,37 @@ function findLineByLeastSquares(values_x, values_y) {
     return result_values_y;
 }
 
+/**
+ * The following section is not used for display to the users
+ * It is a cost function, it (should) determines at what percentage it thinks you should purchase a stock
+ * The answer can be seen from the console
+ * Currently, Xt, yt, and matrixt are unused but can be substituted into the functions.
+ * I unfortunately, could not get it to work for xt, yt, and matrixt, but it does work for x, y, and matrix
+ * The "t" meaning traning data
+ * 
+ * init(matrix) will take the matrix of, in this case 2 test scores and a
+ * 0 or 1 for whether or not the student was accepted into college.
+ * 
+ * X is the test scores
+ * y is whether or not they got into college
+ * 
+ * The function can then be given 2 test scores and it will predict the odds that student will get in
+ * (see, "let studentVector")
+ * 
+ * Again, this is not used in the course, but is a tool that can be used with some tweaking
+ * 
+ * This code will be separated by:
+ * 
+ *##########
+ * NOT USED
+ *##########
+ * */
+
+/**
+ * #######
+ * NOT USED
+ * #######
+ * */
 var matrix = [
     [34.62365962451697, 78.0246928153624, 0],
     [30.28671076822607, 43.89499752400101, 0],
@@ -2633,12 +2680,24 @@ function sigmoid(z) {
     return g;
 }
 
+/**
+ * #######
+ * NOT USED
+ * #######
+ * */
+
 var result;
 
 export default class DraggableGraph extends React.Component {
 
     render() {
 
+        /**
+         * Each const data(Insert Number) is a separate render for a graph
+         * 
+         * By default, all are set to not display accept dataFive, which
+         * can be changed with the function "cycleCharts"
+         * */
         const dataFive = {
             labels: fiveLabel.labels,
             datasets: [
@@ -2670,7 +2729,7 @@ export default class DraggableGraph extends React.Component {
             datasets: [
                 {
                     data: tenActual.dataSet,
-                    label: 'Your Prediction',
+                    label: 'Stock Price',
                     lineTension: 0,
                     backgroundColor: '#1C9CD3',
                     borderColor: '#1C9CD3',
@@ -2696,7 +2755,7 @@ export default class DraggableGraph extends React.Component {
             datasets: [
                 {
                     data: fifteenActual.dataSet,
-                    label: 'Your Prediction',
+                    label: 'Stock Price',
                     lineTension: 0,
                     backgroundColor: '#1C9CD3',
                     borderColor: '#1C9CD3',
@@ -2748,6 +2807,14 @@ export default class DraggableGraph extends React.Component {
 
 var increment = 1;
 
+/**
+ * This function will change the display in the "ChartSample.css
+ * file for each chart to cycle through them.
+ * 
+ * Once tokens are added, this should only happen if the students have enough tokens
+ * 
+ * So, for example, it would be (if increment == 1 && studentTokens == Y)
+ * */
 function cycleCharts() {
     if (increment == 1) {
         document.getElementById('fiveElement').style.display = 'none'
@@ -2768,13 +2835,3 @@ function cycleCharts() {
         return
     }
 }
-
-/** function launchPythonScript() {
-        pypyjs.exec(
-            'y = [x**2. for x in range(10)]'
-        ).then(function () {
-            pypyjs.get('y')
-        }).then(function (result) {
-            alert(result)
-        });
-}*/

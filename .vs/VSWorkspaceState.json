@@ -2,10 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\econ-learning",
+    "\\econ-learning\\public",
+    "\\econ-learning\\public\\images",
     "\\econ-learning\\src",
     "\\econ-learning\\src\\components",
+    "\\econ-learning\\src\\components\\quizzes",
     "\\econ-learning\\src\\pages"
   ],
-  "SelectedNode": "\\econ-learning",
+  "SelectedNode": "\\econ-learning\\public\\images\\bins.jpg",
   "PreviewInSolutionExplorer": false
 }
