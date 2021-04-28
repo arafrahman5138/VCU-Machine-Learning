@@ -17,6 +17,7 @@ export default function Login() {
   const [error, setError] = useState("");
   const [, setCredentials] = useContext(CredentialsContext);
 
+  //This const is to call back to the backend to verify if the account exists
   const login = (e) => {
     e.preventDefault();
     fetch(`http://localhost:4000/login`, {
@@ -31,6 +32,7 @@ export default function Login() {
     })
       .then(handleErrors)
       .then(() => {
+      // This allows us to use the players username for the welcome page
         setCredentials({
           username,
           password,
@@ -52,14 +54,16 @@ export default function Login() {
       <form onSubmit={login}>
       <h1 class="h1">Sign in</h1>
         <input class="usernameInp"
+        // Student Input for Username
           onChange={(e) => setUsername(e.target.value)}
           placeholder="Username"
         />
         <br />
         <input class="usernameInp"
           type="password"
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
+         // Student Input for Password
+           onChange={(e) => setPassword(e.target.value)}
+           placeholder="Password"
         />
         <br />
         <button class="loginBtn" type="submit">Sign in</button>
