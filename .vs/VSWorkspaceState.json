@@ -4,16 +4,10 @@
     "\\Backend",
     "\\econ-learning",
     "\\econ-learning\\public",
-    "\\econ-learning\\public\\images",
     "\\econ-learning\\src",
     "\\econ-learning\\src\\components",
-    "\\econ-learning\\src\\components\\quizzes",
     "\\econ-learning\\src\\pages"
   ],
-<<<<<<< HEAD
-  "SelectedNode": "\\econ-learning\\public\\images\\bins.jpg",
-=======
-  "SelectedNode": "\\econ-learning\\src\\pages\\Welcome.js",
->>>>>>> 88cc7864348f5982fec2f3bf924d75ecca0d2817
+  "SelectedNode": "\\Backend\\server.js",
   "PreviewInSolutionExplorer": false
 }

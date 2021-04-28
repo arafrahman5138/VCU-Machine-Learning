@@ -78,6 +78,7 @@ export default function Quiz1() {
 		}
 	};
 
+  // This const is to call back to the backend(server.js) which will then execute commands to store and update
   const storeQuiz1 = (e) => {
     e.preventDefault();
     fetch(`http://localhost:4000/Quiz1`, {

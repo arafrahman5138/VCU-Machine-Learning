@@ -4,6 +4,8 @@ import { CredentialsContext } from "../App";
 import { handleErrors } from "./Login";
 import './Register.css';
 
+//This is setting the accountid
+//In the future to implement a way to check for all the other accountid in database to make sure there is no duplicates
 function getRandomString(length) {
     var randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     var result = '';
@@ -31,6 +33,7 @@ export default function Register() {
   const [error, setError] = useState("");
   const [, setCredentials] = useContext(CredentialsContext);
 
+  // This const is calling the backend to store these fields for the student
   const register = (e) => {
     e.preventDefault();
     fetch(`http://localhost:4000/register`, {
@@ -57,6 +60,7 @@ export default function Register() {
     })
       .then(handleErrors)
       .then(() => {
+      // This allows us to use the players username for the welcome page
         setCredentials({
           username,
           password,
@@ -82,6 +86,7 @@ export default function Register() {
 
   const history = useHistory();
 
+  //When form is complete the student will be created
   return (
     <div class="formm">
       <div class="spanR">
@@ -90,12 +95,14 @@ export default function Register() {
       <form onSubmit={register}>
         <h1 class="h1">Register</h1>
         <input class="usernameInp"
+        // Student Input for Username
           onChange={(e) => setUsername(e.target.value)}
           placeholder="Username"
         />
         <br />
         <input class="usernameInp"
           type="password"
+        // Student Input for Password
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
         />

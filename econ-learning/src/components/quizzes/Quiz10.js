@@ -75,7 +75,7 @@ export default function Quiz10() {
 			setShowScore(true);
 		}
 	};
-
+  // This const is to call back to the backend(server.js) which will then execute commands to store and update
   const storeQuiz10 = (e) => {
     e.preventDefault();
     fetch(`http://localhost:4000/Quiz10`, {

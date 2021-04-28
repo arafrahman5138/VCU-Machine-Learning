@@ -31,6 +31,7 @@ import {
 export const CredentialsContext = React.createContext();
 
 function App() {
+  // This allows us to use the users data( only username ) in the webapp
   const credentialsState = useState(null);
 
   return (
@@ -106,6 +107,7 @@ function App() {
       
       </Router>
       </CredentialsContext.Provider>
+
       <div className="footer">
         footer area
       </div>

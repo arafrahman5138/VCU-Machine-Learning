@@ -6,11 +6,13 @@ const port = 4000;
 
 const ObjectId = require("mongoose").Types.ObjectId;
 
+// mongoose.connect("") is where you should input your own created mongodb atlas server, or use the preexisted one
 mongoose.connect("mongodb+srv://fil:admin@cluster0.jqnnp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
 
+/////////////// USER SCHEMA ///////////////
 const userSchema = new mongoose.Schema({
   username: String,
   password: String,
@@ -28,6 +30,7 @@ const userSchema = new mongoose.Schema({
   module10: Number,
 });
 const User = mongoose.model("User", userSchema);
+////////////////////////////////////////////////
 
 app.use(cors());
 app.use(express.json());
@@ -488,6 +491,7 @@ app.post("/Quiz10", async (req, res) => {
 });
 ///////////////////////////////////////////////
 
+// Mongoose connection to the backend
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", function () {

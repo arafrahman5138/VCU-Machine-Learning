@@ -5,7 +5,8 @@ import '../components/progress.css'
 import { Link } from "react-router-dom";
 import DragChart from '../components/TestingDragChart'
 
-
+// Modules Progress is a const which calls the backend(server.js) 
+// and fetch's the students field value for each module
 const ModuleProgress = (props) => {
     const [todos, setTodos] = useState([]);
     const [credentials] = useContext(CredentialsContext);
