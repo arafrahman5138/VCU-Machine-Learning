@@ -13,7 +13,7 @@ import {
 } from "react-router-dom";
 
 
-import { modulesData } from "./modulesData.js";
+import { modulesData } from "./modulesData.js"; // object containing all content data
 import './modulePages.css';
 
 export default function ModulePagesDOM() {
@@ -44,7 +44,7 @@ export default function ModulePagesDOM() {
             <ModuleNavHeader title={modulesData[module].Title} prevLink={`/modules/${module-1}`} nextLink={`/modules/${module+1}`}/>
           </div>
           
-
+          {/* importing all content data dynamically from modulesData object */}
           <h2 className="modTitle">{modulesData[module].Pages[page][0]}</h2>
           <div className="image" align="center">
             <img className = "modImg" src={`/images/${modulesData[module].ModuleImg[page]}`} />
@@ -70,19 +70,21 @@ function BottomNavGen(props) {
     if ((len - pages - 1) === 0) {
       return (<div className="bottomNavigation">
         {/* <h4><Link to={`/modules/${module}/${pages - 1}`} replace>Previous Page</Link></h4> */}
-        <Link to={`/modules/${module}/${pages - 1}`} replace>
+        <Link to={`/modules/${module}/${pages - 1}`} replace> 
           <Styled.Button> Previous Page </Styled.Button>
         </Link>
 
         <p>Page {pages + 1}/{len}</p>
         {/* <h4><Link to={`/quiz${module+1}`}>Start Quiz</Link></h4> */}
 
+        {/* The link to the next quiz dynamically */}
         <Link to={`/quiz${module+1}`} replace>
           <Styled.Button> Start Quiz </Styled.Button>
         </Link>
       </div>)
     }
 
+    // creating functionality to go to next page
     if (pages === 0) {
       return (<div className="bottomNavigation">
         {/* <h4>Previous Page</h4> */}

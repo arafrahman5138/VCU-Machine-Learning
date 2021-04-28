@@ -27,10 +27,12 @@ export default function ModulesSelectionDOM() {
     return (
         <Switch>
         
-        <Route path="/modules/:module(\d+)/:page(\d+)?">
+        {/* Dynamic route creation */}
+        <Route path="/modules/:module(\d+)/:page(\d+)?"> 
             <ModulePages/>
         </Route>
         
+        {/* This map function created all of the module cards on the modules page */}
         <Route path="/modules">
         <div className="content">
             <h1 align="center">Modules</h1>
